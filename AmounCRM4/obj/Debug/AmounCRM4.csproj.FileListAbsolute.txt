@@ -88,10 +88,6 @@ C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.Web.Infrast
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\System.Net.Http.Formatting.dll
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\System.Web.Http.dll
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\System.Web.Http.WebHost.dll
-C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.dll
-C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.Services.WebApi.dll
-C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.XpsRendering.dll
-C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.ReportViewer.Html5.WebForms.dll
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Newtonsoft.Json.xml
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\System.Net.Http.Formatting.xml
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\System.Web.Http.xml
@@ -104,7 +100,6 @@ C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.Xps
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.XpsRendering.xml
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.ReportViewer.Html5.WebForms.pdb
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.ReportViewer.Html5.WebForms.xml
-C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.AnalysisServices.AdomdClient.dll
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\SqlServerTypes\x64\msvcr120.dll
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\SqlServerTypes\x86\msvcr120.dll

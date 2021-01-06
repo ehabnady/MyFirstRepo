@@ -1,7 +1,6 @@
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\bin\Debug\ReportLibrary1.dll.config
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\bin\Debug\ReportLibrary1.dll
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\bin\Debug\ReportLibrary1.pdb
-C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\bin\Debug\Telerik.Reporting.dll
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\bin\Debug\Telerik.Reporting.pdb
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\bin\Debug\Telerik.Reporting.xml
 C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\obj\Debug\ReportLibrary1.csprojAssemblyReference.cache
