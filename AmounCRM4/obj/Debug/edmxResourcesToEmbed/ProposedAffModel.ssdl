@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProposedAffModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Affiliations_Proposed">
+    <Key>
+      <PropertyRef Name="AffiliationID" />
+    </Key>
+    <Property Name="AffiliationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AffiliationName" Type="nvarchar" MaxLength="250" />
+    <Property Name="PhysicianID" Type="int" />
+    <Property Name="EntityID" Type="int" />
+    <Property Name="AreaRecID" Type="int" />
+    <Property Name="SpecialityID" Type="int" />
+    <Property Name="LineID" Type="int" />
+    <Property Name="PhysicianClass" Type="nvarchar" MaxLength="2" />
+    <Property Name="BestTimeFrom" Type="nvarchar" MaxLength="50" />
+    <Property Name="BestTimeTo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="150" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="EntryDate" Type="smalldatetime" />
+    <Property Name="Is_Approved" Type="bit" />
+    <Property Name="EntityAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="EntityTypeID" Type="int" />
+    <Property Name="Tel1" Type="nvarchar" MaxLength="15" />
+    <Property Name="Tel2" Type="nvarchar" MaxLength="15" />
+    <Property Name="Tel3" Type="nvarchar" MaxLength="15" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="15" />
+    <Property Name="EntityEmailAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="EntityWebSite" Type="nvarchar" MaxLength="100" />
+    <Property Name="PhysicianName" Type="nvarchar" MaxLength="255" />
+    <Property Name="EntityName" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="ProposedAffModelStoreContainer">
+    <EntitySet Name="Affiliations_Proposed" EntityType="Self.Affiliations_Proposed" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

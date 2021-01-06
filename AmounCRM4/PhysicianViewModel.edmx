@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PhysicianViewsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AmounCRM2.dbo.View_Physicians' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_Physicians">
+          <Key>
+            <PropertyRef Name="PhysicianID" />
+            <PropertyRef Name="PhysicianName" />
+          </Key>
+          <Property Name="PhysicianID" Type="int" Nullable="false" />
+          <Property Name="PhysicianName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="MobileNumber" Type="nvarchar" MaxLength="15" />
+          <Property Name="TelNumber" Type="nvarchar" MaxLength="15" />
+          <Property Name="PhysicianEmailAddress" Type="nvarchar" MaxLength="50" />
+          <Property Name="SpecialtyID" Type="int" />
+          <Property Name="PhysicianOldCode" Type="int" />
+          <Property Name="EntryEmployeeID" Type="int" />
+          <Property Name="EntryDate" Type="smalldatetime" />
+          <Property Name="Deleted" Type="bit" />
+          <Property Name="BirthDate" Type="date" />
+          <Property Name="SpecialityCode" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="PhysicianViewsModelStoreContainer">
+          <EntitySet Name="View_Physicians" EntityType="Self.View_Physicians" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_Physicians].[PhysicianID] AS [PhysicianID], 
+    [View_Physicians].[PhysicianName] AS [PhysicianName], 
+    [View_Physicians].[MobileNumber] AS [MobileNumber], 
+    [View_Physicians].[TelNumber] AS [TelNumber], 
+    [View_Physicians].[PhysicianEmailAddress] AS [PhysicianEmailAddress], 
+    [View_Physicians].[SpecialtyID] AS [SpecialtyID], 
+    [View_Physicians].[PhysicianOldCode] AS [PhysicianOldCode], 
+    [View_Physicians].[EntryEmployeeID] AS [EntryEmployeeID], 
+    [View_Physicians].[EntryDate] AS [EntryDate], 
+    [View_Physicians].[Deleted] AS [Deleted], 
+    [View_Physicians].[BirthDate] AS [BirthDate], 
+    [View_Physicians].[SpecialityCode] AS [SpecialityCode]
+    FROM [dbo].[View_Physicians] AS [View_Physicians]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PhysicianViewsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="View_Physicians">
+          <Key>
+            <PropertyRef Name="PhysicianID" />
+            <PropertyRef Name="PhysicianName" />
+          </Key>
+          <Property Name="PhysicianID" Type="Int32" Nullable="false" />
+          <Property Name="PhysicianName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MobileNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="TelNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="PhysicianEmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SpecialtyID" Type="Int32" />
+          <Property Name="PhysicianOldCode" Type="Int32" />
+          <Property Name="EntryEmployeeID" Type="Int32" />
+          <Property Name="EntryDate" Type="DateTime" Precision="0" />
+          <Property Name="Deleted" Type="Boolean" />
+          <Property Name="BirthDate" Type="DateTime" Precision="0" />
+          <Property Name="SpecialityCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="PhysicianViewDBContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="View_Physicians" EntityType="Self.View_Physicians" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PhysicianViewsModelStoreContainer" CdmEntityContainer="PhysicianViewDBContext">
+          <EntitySetMapping Name="View_Physicians">
+            <EntityTypeMapping TypeName="PhysicianViewsModel.View_Physicians">
+              <MappingFragment StoreEntitySet="View_Physicians">
+                <ScalarProperty Name="PhysicianID" ColumnName="PhysicianID" />
+                <ScalarProperty Name="PhysicianName" ColumnName="PhysicianName" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="TelNumber" ColumnName="TelNumber" />
+                <ScalarProperty Name="PhysicianEmailAddress" ColumnName="PhysicianEmailAddress" />
+                <ScalarProperty Name="SpecialtyID" ColumnName="SpecialtyID" />
+                <ScalarProperty Name="PhysicianOldCode" ColumnName="PhysicianOldCode" />
+                <ScalarProperty Name="EntryEmployeeID" ColumnName="EntryEmployeeID" />
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="SpecialityCode" ColumnName="SpecialityCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

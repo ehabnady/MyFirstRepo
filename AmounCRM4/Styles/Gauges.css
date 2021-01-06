@@ -1,0 +1,80 @@
+﻿body {
+}
+
+.barometerHolder
+
+{
+
+    width: 450px;
+
+    height: 450px;
+
+    margin: 35px 65px;
+
+}
+
+ 
+
+.thermometerHolder
+
+{
+
+    width: 120px;
+
+    height: 120px;
+
+    position: absolute;
+
+    top: 220px;
+
+    left: 160px;
+
+}
+
+ 
+
+.hygrometerHolder
+
+{
+
+    width: 120px;
+
+    height: 120px;
+
+    position: absolute;
+
+    top: 220px;
+
+    left: 298px;
+
+}
+
+ 
+
+div.refreshButtonHolder
+
+{
+
+    position: absolute;
+
+    left: 555px;
+
+    top: 330px;
+
+}
+
+ 
+
+div.refreshButtonHolder a span
+
+{
+
+    text-transform: uppercase;
+
+    font-size: 14px;
+
+    font-family: Arial,Verdana,Tahoma;
+
+    color: #785e0b;
+
+}

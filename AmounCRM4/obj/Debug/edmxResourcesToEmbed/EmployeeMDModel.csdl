@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EmployeesMasterData">
+    <Key>
+      <PropertyRef Name="EmployeeHRCode" />
+    </Key>
+    <Property Name="EmployeeHRCode" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeFullName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeePassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MustChangePassword" Type="Boolean" />
+    <Property Name="LastChangeDate" Type="DateTime" Precision="0" />
+    <Property Name="NextChangeDate" Type="DateTime" Precision="0" />
+    <Property Name="Deleted" Type="Boolean" />
+    <Property Name="CreationDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="IsPilot" Type="Boolean" />
+    <Property Name="NoOfVisitsPerDay" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="EmployeeDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EmployeesMasterDatas" EntityType="Self.EmployeesMasterData" />
+  </EntityContainer>
+</Schema>

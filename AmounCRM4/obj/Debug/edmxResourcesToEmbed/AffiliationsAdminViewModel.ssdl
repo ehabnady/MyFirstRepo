@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AffiliationsAdminView.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AmounCRM2.dbo.View_Affiliations_Admin' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_Affiliations_Admin">
+    <Key>
+      <PropertyRef Name="AffiliationID" />
+      <PropertyRef Name="PhysicianName" />
+      <PropertyRef Name="IsTargeted" />
+      <PropertyRef Name="IsTargeted2" />
+      <PropertyRef Name="Is Targeted" />
+      <PropertyRef Name="IsTargeted3" />
+    </Key>
+    <Property Name="AffiliationID" Type="int" Nullable="false" />
+    <Property Name="AffiliationName" Type="nvarchar" MaxLength="250" />
+    <Property Name="PhysicianName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Entity Name" Type="nvarchar" MaxLength="508" />
+    <Property Name="SpecialtyID" Type="int" />
+    <Property Name="SpecialityName" Type="nvarchar" MaxLength="150" />
+    <Property Name="PhysicianClass" Type="nvarchar" MaxLength="2" />
+    <Property Name="LineName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PhysicianID" Type="int" />
+    <Property Name="EntityID" Type="int" />
+    <Property Name="AmounTerritoryName" Type="nvarchar" MaxLength="60" />
+    <Property Name="AreaRecID" Type="int" />
+    <Property Name="AmounTerritoryID" Type="int" />
+    <Property Name="SupervisionArea" Type="nvarchar" MaxLength="5" />
+    <Property Name="AmounRegionID" Type="int" />
+    <Property Name="AmounRegionName" Type="nvarchar" MaxLength="25" />
+    <Property Name="LineID" Type="int" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="EmployeeHRCode" Type="int" />
+    <Property Name="EmployeeName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmployeeType" Type="nvarchar" MaxLength="255" />
+    <Property Name="SupervisorName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ManagerName" Type="nvarchar" MaxLength="100" />
+    <Property Name="SupervisorID" Type="int" />
+    <Property Name="ManagerID" Type="int" />
+    <Property Name="EntityAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="SpecialityCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="SupervisionAreaID" Type="int" />
+    <Property Name="BrickID" Type="int" />
+    <Property Name="AmounBrickName" Type="nvarchar" MaxLength="40" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="150" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="BestTimeFrom" Type="nvarchar" MaxLength="50" />
+    <Property Name="BestTimeTo" Type="nvarchar" MaxLength="50" />
+    <Property Name="NoOfPatients" Type="float" />
+    <Property Name="WaitingTime" Type="float" />
+    <Property Name="SpecialtyValue" Type="float" />
+    <Property Name="TotalValue" Type="float" />
+    <Property Name="IsTargeted" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="PrescriptionHappit" Type="float" />
+    <Property Name="NoOfPatientsOld" Type="float" />
+    <Property Name="Tel1" Type="nvarchar" MaxLength="15" />
+    <Property Name="Tel2" Type="nvarchar" MaxLength="15" />
+    <Property Name="Tel3" Type="nvarchar" MaxLength="15" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="15" />
+    <Property Name="EntityEmailAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="EntityWebSite" Type="nvarchar" MaxLength="100" />
+    <Property Name="EntityTypeID" Type="int" />
+    <Property Name="LastModificationDate" Type="smalldatetime" />
+    <Property Name="LastModifierID" Type="int" />
+    <Property Name="CreateDate" Type="smalldatetime" />
+    <Property Name="CreatorID" Type="int" />
+    <Property Name="IsTargeted2" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AffiliationName2" Type="nvarchar" MaxLength="265" />
+    <Property Name="RepAreaID" Type="int" />
+    <Property Name="Is Targeted" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="IsTargeted3" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="DirectorID" Type="int" />
+    <Property Name="DirectorHRCode" Type="int" />
+    <Property Name="DirectorName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ComDirID" Type="int" />
+    <Property Name="ComDirHRCode" Type="int" />
+    <Property Name="ComDirName" Type="nvarchar" MaxLength="100" />
+    <Property Name="NoOfVisitsPerDay" Type="int" />
+    <Property Name="NoOfOperations" Type="float" />
+  </EntityType>
+  <EntityContainer Name="AffiliationsAdminViewStoreContainer">
+    <EntitySet Name="View_Affiliations_Admin" EntityType="Self.View_Affiliations_Admin" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_Affiliations_Admin].[AffiliationID] AS [AffiliationID], 
+    [View_Affiliations_Admin].[AffiliationName] AS [AffiliationName], 
+    [View_Affiliations_Admin].[PhysicianName] AS [PhysicianName], 
+    [View_Affiliations_Admin].[Entity Name] AS [Entity Name], 
+    [View_Affiliations_Admin].[SpecialtyID] AS [SpecialtyID], 
+    [View_Affiliations_Admin].[SpecialityName] AS [SpecialityName], 
+    [View_Affiliations_Admin].[PhysicianClass] AS [PhysicianClass], 
+    [View_Affiliations_Admin].[LineName] AS [LineName], 
+    [View_Affiliations_Admin].[PhysicianID] AS [PhysicianID], 
+    [View_Affiliations_Admin].[EntityID] AS [EntityID], 
+    [View_Affiliations_Admin].[AmounTerritoryName] AS [AmounTerritoryName], 
+    [View_Affiliations_Admin].[AreaRecID] AS [AreaRecID], 
+    [View_Affiliations_Admin].[AmounTerritoryID] AS [AmounTerritoryID], 
+    [View_Affiliations_Admin].[SupervisionArea] AS [SupervisionArea], 
+    [View_Affiliations_Admin].[AmounRegionID] AS [AmounRegionID], 
+    [View_Affiliations_Admin].[AmounRegionName] AS [AmounRegionName], 
+    [View_Affiliations_Admin].[LineID] AS [LineID], 
+    [View_Affiliations_Admin].[EmployeeID] AS [EmployeeID], 
+    [View_Affiliations_Admin].[EmployeeHRCode] AS [EmployeeHRCode], 
+    [View_Affiliations_Admin].[EmployeeName] AS [EmployeeName], 
+    [View_Affiliations_Admin].[EmployeeType] AS [EmployeeType], 
+    [View_Affiliations_Admin].[SupervisorName] AS [SupervisorName], 
+    [View_Affiliations_Admin].[ManagerName] AS [ManagerName], 
+    [View_Affiliations_Admin].[SupervisorID] AS [SupervisorID], 
+    [View_Affiliations_Admin].[ManagerID] AS [ManagerID], 
+    [View_Affiliations_Admin].[EntityAddress] AS [EntityAddress], 
+    [View_Affiliations_Admin].[SpecialityCode] AS [SpecialityCode], 
+    [View_Affiliations_Admin].[SupervisionAreaID] AS [SupervisionAreaID], 
+    [View_Affiliations_Admin].[BrickID] AS [BrickID], 
+    [View_Affiliations_Admin].[AmounBrickName] AS [AmounBrickName], 
+    [View_Affiliations_Admin].[Notes] AS [Notes], 
+    [View_Affiliations_Admin].[Deleted] AS [Deleted], 
+    [View_Affiliations_Admin].[BestTimeFrom] AS [BestTimeFrom], 
+    [View_Affiliations_Admin].[BestTimeTo] AS [BestTimeTo], 
+    [View_Affiliations_Admin].[NoOfPatients] AS [NoOfPatients], 
+    [View_Affiliations_Admin].[WaitingTime] AS [WaitingTime], 
+    [View_Affiliations_Admin].[SpecialtyValue] AS [SpecialtyValue], 
+    [View_Affiliations_Admin].[TotalValue] AS [TotalValue], 
+    [View_Affiliations_Admin].[IsTargeted] AS [IsTargeted], 
+    [View_Affiliations_Admin].[PrescriptionHappit] AS [PrescriptionHappit], 
+    [View_Affiliations_Admin].[NoOfPatientsOld] AS [NoOfPatientsOld], 
+    [View_Affiliations_Admin].[Tel1] AS [Tel1], 
+    [View_Affiliations_Admin].[Tel2] AS [Tel2], 
+    [View_Affiliations_Admin].[Tel3] AS [Tel3], 
+    [View_Affiliations_Admin].[Fax] AS [Fax], 
+    [View_Affiliations_Admin].[EntityEmailAddress] AS [EntityEmailAddress], 
+    [View_Affiliations_Admin].[EntityWebSite] AS [EntityWebSite], 
+    [View_Affiliations_Admin].[EntityTypeID] AS [EntityTypeID], 
+    [View_Affiliations_Admin].[LastModificationDate] AS [LastModificationDate], 
+    [View_Affiliations_Admin].[LastModifierID] AS [LastModifierID], 
+    [View_Affiliations_Admin].[CreateDate] AS [CreateDate], 
+    [View_Affiliations_Admin].[CreatorID] AS [CreatorID], 
+    [View_Affiliations_Admin].[IsTargeted2] AS [IsTargeted2], 
+    [View_Affiliations_Admin].[AffiliationName2] AS [AffiliationName2], 
+    [View_Affiliations_Admin].[RepAreaID] AS [RepAreaID], 
+    [View_Affiliations_Admin].[Is Targeted] AS [Is Targeted], 
+    [View_Affiliations_Admin].[IsTargeted3] AS [IsTargeted3], 
+    [View_Affiliations_Admin].[DirectorID] AS [DirectorID], 
+    [View_Affiliations_Admin].[DirectorHRCode] AS [DirectorHRCode], 
+    [View_Affiliations_Admin].[DirectorName] AS [DirectorName], 
+    [View_Affiliations_Admin].[ComDirID] AS [ComDirID], 
+    [View_Affiliations_Admin].[ComDirHRCode] AS [ComDirHRCode], 
+    [View_Affiliations_Admin].[ComDirName] AS [ComDirName], 
+    [View_Affiliations_Admin].[NoOfVisitsPerDay] AS [NoOfVisitsPerDay], 
+    [View_Affiliations_Admin].[NoOfOperations] AS [NoOfOperations]
+    FROM [dbo].[View_Affiliations_Admin] AS [View_Affiliations_Admin]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

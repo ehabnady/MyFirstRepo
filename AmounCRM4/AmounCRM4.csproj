@@ -1,0 +1,2448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{290B2B35-83F9-431B-BFC3-E82DBC7A6E12}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AmounCRM4</RootNamespace>
+    <AssemblyName>AmounCRM4</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <UpgradeBackupLocation />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.7\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="Telerik.Reporting, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+    <Reference Include="Telerik.Reporting.Services.WebApi, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+    <Reference Include="Telerik.Reporting.XpsRendering, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+    <Reference Include="Telerik.ReportViewer.Html5.WebForms, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Web.Device.Detection, Version=2019.2.514.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\Telerik.Web.Device.Detection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.Spreadsheet, Version=2019.2.514.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\AdditionalLibraries\Bin45\Telerik.Web.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2019.2.514.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\Telerik.Web.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2019.2.514.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\Telerik.Web.UI.Skins.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2019.2.503.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2019.2.503.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2019.2.503.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2019.2.503.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2019.2.503.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\AdditionalLibraries\Bin45\Telerik.Windows.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admins\AdminAffiliationForm.aspx.cs">
+      <DependentUpon>AdminAffiliationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\AdminAffiliationForm.aspx.designer.cs">
+      <DependentUpon>AdminAffiliationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\AdminAffiliationForm2.aspx.cs">
+      <DependentUpon>AdminAffiliationForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\AdminAffiliationForm2.aspx.designer.cs">
+      <DependentUpon>AdminAffiliationForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\AffiliationForm.aspx.cs">
+      <DependentUpon>AffiliationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\AffiliationForm.aspx.designer.cs">
+      <DependentUpon>AffiliationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\AllUsers.aspx.cs">
+      <DependentUpon>AllUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\AllUsers.aspx.designer.cs">
+      <DependentUpon>AllUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\AuditTrailApps.aspx.cs">
+      <DependentUpon>AuditTrailApps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\AuditTrailApps.aspx.designer.cs">
+      <DependentUpon>AuditTrailApps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\AutomaticPlan.aspx.cs">
+      <DependentUpon>AutomaticPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\AutomaticPlan.aspx.designer.cs">
+      <DependentUpon>AutomaticPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Bausch.aspx.cs">
+      <DependentUpon>Bausch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Bausch.aspx.designer.cs">
+      <DependentUpon>Bausch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\ChangeRequestsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangeRequestsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\ChangeRequestsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangeRequestsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\ChangeRequestsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangeRequestsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\ClinicForm.aspx.cs">
+      <DependentUpon>ClinicForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\ClinicForm.aspx.designer.cs">
+      <DependentUpon>ClinicForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\CycleClosing.aspx.cs">
+      <DependentUpon>CycleClosing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\CycleClosing.aspx.designer.cs">
+      <DependentUpon>CycleClosing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\EmployeeFormTemp.aspx.cs">
+      <DependentUpon>EmployeeFormTemp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\EmployeeFormTemp.aspx.designer.cs">
+      <DependentUpon>EmployeeFormTemp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\EmployeeFormTempUpdates.aspx.cs">
+      <DependentUpon>EmployeeFormTempUpdates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\EmployeeFormTempUpdates.aspx.designer.cs">
+      <DependentUpon>EmployeeFormTempUpdates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Mailing.cs" />
+    <Compile Include="Admins\MessageForm2.aspx.cs">
+      <DependentUpon>MessageForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\MessageForm2.aspx.designer.cs">
+      <DependentUpon>MessageForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\MessagesForm.aspx.cs">
+      <DependentUpon>MessagesForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\MessagesForm.aspx.designer.cs">
+      <DependentUpon>MessagesForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\MobileEdit.aspx.cs">
+      <DependentUpon>MobileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\MobileEdit.aspx.designer.cs">
+      <DependentUpon>MobileEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Plan_Visits.aspx.cs">
+      <DependentUpon>Plan_Visits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Plan_Visits.aspx.designer.cs">
+      <DependentUpon>Plan_Visits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Employees.aspx.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Employees.aspx.designer.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\EmployeesForm.aspx.cs">
+      <DependentUpon>EmployeesForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\EmployeesForm.aspx.designer.cs">
+      <DependentUpon>EmployeesForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\GenerateClosingReports.aspx.cs">
+      <DependentUpon>GenerateClosingReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\GenerateClosingReports.aspx.designer.cs">
+      <DependentUpon>GenerateClosingReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\PhysicianForm.aspx.cs">
+      <DependentUpon>PhysicianForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\PhysicianForm.aspx.designer.cs">
+      <DependentUpon>PhysicianForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\PlanAdjustment.aspx.cs">
+      <DependentUpon>PlanAdjustment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\PlanAdjustment.aspx.designer.cs">
+      <DependentUpon>PlanAdjustment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\PopulationList.aspx.cs">
+      <DependentUpon>PopulationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\PopulationList.aspx.designer.cs">
+      <DependentUpon>PopulationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\RadGridEmployeesMainData.ascx.cs">
+      <DependentUpon>RadGridEmployeesMainData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\RadGridEmployeesMainData.ascx.designer.cs">
+      <DependentUpon>RadGridEmployeesMainData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\ReadLogFile.aspx.cs">
+      <DependentUpon>ReadLogFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\ReadLogFile.aspx.designer.cs">
+      <DependentUpon>ReadLogFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\RepAffiliationForm.aspx.cs">
+      <DependentUpon>RepAffiliationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\RepAffiliationForm.aspx.designer.cs">
+      <DependentUpon>RepAffiliationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\RepAffiliationForm2.aspx.cs">
+      <DependentUpon>RepAffiliationForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\RepAffiliationForm2.aspx.designer.cs">
+      <DependentUpon>RepAffiliationForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\RepAffiliationForm1.aspx.cs">
+      <DependentUpon>RepAffiliationForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\RepAffiliationForm1.aspx.designer.cs">
+      <DependentUpon>RepAffiliationForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\DoctorsList.aspx.cs">
+      <DependentUpon>DoctorsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\DoctorsList.aspx.designer.cs">
+      <DependentUpon>DoctorsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\RepAffiliationFormO.aspx.cs">
+      <DependentUpon>RepAffiliationFormO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\RepAffiliationFormO.aspx.designer.cs">
+      <DependentUpon>RepAffiliationFormO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Requests.aspx.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Requests.aspx.designer.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Responsibilities.aspx.cs">
+      <DependentUpon>Responsibilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Responsibilities.aspx.designer.cs">
+      <DependentUpon>Responsibilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\SalesRepPharmaReq.aspx.cs">
+      <DependentUpon>SalesRepPharmaReq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\SalesRepPharmaReq.aspx.designer.cs">
+      <DependentUpon>SalesRepPharmaReq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\SalesRepsPharmacies.aspx.cs">
+      <DependentUpon>SalesRepsPharmacies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\SalesRepsPharmacies.aspx.designer.cs">
+      <DependentUpon>SalesRepsPharmacies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Targeting.aspx.cs">
+      <DependentUpon>Targeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Targeting.aspx.designer.cs">
+      <DependentUpon>Targeting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\TempDoctors.aspx.cs">
+      <DependentUpon>TempDoctors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\TempDoctors.aspx.designer.cs">
+      <DependentUpon>TempDoctors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\UpdateDoctors.aspx.cs">
+      <DependentUpon>UpdateDoctors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\UpdateDoctors.aspx.designer.cs">
+      <DependentUpon>UpdateDoctors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\UpdateDoctorsForm.aspx.cs">
+      <DependentUpon>UpdateDoctorsForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\UpdateDoctorsForm.aspx.designer.cs">
+      <DependentUpon>UpdateDoctorsForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\VacationReport.aspx.cs">
+      <DependentUpon>VacationReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\VacationReport.aspx.designer.cs">
+      <DependentUpon>VacationReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\VacationReportO.aspx.cs">
+      <DependentUpon>VacationReportO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\VacationReportO.aspx.designer.cs">
+      <DependentUpon>VacationReportO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\VacationRequest.aspx.cs">
+      <DependentUpon>VacationRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\VacationRequest.aspx.designer.cs">
+      <DependentUpon>VacationRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\VacationRequestO.aspx.cs">
+      <DependentUpon>VacationRequestO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\VacationRequestO.aspx.designer.cs">
+      <DependentUpon>VacationRequestO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\View_ChangeRequests.cs">
+      <DependentUpon>ChangeRequestsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliation.cs">
+      <DependentUpon>AffiliationsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliationsAdminViewModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AffiliationsAdminViewModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliationsAdminViewModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AffiliationsAdminViewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliationsAdminViewModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AffiliationsAdminViewModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliationsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AffiliationsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliationsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AffiliationsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliationsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AffiliationsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliationsTemp.cs">
+      <DependentUpon>AffiliationTempModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Affiliations_Proposed.cs">
+      <DependentUpon>ProposedAffiliationModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliationTempModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AffiliationTempModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliationTempModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AffiliationTempModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AffiliationTempModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AffiliationTempModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment.cs">
+      <DependentUpon>AppointmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppointmentModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppointmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppointmentModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\ExecSummary2.cs">
+      <DependentUpon>ExecSummary2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BrandPriorityBySpecLine.cs">
+      <DependentUpon>BrandPriorityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BrandPriorityModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BrandPriorityModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BrandPriorityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BrandPriorityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BrandPriorityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BrandPriorityModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword2.aspx.cs">
+      <DependentUpon>ChangePassword2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword2.aspx.designer.cs">
+      <DependentUpon>ChangePassword2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClinicModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClinicModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClinicModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\ActualVsTargetComDir.aspx.cs">
+      <DependentUpon>ActualVsTargetComDir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\ActualVsTargetComDir.aspx.designer.cs">
+      <DependentUpon>ActualVsTargetComDir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\CallRate.aspx.cs">
+      <DependentUpon>CallRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\CallRate.aspx.designer.cs">
+      <DependentUpon>CallRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\CallsAnalysis.aspx.cs">
+      <DependentUpon>CallsAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\CallsAnalysis.aspx.designer.cs">
+      <DependentUpon>CallsAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\ComDirDefault2.aspx.cs">
+      <DependentUpon>ComDirDefault2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\ComDirDefault2.aspx.designer.cs">
+      <DependentUpon>ComDirDefault2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\ComDirStatistics.aspx.cs">
+      <DependentUpon>ComDirStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\ComDirStatistics.aspx.designer.cs">
+      <DependentUpon>ComDirStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\CovFreqPerCycle.aspx.cs">
+      <DependentUpon>CovFreqPerCycle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\CovFreqPerCycle.aspx.designer.cs">
+      <DependentUpon>CovFreqPerCycle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\DetailingPriority2.aspx.cs">
+      <DependentUpon>DetailingPriority2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\DetailingPriority2.aspx.designer.cs">
+      <DependentUpon>DetailingPriority2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\DetailingPriority.aspx.cs">
+      <DependentUpon>DetailingPriority.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\DetailingPriority.aspx.designer.cs">
+      <DependentUpon>DetailingPriority.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\gridAffs.aspx.cs">
+      <DependentUpon>gridAffs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\gridAffs.aspx.designer.cs">
+      <DependentUpon>gridAffs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\NotVisitedDoctors.aspx.cs">
+      <DependentUpon>NotVisitedDoctors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\NotVisitedDoctors.aspx.designer.cs">
+      <DependentUpon>NotVisitedDoctors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\PivotAnalyzer.aspx.cs">
+      <DependentUpon>PivotAnalyzer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\PivotAnalyzer.aspx.designer.cs">
+      <DependentUpon>PivotAnalyzer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\SiteMaster2.Master.cs">
+      <DependentUpon>SiteMaster2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\SiteMaster2.Master.designer.cs">
+      <DependentUpon>SiteMaster2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\ComDirReport_Dashboard.aspx.cs">
+      <DependentUpon>ComDirReport_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\ComDirReport_Dashboard.aspx.designer.cs">
+      <DependentUpon>ComDirReport_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\SpecValueForm.aspx.cs">
+      <DependentUpon>SpecValueForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\SpecValueForm.aspx.designer.cs">
+      <DependentUpon>SpecValueForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\TargetPlanVisits.aspx.cs">
+      <DependentUpon>TargetPlanVisits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\TargetPlanVisits.aspx.designer.cs">
+      <DependentUpon>TargetPlanVisits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommercialDirector\Visits_Plans.aspx.cs">
+      <DependentUpon>Visits_Plans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommercialDirector\Visits_Plans.aspx.designer.cs">
+      <DependentUpon>Visits_Plans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ReportsController.cs" />
+    <Compile Include="DataSet1.Designer.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\Calls2.aspx.cs">
+      <DependentUpon>Calls2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\Calls2.aspx.designer.cs">
+      <DependentUpon>Calls2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\CallsAnalysis.aspx.cs">
+      <DependentUpon>CallsAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\CallsAnalysis.aspx.designer.cs">
+      <DependentUpon>CallsAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\CallsEntry.aspx.cs">
+      <DependentUpon>CallsEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\CallsEntry.aspx.designer.cs">
+      <DependentUpon>CallsEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\DMCallsScheduler.aspx.cs">
+      <DependentUpon>DMCallsScheduler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\DMCallsScheduler.aspx.designer.cs">
+      <DependentUpon>DMCallsScheduler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\DMDefault2.aspx.cs">
+      <DependentUpon>DMDefault2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\DMDefault2.aspx.designer.cs">
+      <DependentUpon>DMDefault2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\DMReport_Affiliations.aspx.cs">
+      <DependentUpon>DMReport_Affiliations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\DMReport_Affiliations.aspx.designer.cs">
+      <DependentUpon>DMReport_Affiliations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\DMReport_Appointments.aspx.cs">
+      <DependentUpon>DMReport_Appointments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\DMReport_Appointments.aspx.designer.cs">
+      <DependentUpon>DMReport_Appointments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\DMReport_Dashboard.aspx.cs">
+      <DependentUpon>DMReport_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\DMReport_Dashboard.aspx.designer.cs">
+      <DependentUpon>DMReport_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\DMReport_Visits.aspx.cs">
+      <DependentUpon>DMReport_Visits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\DMReport_Visits.aspx.designer.cs">
+      <DependentUpon>DMReport_Visits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\DMReport_TargetedAffiliations.aspx.cs">
+      <DependentUpon>DMReport_TargetedAffiliations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\DMReport_TargetedAffiliations.aspx.designer.cs">
+      <DependentUpon>DMReport_TargetedAffiliations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\DMStatistics.aspx.cs">
+      <DependentUpon>DMStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\DMStatistics.aspx.designer.cs">
+      <DependentUpon>DMStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\Notifications.aspx.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\Notifications.aspx.designer.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\SalesAnalysis.aspx.cs">
+      <DependentUpon>SalesAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\SalesAnalysis.aspx.designer.cs">
+      <DependentUpon>SalesAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\Vacations.aspx.cs">
+      <DependentUpon>Vacations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\Vacations.aspx.designer.cs">
+      <DependentUpon>Vacations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DMs\VacationsO.aspx.cs">
+      <DependentUpon>VacationsO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DMs\VacationsO.aspx.designer.cs">
+      <DependentUpon>VacationsO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpHistoryTempModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpHistoryTempModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpHistoryTempModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpHistoryTempModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpHistoryTempModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpHistoryTempModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeHistoryModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeHistoryModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeHistoryModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeHistoryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeHistoryModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeHistoryModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMDModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeMDModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMDModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeMDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMDModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeMDModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesHistory.cs">
+      <DependentUpon>EmployeeHistoryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesHistoryTemp.cs">
+      <DependentUpon>EmpHistoryTempModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesMasterData.cs">
+      <DependentUpon>EmployeeMDModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesMasterDataTemp.cs">
+      <DependentUpon>EmpTempModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeViewModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeViewModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeViewModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeViewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeViewModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeViewModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpTempModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpTempModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpTempModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpTempModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpTempModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpTempModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EntitiesViewModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntitiesViewModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntitiesViewModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntitiesViewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntitiesViewModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntitiesViewModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity.cs">
+      <DependentUpon>ClinicModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\ExecSummary2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExecSummary2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EntityTemp.cs">
+      <DependentUpon>EntityTempModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityTempModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityTempModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityTempModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityTempModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityTempModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityTempModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\ExecSummary3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExecSummary3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackSite4.Master.cs">
+      <DependentUpon>FeedbackSite4.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedbackSite4.Master.designer.cs">
+      <DependentUpon>FeedbackSite4.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.aspx.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login2.aspx.designer.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NationalVaccation.cs">
+      <DependentUpon>NationalVavModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NationalVavModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NationalVavModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NationalVavModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NationalVavModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NationalVavModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NationalVavModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyEmployee.cs">
+      <DependentUpon>PharmacyEmployeesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyEmployeesModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyEmployeesModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyEmployeesModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyEmployeesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyEmployeesModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyEmployeesModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PharmaModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmaModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PharmaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PharmaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmaModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PharmaProposedModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmaProposedModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PharmaProposedModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmaProposedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PharmaProposedModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmaProposedModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Physician.cs">
+      <DependentUpon>PhysicianModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysicianModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysicianModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysicianModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianModel1.cs" />
+    <Compile Include="PhysiciansTemp.cs">
+      <DependentUpon>PhysiciansTempModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysiciansTempModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysiciansTempModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysiciansTempModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysiciansTempModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysiciansTempModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysiciansTempModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PhysiciansValueTempModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysiciansValueTempModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysiciansValueTempModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysiciansValueTempModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysiciansValueTempModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysiciansValueTempModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianValueByLine.cs">
+      <DependentUpon>PhysicianValueModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianValueByLineTemp.cs">
+      <DependentUpon>PhysiciansValueTempModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianValueModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysicianValueModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianValueModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysicianValueModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianValueModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysicianValueModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianViewModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysicianViewModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianViewModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysicianViewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicianViewModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysicianViewModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PH_Pharmacies.cs">
+      <DependentUpon>PharmaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PH_Pharmacies_Proposed.cs">
+      <DependentUpon>PharmaProposedModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ProposedAffiliationModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProposedAffiliationModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProposedAffiliationModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProposedAffiliationModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProposedAffiliationModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProposedAffiliationModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\Calls2.aspx.cs">
+      <DependentUpon>Calls2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\Calls2.aspx.designer.cs">
+      <DependentUpon>Calls2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\CallsAnalysis.aspx.cs">
+      <DependentUpon>CallsAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\CallsAnalysis.aspx.designer.cs">
+      <DependentUpon>CallsAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\CallsEntry.aspx.cs">
+      <DependentUpon>CallsEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\CallsEntry.aspx.designer.cs">
+      <DependentUpon>CallsEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\CallsEntryFromAdmin.aspx.cs">
+      <DependentUpon>CallsEntryFromAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\CallsEntryFromAdmin.aspx.designer.cs">
+      <DependentUpon>CallsEntryFromAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\CallsScheduler.aspx.cs">
+      <DependentUpon>CallsScheduler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\CallsScheduler.aspx.designer.cs">
+      <DependentUpon>CallsScheduler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\CallsScheduler3.aspx.cs">
+      <DependentUpon>CallsScheduler3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\CallsScheduler3.aspx.designer.cs">
+      <DependentUpon>CallsScheduler3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\CallsScheduler2.aspx.cs">
+      <DependentUpon>CallsScheduler2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\CallsScheduler2.aspx.designer.cs">
+      <DependentUpon>CallsScheduler2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\CallsSchedulerFromAdmin.aspx.cs">
+      <DependentUpon>CallsSchedulerFromAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\CallsSchedulerFromAdmin.aspx.designer.cs">
+      <DependentUpon>CallsSchedulerFromAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\Notifications.aspx.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\Notifications.aspx.designer.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\PivotAnalyzer.aspx.cs">
+      <DependentUpon>PivotAnalyzer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\PivotAnalyzer.aspx.designer.cs">
+      <DependentUpon>PivotAnalyzer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\RepReport_Affiliations.aspx.cs">
+      <DependentUpon>RepReport_Affiliations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\RepReport_Affiliations.aspx.designer.cs">
+      <DependentUpon>RepReport_Affiliations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\RepReport_Appointments.aspx.cs">
+      <DependentUpon>RepReport_Appointments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\RepReport_Appointments.aspx.designer.cs">
+      <DependentUpon>RepReport_Appointments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\Repreport_Dashboard.aspx.cs">
+      <DependentUpon>Repreport_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\Repreport_Dashboard.aspx.designer.cs">
+      <DependentUpon>Repreport_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\RepReport_Dashboard2.aspx.cs">
+      <DependentUpon>RepReport_Dashboard2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\RepReport_Dashboard2.aspx.designer.cs">
+      <DependentUpon>RepReport_Dashboard2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\RepReport_TargetedAffiliations.aspx.cs">
+      <DependentUpon>RepReport_TargetedAffiliations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\RepReport_TargetedAffiliations.aspx.designer.cs">
+      <DependentUpon>RepReport_TargetedAffiliations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\RepReport_Visits.aspx.cs">
+      <DependentUpon>RepReport_Visits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\RepReport_Visits.aspx.designer.cs">
+      <DependentUpon>RepReport_Visits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\RepsDefault2.aspx.cs">
+      <DependentUpon>RepsDefault2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\RepsDefault2.aspx.designer.cs">
+      <DependentUpon>RepsDefault2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\RepsDefault3.aspx.cs">
+      <DependentUpon>RepsDefault3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\RepsDefault3.aspx.designer.cs">
+      <DependentUpon>RepsDefault3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\RequestsManipulations.cs" />
+    <Compile Include="Reps\SalesAnalysis.aspx.cs">
+      <DependentUpon>SalesAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\SalesAnalysis.aspx.designer.cs">
+      <DependentUpon>SalesAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\Statistics.aspx.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\Statistics.aspx.designer.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reps\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reps\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesDirector\CallsAnalysis.aspx.cs">
+      <DependentUpon>CallsAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesDirector\CallsAnalysis.aspx.designer.cs">
+      <DependentUpon>CallsAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesDirector\SDReport_Dashboard.aspx.cs">
+      <DependentUpon>SDReport_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesDirector\SDReport_Dashboard.aspx.designer.cs">
+      <DependentUpon>SDReport_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesDirector\SDStatistics.aspx.cs">
+      <DependentUpon>SDStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesDirector\SDStatistics.aspx.designer.cs">
+      <DependentUpon>SDStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesDirector\SiteMaster2.Master.cs">
+      <DependentUpon>SiteMaster2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesDirector\SiteMaster2.Master.designer.cs">
+      <DependentUpon>SiteMaster2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SalesDirector\SDDefault2.aspx.cs">
+      <DependentUpon>SDDefault2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesDirector\SDDefault2.aspx.designer.cs">
+      <DependentUpon>SDDefault2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\Calls2.aspx.cs">
+      <DependentUpon>Calls2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\Calls2.aspx.designer.cs">
+      <DependentUpon>Calls2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\ActualVsTarget.aspx.cs">
+      <DependentUpon>ActualVsTarget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\ActualVsTarget.aspx.designer.cs">
+      <DependentUpon>ActualVsTarget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\CallRate.aspx.cs">
+      <DependentUpon>CallRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\CallRate.aspx.designer.cs">
+      <DependentUpon>CallRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\CallsAnalysis.aspx.cs">
+      <DependentUpon>CallsAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\CallsAnalysis.aspx.designer.cs">
+      <DependentUpon>CallsAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\Doctors.aspx.cs">
+      <DependentUpon>Doctors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\Doctors.aspx.designer.cs">
+      <DependentUpon>Doctors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\Notifications.aspx.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\Notifications.aspx.designer.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\NotVisited.aspx.cs">
+      <DependentUpon>NotVisited.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\NotVisited.aspx.designer.cs">
+      <DependentUpon>NotVisited.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\NotVisitedDoctors.aspx.cs">
+      <DependentUpon>NotVisitedDoctors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\NotVisitedDoctors.aspx.designer.cs">
+      <DependentUpon>NotVisitedDoctors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\SMStatistics.aspx.cs">
+      <DependentUpon>SMStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\SMStatistics.aspx.designer.cs">
+      <DependentUpon>SMStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\SMVacations.aspx.cs">
+      <DependentUpon>SMVacations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\SMVacations.aspx.designer.cs">
+      <DependentUpon>SMVacations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\Visits_Plan.aspx.cs">
+      <DependentUpon>Visits_Plan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\Visits_Plan.aspx.designer.cs">
+      <DependentUpon>Visits_Plan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\DoctorsList.aspx.cs">
+      <DependentUpon>DoctorsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\DoctorsList.aspx.designer.cs">
+      <DependentUpon>DoctorsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\SMCallsScheduler.aspx.cs">
+      <DependentUpon>SMCallsScheduler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\SMCallsScheduler.aspx.designer.cs">
+      <DependentUpon>SMCallsScheduler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\SMReport_Dashboard.aspx.cs">
+      <DependentUpon>SMReport_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\SMReport_Dashboard.aspx.designer.cs">
+      <DependentUpon>SMReport_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\SMDefault2.aspx.cs">
+      <DependentUpon>SMDefault2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\SMDefault2.aspx.designer.cs">
+      <DependentUpon>SMDefault2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\MyTest.aspx.cs">
+      <DependentUpon>MyTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\MyTest.aspx.designer.cs">
+      <DependentUpon>MyTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagers\SiteMaster2.Master.cs">
+      <DependentUpon>SiteMaster2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManagers\SiteMaster2.Master.designer.cs">
+      <DependentUpon>SiteMaster2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site3.Master.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site3.Master.designer.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SpecPriorityByLine.cs">
+      <DependentUpon>SpecPrioritybyLineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpecPrioritybyLineModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpecPrioritybyLineModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpecPrioritybyLineModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpecPrioritybyLineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpecPrioritybyLineModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpecPrioritybyLineModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Surveys\FeedbackReports.aspx.cs">
+      <DependentUpon>FeedbackReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Surveys\FeedbackReports.aspx.designer.cs">
+      <DependentUpon>FeedbackReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Surveys\FeedbackReports_Managers.aspx.cs">
+      <DependentUpon>FeedbackReports_Managers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Surveys\FeedbackReports_Managers.aspx.designer.cs">
+      <DependentUpon>FeedbackReports_Managers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Surveys\Feedbacks.aspx.cs">
+      <DependentUpon>Feedbacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Surveys\Feedbacks.aspx.designer.cs">
+      <DependentUpon>Feedbacks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Surveys\Survey.aspx.cs">
+      <DependentUpon>Survey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Surveys\Survey.aspx.designer.cs">
+      <DependentUpon>Survey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Surveys\Survey4.aspx.cs">
+      <DependentUpon>Survey4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Surveys\Survey4.aspx.designer.cs">
+      <DependentUpon>Survey4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Surveys\Survey5.aspx.cs">
+      <DependentUpon>Survey5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Surveys\Survey5.aspx.designer.cs">
+      <DependentUpon>Survey5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Surveys\Survey6.aspx.cs">
+      <DependentUpon>Survey6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Surveys\Survey6.aspx.designer.cs">
+      <DependentUpon>Survey6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Surveys\Survey7.aspx.cs">
+      <DependentUpon>Survey7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Surveys\Survey7.aspx.designer.cs">
+      <DependentUpon>Survey7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Surveys\SurveyReport.aspx.cs">
+      <DependentUpon>SurveyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Surveys\SurveyReport.aspx.designer.cs">
+      <DependentUpon>SurveyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Under_Maintenance.aspx.cs">
+      <DependentUpon>Under_Maintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Under_Maintenance.aspx.designer.cs">
+      <DependentUpon>Under_Maintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDoctors2.aspx.cs">
+      <DependentUpon>UpdateDoctors2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateDoctors2.aspx.designer.cs">
+      <DependentUpon>UpdateDoctors2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vacation.cs">
+      <DependentUpon>VacationModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VacationModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacationModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VacationModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacationModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VacationModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacationModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAffiliationsonlyModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewAffiliationsonlyModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAffiliationsonlyModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewAffiliationsonlyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAffiliationsonlyModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewAffiliationsonlyModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="View_Affiliations_Admin.cs">
+      <DependentUpon>AffiliationsAdminViewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Affiliations_only.cs">
+      <DependentUpon>ViewAffiliationsonlyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_BrandPriority.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>View_BrandPriority.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_BrandPriority.cs">
+      <DependentUpon>View_BrandPriority.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_BrandPriority.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>View_BrandPriority.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="View_BrandPriority1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>View_BrandPriority.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Employees.cs">
+      <DependentUpon>EmployeeViewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Entities.cs">
+      <DependentUpon>EntitiesViewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_Physicians.cs">
+      <DependentUpon>PhysicianViewModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admins\AdminAffiliationForm.aspx" />
+    <Content Include="Admins\AdminAffiliationForm2.aspx" />
+    <Content Include="Admins\AffiliationForm.aspx" />
+    <Content Include="Admins\AllUsers.aspx" />
+    <Content Include="Admins\AuditTrailApps.aspx" />
+    <Content Include="Admins\AutomaticPlan.aspx" />
+    <Content Include="Admins\Bausch.aspx" />
+    <Content Include="Admins\ChangeRequestsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ChangeRequestsModel.edmx</DependentUpon>
+      <LastGenOutput>ChangeRequestsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Admins\ChangeRequestsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ChangeRequestsModel.edmx</DependentUpon>
+      <LastGenOutput>ChangeRequestsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Admins\ClinicForm.aspx" />
+    <Content Include="Admins\CycleClosing.aspx" />
+    <Content Include="Admins\EmployeeFormTemp.aspx" />
+    <Content Include="Admins\EmployeeFormTempUpdates.aspx" />
+    <Content Include="Admins\MessageForm2.aspx" />
+    <Content Include="Admins\MessagesForm.aspx" />
+    <Content Include="Admins\MobileEdit.aspx" />
+    <Content Include="Admins\Plan_Visits.aspx" />
+    <Content Include="Admins\Employees.aspx" />
+    <Content Include="Admins\EmployeesForm.aspx" />
+    <Content Include="Admins\GenerateClosingReports.aspx" />
+    <Content Include="Admins\PhysicianForm.aspx" />
+    <Content Include="Admins\PlanAdjustment.aspx" />
+    <Content Include="Admins\PopulationList.aspx" />
+    <Content Include="Admins\RadGridEmployeesMainData.ascx" />
+    <Content Include="Admins\ReadLogFile.aspx" />
+    <Content Include="Admins\RepAffiliationForm.aspx" />
+    <Content Include="Admins\RepAffiliationForm2.aspx" />
+    <Content Include="Admins\RepAffiliationForm1.aspx" />
+    <Content Include="Admins\DoctorsList.aspx" />
+    <Content Include="Admins\RepAffiliationFormO.aspx" />
+    <Content Include="Admins\Requests.aspx" />
+    <Content Include="Admins\Responsibilities.aspx" />
+    <Content Include="Admins\SalesRepPharmaReq.aspx" />
+    <Content Include="Admins\SalesRepsPharmacies.aspx" />
+    <Content Include="Admins\Targeting.aspx" />
+    <Content Include="Admins\TempDoctors.aspx" />
+    <Content Include="Admins\UpdateDoctors.aspx" />
+    <Content Include="Admins\UpdateDoctorsForm.aspx" />
+    <Content Include="Admins\VacationReport.aspx" />
+    <Content Include="Admins\VacationReportO.aspx" />
+    <Content Include="Admins\VacationRequest.aspx" />
+    <Content Include="Admins\VacationRequestO.aspx" />
+    <Content Include="AffiliationsAdminViewModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AffiliationsAdminViewModel.edmx</DependentUpon>
+      <LastGenOutput>AffiliationsAdminViewModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AffiliationsAdminViewModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AffiliationsAdminViewModel.edmx</DependentUpon>
+      <LastGenOutput>AffiliationsAdminViewModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="AffiliationsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AffiliationsModel.edmx</DependentUpon>
+      <LastGenOutput>AffiliationsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AffiliationsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AffiliationsModel.edmx</DependentUpon>
+      <LastGenOutput>AffiliationsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="AffiliationTempModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AffiliationTempModel.edmx</DependentUpon>
+      <LastGenOutput>AffiliationTempModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AffiliationTempModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AffiliationTempModel.edmx</DependentUpon>
+      <LastGenOutput>AffiliationTempModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="AmounLogo.jpg" />
+    <Content Include="AppointmentModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AppointmentModel.edmx</DependentUpon>
+      <LastGenOutput>AppointmentModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AppointmentModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AppointmentModel.edmx</DependentUpon>
+      <LastGenOutput>AppointmentModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_Data\RadCaptcha\0.wav" />
+    <Content Include="App_Data\RadCaptcha\1.wav" />
+    <Content Include="App_Data\RadCaptcha\2.wav" />
+    <Content Include="App_Data\RadCaptcha\3.wav" />
+    <Content Include="App_Data\RadCaptcha\4.wav" />
+    <Content Include="App_Data\RadCaptcha\5.wav" />
+    <Content Include="App_Data\RadCaptcha\6.wav" />
+    <Content Include="App_Data\RadCaptcha\7.wav" />
+    <Content Include="App_Data\RadCaptcha\8.wav" />
+    <Content Include="App_Data\RadCaptcha\9.wav" />
+    <Content Include="App_Data\RadCaptcha\A.wav" />
+    <Content Include="App_Data\RadCaptcha\B.wav" />
+    <Content Include="App_Data\RadCaptcha\C.wav" />
+    <Content Include="App_Data\RadCaptcha\D.wav" />
+    <Content Include="App_Data\RadCaptcha\E.wav" />
+    <Content Include="App_Data\RadCaptcha\F.wav" />
+    <Content Include="App_Data\RadCaptcha\G.wav" />
+    <Content Include="App_Data\RadCaptcha\H.wav" />
+    <Content Include="App_Data\RadCaptcha\I.wav" />
+    <Content Include="App_Data\RadCaptcha\J.wav" />
+    <Content Include="App_Data\RadCaptcha\K.wav" />
+    <Content Include="App_Data\RadCaptcha\L.wav" />
+    <Content Include="App_Data\RadCaptcha\M.wav" />
+    <Content Include="App_Data\RadCaptcha\N.wav" />
+    <Content Include="App_Data\RadCaptcha\O.wav" />
+    <Content Include="App_Data\RadCaptcha\P.wav" />
+    <Content Include="App_Data\RadCaptcha\Q.wav" />
+    <Content Include="App_Data\RadCaptcha\R.wav" />
+    <Content Include="App_Data\RadCaptcha\S.wav" />
+    <Content Include="App_Data\RadCaptcha\T.wav" />
+    <Content Include="App_Data\RadCaptcha\U.wav" />
+    <Content Include="App_Data\RadCaptcha\V.wav" />
+    <Content Include="App_Data\RadCaptcha\W.wav" />
+    <Content Include="App_Data\RadCaptcha\X.wav" />
+    <Content Include="App_Data\RadCaptcha\Y.wav" />
+    <Content Include="App_Data\RadCaptcha\Z.wav" />
+    <Content Include="BrainShark.JPG" />
+    <Content Include="BrandPriorityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BrandPriorityModel.edmx</DependentUpon>
+      <LastGenOutput>BrandPriorityModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="BrandPriorityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BrandPriorityModel.edmx</DependentUpon>
+      <LastGenOutput>BrandPriorityModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Calls2NewDesign.txt" />
+    <Content Include="Capture.PNG" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="ChangePassword2.aspx" />
+    <Content Include="ClinicModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ClinicModel.edmx</DependentUpon>
+      <LastGenOutput>ClinicModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ClinicModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ClinicModel.edmx</DependentUpon>
+      <LastGenOutput>ClinicModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="CommercialDirector\ActualVsTargetComDir.aspx" />
+    <Content Include="CommercialDirector\CallRate.aspx" />
+    <Content Include="CommercialDirector\CallsAnalysis.aspx" />
+    <Content Include="CommercialDirector\ComDirDefault2.aspx" />
+    <Content Include="CommercialDirector\ComDirReport_Dashboard.aspx" />
+    <Content Include="CommercialDirector\ComDirStatistics.aspx" />
+    <Content Include="CommercialDirector\CovFreqPerCycle.aspx" />
+    <Content Include="CommercialDirector\DetailingPriority2.aspx" />
+    <Content Include="CommercialDirector\DetailingPriority.aspx" />
+    <Content Include="CommercialDirector\gridAffs.aspx" />
+    <Content Include="CommercialDirector\NotVisitedDoctors.aspx" />
+    <Content Include="CommercialDirector\PivotAnalyzer.aspx" />
+    <Content Include="CommercialDirector\SpecValueForm.aspx" />
+    <Content Include="CommercialDirector\TargetPlanVisits.aspx" />
+    <Content Include="CommercialDirector\Visits_Plans.aspx" />
+    <Content Include="Completion.jpg" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="DashboardScenario1.txt" />
+    <Content Include="Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\RadSpell\de-DE.tdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\RadSpell\en-US.tdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\RadSpell\fr-FR.tdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DMs\Calls2.aspx" />
+    <Content Include="DMs\CallsAnalysis.aspx" />
+    <Content Include="DMs\CallsEntry.aspx" />
+    <Content Include="DMs\DMCallsScheduler.aspx" />
+    <Content Include="DMs\DMDefault2.aspx" />
+    <Content Include="DMs\DMReport_Affiliations.aspx" />
+    <Content Include="DMs\DMReport_Appointments.aspx" />
+    <Content Include="DMs\DMReport_Dashboard.aspx" />
+    <Content Include="DMs\DMReport_Visits.aspx" />
+    <Content Include="DMs\DMReport_TargetedAffiliations.aspx" />
+    <Content Include="DMs\DMStatistics.aspx" />
+    <Content Include="DMs\Notifications.aspx" />
+    <Content Include="DMs\SalesAnalysis.aspx" />
+    <Content Include="DMs\Vacations.aspx" />
+    <Content Include="DMs\VacationsO.aspx" />
+    <Content Include="ECMSLogo_png.png" />
+    <Content Include="EmpHistoryTempModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmpHistoryTempModel.edmx</DependentUpon>
+      <LastGenOutput>EmpHistoryTempModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmpHistoryTempModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmpHistoryTempModel.edmx</DependentUpon>
+      <LastGenOutput>EmpHistoryTempModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmployeeHistoryModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmployeeHistoryModel.edmx</DependentUpon>
+      <LastGenOutput>EmployeeHistoryModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmployeeHistoryModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmployeeHistoryModel.edmx</DependentUpon>
+      <LastGenOutput>EmployeeHistoryModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmployeeMDModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmployeeMDModel.edmx</DependentUpon>
+      <LastGenOutput>EmployeeMDModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmployeeMDModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmployeeMDModel.edmx</DependentUpon>
+      <LastGenOutput>EmployeeMDModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmployeeViewModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmployeeViewModel.edmx</DependentUpon>
+      <LastGenOutput>EmployeeViewModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmployeeViewModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmployeeViewModel.edmx</DependentUpon>
+      <LastGenOutput>EmployeeViewModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmpTempModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmpTempModel.edmx</DependentUpon>
+      <LastGenOutput>EmpTempModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmpTempModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmpTempModel.edmx</DependentUpon>
+      <LastGenOutput>EmpTempModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="EntitiesViewModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntitiesViewModel.edmx</DependentUpon>
+      <LastGenOutput>EntitiesViewModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EntitiesViewModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntitiesViewModel.edmx</DependentUpon>
+      <LastGenOutput>EntitiesViewModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="EntityTempModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityTempModel.edmx</DependentUpon>
+      <LastGenOutput>EntityTempModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EntityTempModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityTempModel.edmx</DependentUpon>
+      <LastGenOutput>EntityTempModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="ErrorPage.htm" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Login.aspx" />
+    <Content Include="NationalVavModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NationalVavModel.edmx</DependentUpon>
+      <LastGenOutput>NationalVavModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="NationalVavModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NationalVavModel.edmx</DependentUpon>
+      <LastGenOutput>NationalVavModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="PharmacyEmployeesModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PharmacyEmployeesModel.edmx</DependentUpon>
+      <LastGenOutput>PharmacyEmployeesModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PharmacyEmployeesModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PharmacyEmployeesModel.edmx</DependentUpon>
+      <LastGenOutput>PharmacyEmployeesModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="PharmaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PharmaModel.edmx</DependentUpon>
+      <LastGenOutput>PharmaModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PharmaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PharmaModel.edmx</DependentUpon>
+      <LastGenOutput>PharmaModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="PharmaProposedModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PharmaProposedModel.edmx</DependentUpon>
+      <LastGenOutput>PharmaProposedModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PharmaProposedModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PharmaProposedModel.edmx</DependentUpon>
+      <LastGenOutput>PharmaProposedModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="pic1.png" />
+    <Content Include="pic2.png" />
+    <Content Include="Reps\CallsAnalysis.aspx" />
+    <Content Include="Reps\CallsScheduler3.aspx" />
+    <Content Include="Reps\CallsScheduler2.aspx" />
+    <Content Include="Reps\Notifications.aspx" />
+    <Content Include="Reps\PivotAnalyzer.aspx" />
+    <Content Include="Reps\RepReport_Dashboard2.aspx" />
+    <Content Include="Reps\SalesAnalysis.aspx" />
+    <Content Include="Reps\Statistics.aspx" />
+    <Content Include="Reps\Test.aspx" />
+    <Content Include="SalesDirector\CallsAnalysis.aspx" />
+    <Content Include="SalesDirector\SDReport_Dashboard.aspx" />
+    <Content Include="SalesDirector\SDDefault2.aspx" />
+    <Content Include="SalesDirector\SDStatistics.aspx" />
+    <Content Include="SalesManagers\CallsAnalysis.aspx" />
+    <Content Include="SalesManagers\Doctors.aspx" />
+    <Content Include="SalesManagers\Notifications.aspx" />
+    <Content Include="SalesManagers\NotVisitedDoctors.aspx" />
+    <Content Include="SalesManagers\SMStatistics.aspx" />
+    <Content Include="SalesManagers\SMVacations.aspx" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Surveys\CreateTableDynamically.txt" />
+    <Content Include="Surveys\FeedbackReports.aspx" />
+    <Content Include="Surveys\FeedbackReports_Managers.aspx" />
+    <Content Include="Surveys\Feedbacks.aspx" />
+    <Content Include="Surveys\Survey.aspx" />
+    <Content Include="Surveys\Survey4.aspx" />
+    <Content Include="Surveys\Survey5.aspx" />
+    <Content Include="Surveys\Survey6.aspx" />
+    <Content Include="Surveys\Survey7.aspx" />
+    <Content Include="Surveys\SurveyReport.aspx" />
+    <Content Include="Thanks.html" />
+    <Content Include="UnderMain.jpg" />
+    <Content Include="Global.asax" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-3.2.1.min.js" />
+    <Content Include="js\jquery.responsivetable.min.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="Login2.aspx" />
+    <Content Include="PhysicianModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PhysicianModel.edmx</DependentUpon>
+      <LastGenOutput>PhysicianModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PhysicianModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PhysicianModel.edmx</DependentUpon>
+      <LastGenOutput>PhysicianModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="PhysiciansTempModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PhysiciansTempModel.edmx</DependentUpon>
+      <LastGenOutput>PhysiciansTempModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PhysiciansTempModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PhysiciansTempModel.edmx</DependentUpon>
+      <LastGenOutput>PhysiciansTempModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="PhysiciansValueTempModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PhysiciansValueTempModel.edmx</DependentUpon>
+      <LastGenOutput>PhysiciansValueTempModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PhysiciansValueTempModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PhysiciansValueTempModel.edmx</DependentUpon>
+      <LastGenOutput>PhysiciansValueTempModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="PhysicianValueModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PhysicianValueModel.edmx</DependentUpon>
+      <LastGenOutput>PhysicianValueModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PhysicianValueModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PhysicianValueModel.edmx</DependentUpon>
+      <LastGenOutput>PhysicianValueModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="PhysicianViewModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PhysicianViewModel.edmx</DependentUpon>
+      <LastGenOutput>PhysicianViewModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PhysicianViewModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PhysicianViewModel.edmx</DependentUpon>
+      <LastGenOutput>PhysicianViewModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProposedAffiliationModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProposedAffiliationModel.edmx</DependentUpon>
+      <LastGenOutput>ProposedAffiliationModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProposedAffiliationModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProposedAffiliationModel.edmx</DependentUpon>
+      <LastGenOutput>ProposedAffiliationModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Reps\Calls2.aspx" />
+    <Content Include="Reps\CallsEntry.aspx" />
+    <Content Include="Reps\CallsEntryFromAdmin.aspx" />
+    <Content Include="Reps\CallsScheduler.aspx" />
+    <Content Include="Reps\CallsSchedulerFromAdmin.aspx" />
+    <Content Include="Reps\RepReport_Affiliations.aspx" />
+    <Content Include="Reps\RepReport_Appointments.aspx" />
+    <Content Include="Reps\Repreport_Dashboard.aspx" />
+    <Content Include="Reps\RepReport_TargetedAffiliations.aspx" />
+    <Content Include="Reps\RepReport_Visits.aspx" />
+    <Content Include="Reps\RepsDefault2.aspx" />
+    <Content Include="Reps\RepsDefault3.aspx" />
+    <Content Include="SalesManagers\Calls2.aspx" />
+    <Content Include="SalesManagers\ActualVsTarget.aspx" />
+    <Content Include="SalesManagers\CallRate.aspx" />
+    <Content Include="SalesManagers\NotVisited.aspx" />
+    <Content Include="SalesManagers\Visits_Plan.aspx" />
+    <Content Include="SalesManagers\DoctorsList.aspx" />
+    <Content Include="SalesManagers\SMCallsScheduler.aspx" />
+    <Content Include="SalesManagers\SMReport_Dashboard.aspx" />
+    <Content Include="SalesManagers\SMDefault2.aspx" />
+    <Content Include="SalesManagers\MyTest.aspx" />
+    <Content Include="SpecPrioritybyLineModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SpecPrioritybyLineModel.edmx</DependentUpon>
+      <LastGenOutput>SpecPrioritybyLineModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SpecPrioritybyLineModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SpecPrioritybyLineModel.edmx</DependentUpon>
+      <LastGenOutput>SpecPrioritybyLineModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Styles\Gauges.css" />
+    <Content Include="Under_Maintenance.aspx" />
+    <Content Include="UpdateDoctors2.aspx" />
+    <Content Include="VacationModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VacationModel.edmx</DependentUpon>
+      <LastGenOutput>VacationModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="VacationModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VacationModel.edmx</DependentUpon>
+      <LastGenOutput>VacationModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="ViewAffiliationsonlyModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ViewAffiliationsonlyModel.edmx</DependentUpon>
+      <LastGenOutput>ViewAffiliationsonlyModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ViewAffiliationsonlyModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ViewAffiliationsonlyModel.edmx</DependentUpon>
+      <LastGenOutput>ViewAffiliationsonlyModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="View_BrandPriority.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>View_BrandPriority.edmx</DependentUpon>
+      <LastGenOutput>View_BrandPriority.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="View_BrandPriority.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>View_BrandPriority.edmx</DependentUpon>
+      <LastGenOutput>View_BrandPriority1.cs</LastGenOutput>
+    </Content>
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataSet1.xsc" />
+    <Content Include="DataSet1.xss" />
+    <Content Include="Site1.Master" />
+    <EntityDeploy Include="AppointmentModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AppointmentModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="AppointmentModel.edmx.diagram">
+      <DependentUpon>AppointmentModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="ClinicModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ClinicModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ClinicModel.edmx.diagram">
+      <DependentUpon>ClinicModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="PhysicianModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PhysicianModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="PhysicianModel.edmx.diagram">
+      <DependentUpon>PhysicianModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="ProposedAffiliationModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProposedAffiliationModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ProposedAffiliationModel.edmx.diagram">
+      <DependentUpon>ProposedAffiliationModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="App_Data\ExecSummary2.xsc">
+      <DependentUpon>ExecSummary2.xsd</DependentUpon>
+    </Content>
+    <EntityDeploy Include="AffiliationsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AffiliationsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="AffiliationsModel.edmx.diagram">
+      <DependentUpon>AffiliationsModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="AffiliationsAdminViewModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AffiliationsAdminViewModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="AffiliationsAdminViewModel.edmx.diagram">
+      <DependentUpon>AffiliationsAdminViewModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="AffiliationTempModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AffiliationTempModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="AffiliationTempModel.edmx.diagram">
+      <DependentUpon>AffiliationTempModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Admins\ChangeRequestsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ChangeRequestsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Admins\ChangeRequestsModel.edmx.diagram">
+      <DependentUpon>ChangeRequestsModel.edmx</DependentUpon>
+    </Content>
+    <None Include="App_Data\ExecSummary2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExecSummary2.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="App_Data\ExecSummary2.xss">
+      <DependentUpon>ExecSummary2.xsd</DependentUpon>
+    </Content>
+    <EntityDeploy Include="PhysicianValueModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PhysicianValueModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="PhysicianValueModel.edmx.diagram">
+      <DependentUpon>PhysicianValueModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="EmployeeViewModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmployeeViewModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="EmployeeViewModel.edmx.diagram">
+      <DependentUpon>EmployeeViewModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="EmployeeMDModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmployeeMDModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="EmployeeMDModel.edmx.diagram">
+      <DependentUpon>EmployeeMDModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="EmployeeHistoryModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmployeeHistoryModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="EmployeeHistoryModel.edmx.diagram">
+      <DependentUpon>EmployeeHistoryModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="EntitiesViewModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EntitiesViewModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="EntitiesViewModel.edmx.diagram">
+      <DependentUpon>EntitiesViewModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="PhysicianViewModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PhysicianViewModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="PhysicianViewModel.edmx.diagram">
+      <DependentUpon>PhysicianViewModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <EntityDeploy Include="BrandPriorityModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BrandPriorityModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="BrandPriorityModel.edmx.diagram">
+      <DependentUpon>BrandPriorityModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="PhysiciansTempModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PhysiciansTempModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="PhysiciansTempModel.edmx.diagram">
+      <DependentUpon>PhysiciansTempModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="EntityTempModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EntityTempModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="EntityTempModel.edmx.diagram">
+      <DependentUpon>EntityTempModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="PhysiciansValueTempModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PhysiciansValueTempModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="PhysiciansValueTempModel.edmx.diagram">
+      <DependentUpon>PhysiciansValueTempModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="CommercialDirector\SiteMaster2.Master" />
+    <EntityDeploy Include="NationalVavModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NationalVavModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="NationalVavModel.edmx.diagram">
+      <DependentUpon>NationalVavModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="EmpTempModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmpTempModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="EmpTempModel.edmx.diagram">
+      <DependentUpon>EmpTempModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="EmpHistoryTempModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmpHistoryTempModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="EmpHistoryTempModel.edmx.diagram">
+      <DependentUpon>EmpHistoryTempModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="App_Data\ExecSummary3.xsc">
+      <DependentUpon>ExecSummary3.xsd</DependentUpon>
+    </Content>
+    <None Include="App_Data\ExecSummary3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExecSummary3.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="App_Data\ExecSummary3.xss">
+      <DependentUpon>ExecSummary3.xsd</DependentUpon>
+    </Content>
+    <Content Include="FeedbackSite4.Master" />
+    <EntityDeploy Include="PharmaProposedModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PharmaProposedModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="PharmaProposedModel.edmx.diagram">
+      <DependentUpon>PharmaProposedModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="PharmaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PharmaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="PharmaModel.edmx.diagram">
+      <DependentUpon>PharmaModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="PharmacyEmployeesModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PharmacyEmployeesModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="PharmacyEmployeesModel.edmx.diagram">
+      <DependentUpon>PharmacyEmployeesModel.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\ECMS4.pubxml" />
+    <EntityDeploy Include="VacationModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VacationModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="VacationModel.edmx.diagram">
+      <DependentUpon>VacationModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="SalesManagers\SiteMaster2.Master" />
+    <EntityDeploy Include="ViewAffiliationsonlyModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ViewAffiliationsonlyModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ViewAffiliationsonlyModel.edmx.diagram">
+      <DependentUpon>ViewAffiliationsonlyModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="SpecPrioritybyLineModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SpecPrioritybyLineModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="SpecPrioritybyLineModel.edmx.diagram">
+      <DependentUpon>SpecPrioritybyLineModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="View_BrandPriority.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>View_BrandPriority.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="View_BrandPriority.edmx.diagram">
+      <DependentUpon>View_BrandPriority.edmx</DependentUpon>
+    </Content>
+    <Content Include="SalesDirector\SiteMaster2.Master" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Site2.Master" />
+    <Content Include="Site3.Master" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <Content Include="web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49573</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49573/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

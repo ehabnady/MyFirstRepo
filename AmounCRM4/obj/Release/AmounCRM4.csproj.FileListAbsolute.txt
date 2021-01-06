@@ -1,0 +1,107 @@
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\ApplicationInsights.config
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\AmounCRM4.dll.config
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\AmounCRM4.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\AmounCRM4.pdb
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\EntityFramework.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\EntityFramework.SqlServer.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Microsoft.AI.Web.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Web.Spreadsheet.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Web.UI.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Web.UI.Skins.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Core.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Flow.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Spreadsheet.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Zip.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Newtonsoft.Json.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\EntityFramework.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\EntityFramework.SqlServer.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Microsoft.AI.Web.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Web.Spreadsheet.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Web.UI.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Core.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Flow.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Spreadsheet.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Zip.xml
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\obj\Release\AmounCRM4.dll.licenses
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\obj\Release\AmounCRM4.dll
+C:\Users\nsa-ehabnady\documents\visual studio 2015\projects\AmounCRM4\AmounCRM4\obj\Release\AmounCRM4.pdb
+C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\obj\Release\AmounCRM4.csprojResolveAssemblyReference.cache
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\ApplicationInsights.config
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\AmounCRM4.dll.config
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\AmounCRM4.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\AmounCRM4.pdb
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\EntityFramework.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\EntityFramework.SqlServer.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.AI.Web.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.ApplicationInsights.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Web.Device.Detection.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Web.Spreadsheet.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Web.UI.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Web.UI.Skins.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Core.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Flow.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Spreadsheet.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Zip.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Newtonsoft.Json.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\AWSSDK.S3.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\AWSSDK.Core.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\EntityFramework.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\EntityFramework.SqlServer.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.AI.Web.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.ApplicationInsights.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Web.Device.Detection.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Web.Spreadsheet.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Web.UI.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Core.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Flow.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Spreadsheet.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Windows.Zip.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\obj\Release\AmounCRM4.dll.licenses
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\obj\Release\AmounCRM4.csproj.CoreCompileInputs.cache
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\obj\Release\AmounCRM4.csproj.CopyComplete
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\obj\Release\AmounCRM4.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\obj\Release\AmounCRM4.pdb
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\obj\Release\AmounCRM4.csprojAssemblyReference.cache
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.AnalysisServices.AdomdClient.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\System.Net.Http.Formatting.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\System.Web.Http.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\System.Web.Http.WebHost.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.Services.WebApi.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.XpsRendering.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.ReportViewer.Html5.WebForms.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Newtonsoft.Json.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\System.Net.Http.Formatting.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\System.Web.Http.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\System.Web.Http.WebHost.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.pdb
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.Services.WebApi.pdb
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.Services.WebApi.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.XpsRendering.pdb
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.Reporting.XpsRendering.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.ReportViewer.Html5.WebForms.pdb
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\AmounCRM4\bin\Telerik.ReportViewer.Html5.WebForms.xml

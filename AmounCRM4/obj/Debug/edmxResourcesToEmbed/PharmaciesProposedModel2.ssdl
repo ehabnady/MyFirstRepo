@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PharmaciesProposedModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AmounCRM2.dbo.PH_Pharmacies_Proposed' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PH_Pharmacies_Proposed">
+    <Key>
+      <PropertyRef Name="RecID" />
+    </Key>
+    <Property Name="PharmacyID" Type="int" />
+    <Property Name="PharmacyName" Type="nvarchar" MaxLength="100" />
+    <Property Name="BrickID" Type="int" />
+    <Property Name="CusNameFromInMarket" Type="nvarchar" MaxLength="150" />
+    <Property Name="IsWrong" Type="nvarchar" MaxLength="10" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="RecID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="SD_Approved" Type="bit" />
+    <Property Name="SD_Comment" Type="nvarchar" MaxLength="150" />
+    <Property Name="SDDate" Type="smalldatetime" />
+    <Property Name="RequestType" Type="nvarchar" MaxLength="100" />
+    <Property Name="RequestDate" Type="smalldatetime" />
+    <Property Name="AreaRecID" Type="int" />
+    <Property Name="AreaRecIDOld" Type="int" />
+    <Property Name="PharmacyAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="PharmacyAddressOld" Type="nvarchar" MaxLength="255" />
+    <Property Name="EmpId" Type="int" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="SDID" Type="int" />
+  </EntityType>
+  <EntityContainer Name="PharmaciesProposedModel2StoreContainer">
+    <EntitySet Name="PH_Pharmacies_Proposed" EntityType="Self.PH_Pharmacies_Proposed" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PH_Pharmacies_Proposed].[PharmacyID] AS [PharmacyID], 
+    [PH_Pharmacies_Proposed].[PharmacyName] AS [PharmacyName], 
+    [PH_Pharmacies_Proposed].[BrickID] AS [BrickID], 
+    [PH_Pharmacies_Proposed].[CusNameFromInMarket] AS [CusNameFromInMarket], 
+    [PH_Pharmacies_Proposed].[IsWrong] AS [IsWrong], 
+    [PH_Pharmacies_Proposed].[Deleted] AS [Deleted], 
+    [PH_Pharmacies_Proposed].[RecID] AS [RecID], 
+    [PH_Pharmacies_Proposed].[Description] AS [Description], 
+    [PH_Pharmacies_Proposed].[SD_Approved] AS [SD_Approved], 
+    [PH_Pharmacies_Proposed].[SD_Comment] AS [SD_Comment], 
+    [PH_Pharmacies_Proposed].[SDDate] AS [SDDate], 
+    [PH_Pharmacies_Proposed].[RequestType] AS [RequestType], 
+    [PH_Pharmacies_Proposed].[RequestDate] AS [RequestDate], 
+    [PH_Pharmacies_Proposed].[AreaRecID] AS [AreaRecID], 
+    [PH_Pharmacies_Proposed].[AreaRecIDOld] AS [AreaRecIDOld], 
+    [PH_Pharmacies_Proposed].[PharmacyAddress] AS [PharmacyAddress], 
+    [PH_Pharmacies_Proposed].[PharmacyAddressOld] AS [PharmacyAddressOld], 
+    [PH_Pharmacies_Proposed].[EmpId] AS [EmpId], 
+    [PH_Pharmacies_Proposed].[Status] AS [Status], 
+    [PH_Pharmacies_Proposed].[SDID] AS [SDID]
+    FROM [dbo].[PH_Pharmacies_Proposed] AS [PH_Pharmacies_Proposed]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

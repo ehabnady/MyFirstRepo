@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PhysiciansTempMode.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="PhysiciansTemp">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="PhysicianID" Type="int" Nullable="false" />
+          <Property Name="PhysicianName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="MobileNumber" Type="nvarchar" MaxLength="15" />
+          <Property Name="TelNumber" Type="nvarchar" MaxLength="15" />
+          <Property Name="PhysicianEmailAddress" Type="nvarchar" MaxLength="50" />
+          <Property Name="SpecialtyID" Type="int" />
+          <Property Name="PhysicianOldCode" Type="int" />
+          <Property Name="EntryEmployeeID" Type="int" />
+          <Property Name="EntryDate" Type="smalldatetime" />
+          <Property Name="Deleted" Type="bit" />
+          <Property Name="BirthDate" Type="date" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="SpecialtyName" Type="nvarchar" MaxLength="150" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="PhysiciansTempModeStoreContainer">
+          <EntitySet Name="PhysiciansTemp" EntityType="Self.PhysiciansTemp" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PhysiciansTempMode" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="PhysiciansTemp">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="PhysicianID" Type="Int32" Nullable="false" />
+          <Property Name="PhysicianName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MobileNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="TelNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="PhysicianEmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SpecialtyID" Type="Int32" />
+          <Property Name="PhysicianOldCode" Type="Int32" />
+          <Property Name="EntryEmployeeID" Type="Int32" />
+          <Property Name="EntryDate" Type="DateTime" Precision="0" />
+          <Property Name="Deleted" Type="Boolean" />
+          <Property Name="BirthDate" Type="DateTime" Precision="0" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="SpecialtyName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityContainer Name="PhysiciansTempDBContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PhysiciansTemps" EntityType="Self.PhysiciansTemp" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PhysiciansTempModeStoreContainer" CdmEntityContainer="PhysiciansTempDBContext">
+          <EntitySetMapping Name="PhysiciansTemps">
+            <EntityTypeMapping TypeName="PhysiciansTempMode.PhysiciansTemp">
+              <MappingFragment StoreEntitySet="PhysiciansTemp">
+                <ScalarProperty Name="PhysicianID" ColumnName="PhysicianID" />
+                <ScalarProperty Name="PhysicianName" ColumnName="PhysicianName" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="TelNumber" ColumnName="TelNumber" />
+                <ScalarProperty Name="PhysicianEmailAddress" ColumnName="PhysicianEmailAddress" />
+                <ScalarProperty Name="SpecialtyID" ColumnName="SpecialtyID" />
+                <ScalarProperty Name="PhysicianOldCode" ColumnName="PhysicianOldCode" />
+                <ScalarProperty Name="EntryEmployeeID" ColumnName="EntryEmployeeID" />
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="SpecialtyName" ColumnName="SpecialtyName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

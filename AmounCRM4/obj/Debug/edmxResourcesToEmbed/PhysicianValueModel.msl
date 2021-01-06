@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PhysicianValueStoreContainer" CdmEntityContainer="PhysicianValueDBContext">
+    <EntitySetMapping Name="PhysicianValueByLines">
+      <EntityTypeMapping TypeName="PhysicianValue.PhysicianValueByLine">
+        <MappingFragment StoreEntitySet="PhysicianValueByLine">
+          <ScalarProperty Name="NoOfOperations" ColumnName="NoOfOperations" />
+          <ScalarProperty Name="PrescriptionHappitOld2" ColumnName="PrescriptionHappitOld2" />
+          <ScalarProperty Name="NoOfPatientsOld2" ColumnName="NoOfPatientsOld2" />
+          <ScalarProperty Name="LastModifierID" ColumnName="LastModifierID" />
+          <ScalarProperty Name="CreatorID" ColumnName="CreatorID" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="NoOfPatientsOld" ColumnName="NoOfPatientsOld" />
+          <ScalarProperty Name="PrescriptionHappit" ColumnName="PrescriptionHappit" />
+          <ScalarProperty Name="RecID" ColumnName="RecID" />
+          <ScalarProperty Name="AffiliationID" ColumnName="AffiliationID" />
+          <ScalarProperty Name="LineID" ColumnName="LineID" />
+          <ScalarProperty Name="NoOfPatients" ColumnName="NoOfPatients" />
+          <ScalarProperty Name="WaitingTime" ColumnName="WaitingTime" />
+          <ScalarProperty Name="SpecialtyValue" ColumnName="SpecialtyValue" />
+          <ScalarProperty Name="TotalValue" ColumnName="TotalValue" />
+          <ScalarProperty Name="PhysicianClass" ColumnName="PhysicianClass" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

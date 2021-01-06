@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AppModelStoreContainer" CdmEntityContainer="AppEntities16">
+    <EntitySetMapping Name="Appointments">
+      <EntityTypeMapping TypeName="AppModel.Appointment">
+        <MappingFragment StoreEntitySet="Appointments">
+          <ScalarProperty Name="AppointmentID" ColumnName="AppointmentID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="PhysicianID" ColumnName="PhysicianID" />
+          <ScalarProperty Name="RecurrenceRule" ColumnName="RecurrenceRule" />
+          <ScalarProperty Name="RecurrenceParentID" ColumnName="RecurrenceParentID" />
+          <ScalarProperty Name="Reminder" ColumnName="Reminder" />
+          <ScalarProperty Name="Annotations" ColumnName="Annotations" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="LineID" ColumnName="LineID" />
+          <ScalarProperty Name="AreaRecID" ColumnName="AreaRecID" />
+          <ScalarProperty Name="CycleID" ColumnName="CycleID" />
+          <ScalarProperty Name="AffiliationID" ColumnName="AffiliationID" />
+          <ScalarProperty Name="IsOriginal" ColumnName="IsOriginal" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+          <ScalarProperty Name="DeletedAppointment" ColumnName="DeletedAppointment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

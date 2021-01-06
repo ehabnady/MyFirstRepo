@@ -1,0 +1,15 @@
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\bin\Debug\ReportLibrary1.dll.config
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\bin\Debug\ReportLibrary1.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\bin\Debug\ReportLibrary1.pdb
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\bin\Debug\Telerik.Reporting.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\bin\Debug\Telerik.Reporting.pdb
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\bin\Debug\Telerik.Reporting.xml
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\obj\Debug\ReportLibrary1.csprojAssemblyReference.cache
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\obj\Debug\ReportLibrary1.ConsentForms.resources
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\obj\Debug\ReportLibrary1.Properties.Resources.resources
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\obj\Debug\ReportLibrary1.csproj.GenerateResource.cache
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\obj\Debug\ReportLibrary1.dll.licenses
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\obj\Debug\ReportLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\obj\Debug\ReportLibrary1.csproj.CopyComplete
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\obj\Debug\ReportLibrary1.dll
+C:\Users\NSA-EhabNady\source\repos\AmounCRM4\ReportLibrary1\obj\Debug\ReportLibrary1.pdb

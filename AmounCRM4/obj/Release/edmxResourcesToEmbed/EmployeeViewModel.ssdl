@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeesView.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AmounCRM2.dbo.View_Employees' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_Employees">
+    <Key>
+      <PropertyRef Name="EmployeeHRCode" />
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="TopManagerID" />
+      <PropertyRef Name="DirectorID" />
+      <PropertyRef Name="ComDirID" />
+    </Key>
+    <Property Name="DeletedEmployee" Type="bit" />
+    <Property Name="DeletedRep" Type="bit" />
+    <Property Name="EmployeeHRCode" Type="int" Nullable="false" />
+    <Property Name="EmployeeFullName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmployeeUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="LineID" Type="int" />
+    <Property Name="EmployeeType" Type="nvarchar" MaxLength="255" />
+    <Property Name="AreaRecID" Type="int" />
+    <Property Name="EmployeePassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="MustChangePassword" Type="bit" />
+    <Property Name="LastChangeDate" Type="smalldatetime" />
+    <Property Name="NextChangeDate" Type="smalldatetime" />
+    <Property Name="DirectManagerID" Type="int" />
+    <Property Name="DirectManagerCode" Type="int" />
+    <Property Name="DirectManagerLineID" Type="int" />
+    <Property Name="DirectManagerAreaID" Type="int" />
+    <Property Name="DirectManagerName" Type="nvarchar" MaxLength="100" />
+    <Property Name="DirectManagerUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DirectManagerPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="DirectManagerMustChangePassword" Type="bit" />
+    <Property Name="DirectManagerLastChangeDate" Type="smalldatetime" />
+    <Property Name="DirectManagerChangeDate" Type="smalldatetime" />
+    <Property Name="TopManagerID" Type="int" Nullable="false" />
+    <Property Name="TopManagerHRCode" Type="int" />
+    <Property Name="TopManagerLineID" Type="int" />
+    <Property Name="TopManagerAreaID" Type="int" />
+    <Property Name="TopManagerName" Type="nvarchar" MaxLength="100" />
+    <Property Name="TopManagerUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="TopManagerPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="TopManagerMustChangePassword" Type="bit" />
+    <Property Name="TopManagerLastChangeDate" Type="smalldatetime" />
+    <Property Name="TopManagerNextChangeDate" Type="smalldatetime" />
+    <Property Name="DirectorID" Type="int" Nullable="false" />
+    <Property Name="DirectorHRCode" Type="int" />
+    <Property Name="DirectorType" Type="nvarchar" MaxLength="255" />
+    <Property Name="DirectorName" Type="nvarchar" MaxLength="100" />
+    <Property Name="DirectorUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DirectorPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="DirectorMustChange" Type="bit" />
+    <Property Name="DirectorLastChangeDate" Type="smalldatetime" />
+    <Property Name="DirectorNextChangeDate" Type="smalldatetime" />
+    <Property Name="ComDirID" Type="int" Nullable="false" />
+    <Property Name="ComDirHRCode" Type="int" />
+    <Property Name="ComDirType" Type="nvarchar" MaxLength="255" />
+    <Property Name="ComDirName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ComDirUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ComDirPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="ComDirMustChange" Type="bit" />
+    <Property Name="ComDirLastChangeDate" Type="smalldatetime" />
+    <Property Name="ComDirNextChangeDate" Type="smalldatetime" />
+    <Property Name="RecordCreationDate" Type="smalldatetime" />
+    <Property Name="RecordCreatedBy" Type="int" />
+    <Property Name="NoOfVisitsPerDay" Type="int" />
+  </EntityType>
+  <EntityContainer Name="EmployeesViewStoreContainer">
+    <EntitySet Name="View_Employees" EntityType="Self.View_Employees" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_Employees].[DeletedEmployee] AS [DeletedEmployee], 
+    [View_Employees].[DeletedRep] AS [DeletedRep], 
+    [View_Employees].[EmployeeHRCode] AS [EmployeeHRCode], 
+    [View_Employees].[EmployeeFullName] AS [EmployeeFullName], 
+    [View_Employees].[EmployeeUserName] AS [EmployeeUserName], 
+    [View_Employees].[EmployeeID] AS [EmployeeID], 
+    [View_Employees].[LineID] AS [LineID], 
+    [View_Employees].[EmployeeType] AS [EmployeeType], 
+    [View_Employees].[AreaRecID] AS [AreaRecID], 
+    [View_Employees].[EmployeePassword] AS [EmployeePassword], 
+    [View_Employees].[MustChangePassword] AS [MustChangePassword], 
+    [View_Employees].[LastChangeDate] AS [LastChangeDate], 
+    [View_Employees].[NextChangeDate] AS [NextChangeDate], 
+    [View_Employees].[DirectManagerID] AS [DirectManagerID], 
+    [View_Employees].[DirectManagerCode] AS [DirectManagerCode], 
+    [View_Employees].[DirectManagerLineID] AS [DirectManagerLineID], 
+    [View_Employees].[DirectManagerAreaID] AS [DirectManagerAreaID], 
+    [View_Employees].[DirectManagerName] AS [DirectManagerName], 
+    [View_Employees].[DirectManagerUserName] AS [DirectManagerUserName], 
+    [View_Employees].[DirectManagerPassword] AS [DirectManagerPassword], 
+    [View_Employees].[DirectManagerMustChangePassword] AS [DirectManagerMustChangePassword], 
+    [View_Employees].[DirectManagerLastChangeDate] AS [DirectManagerLastChangeDate], 
+    [View_Employees].[DirectManagerChangeDate] AS [DirectManagerChangeDate], 
+    [View_Employees].[TopManagerID] AS [TopManagerID], 
+    [View_Employees].[TopManagerHRCode] AS [TopManagerHRCode], 
+    [View_Employees].[TopManagerLineID] AS [TopManagerLineID], 
+    [View_Employees].[TopManagerAreaID] AS [TopManagerAreaID], 
+    [View_Employees].[TopManagerName] AS [TopManagerName], 
+    [View_Employees].[TopManagerUserName] AS [TopManagerUserName], 
+    [View_Employees].[TopManagerPassword] AS [TopManagerPassword], 
+    [View_Employees].[TopManagerMustChangePassword] AS [TopManagerMustChangePassword], 
+    [View_Employees].[TopManagerLastChangeDate] AS [TopManagerLastChangeDate], 
+    [View_Employees].[TopManagerNextChangeDate] AS [TopManagerNextChangeDate], 
+    [View_Employees].[DirectorID] AS [DirectorID], 
+    [View_Employees].[DirectorHRCode] AS [DirectorHRCode], 
+    [View_Employees].[DirectorType] AS [DirectorType], 
+    [View_Employees].[DirectorName] AS [DirectorName], 
+    [View_Employees].[DirectorUserName] AS [DirectorUserName], 
+    [View_Employees].[DirectorPassword] AS [DirectorPassword], 
+    [View_Employees].[DirectorMustChange] AS [DirectorMustChange], 
+    [View_Employees].[DirectorLastChangeDate] AS [DirectorLastChangeDate], 
+    [View_Employees].[DirectorNextChangeDate] AS [DirectorNextChangeDate], 
+    [View_Employees].[ComDirID] AS [ComDirID], 
+    [View_Employees].[ComDirHRCode] AS [ComDirHRCode], 
+    [View_Employees].[ComDirType] AS [ComDirType], 
+    [View_Employees].[ComDirName] AS [ComDirName], 
+    [View_Employees].[ComDirUserName] AS [ComDirUserName], 
+    [View_Employees].[ComDirPassword] AS [ComDirPassword], 
+    [View_Employees].[ComDirMustChange] AS [ComDirMustChange], 
+    [View_Employees].[ComDirLastChangeDate] AS [ComDirLastChangeDate], 
+    [View_Employees].[ComDirNextChangeDate] AS [ComDirNextChangeDate], 
+    [View_Employees].[RecordCreationDate] AS [RecordCreationDate], 
+    [View_Employees].[RecordCreatedBy] AS [RecordCreatedBy], 
+    [View_Employees].[NoOfVisitsPerDay] AS [NoOfVisitsPerDay]
+    FROM [dbo].[View_Employees] AS [View_Employees]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

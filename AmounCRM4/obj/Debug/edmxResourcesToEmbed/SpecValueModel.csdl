@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SpecValModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="SpecPriorityByLine">
+    <Key>
+      <PropertyRef Name="RecID" />
+    </Key>
+    <Property Name="RecID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SpecialtyID" Type="Int32" />
+    <Property Name="LineID" Type="Int32" />
+    <Property Name="SpecValue" Type="Double" />
+    <Property Name="SpecPriority" Type="Int32" />
+    <Property Name="Deleted" Type="Boolean" />
+    <Property Name="SpecValueOld" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="SpecValueDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SpecPriorityByLines" EntityType="Self.SpecPriorityByLine" />
+  </EntityContainer>
+</Schema>

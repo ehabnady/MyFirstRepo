@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PhysicianValue.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PhysicianValueByLine">
+    <Key>
+      <PropertyRef Name="RecID" />
+    </Key>
+    <Property Name="RecID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AffiliationID" Type="int" />
+    <Property Name="LineID" Type="int" />
+    <Property Name="NoOfPatients" Type="float" />
+    <Property Name="WaitingTime" Type="float" />
+    <Property Name="SpecialtyValue" Type="float" />
+    <Property Name="TotalValue" Type="float" />
+    <Property Name="PhysicianClass" Type="nvarchar" MaxLength="2" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="PrescriptionHappit" Type="float" />
+    <Property Name="NoOfPatientsOld" Type="float" />
+    <Property Name="CreateDate" Type="smalldatetime" />
+    <Property Name="LastModificationDate" Type="smalldatetime" />
+    <Property Name="CreatorID" Type="int" />
+    <Property Name="LastModifierID" Type="int" />
+    <Property Name="NoOfPatientsOld2" Type="float" />
+    <Property Name="PrescriptionHappitOld2" Type="float" />
+    <Property Name="NoOfOperations" Type="float" />
+  </EntityType>
+  <EntityContainer Name="PhysicianValueStoreContainer">
+    <EntitySet Name="PhysicianValueByLine" EntityType="Self.PhysicianValueByLine" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

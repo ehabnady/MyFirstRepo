@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SpecValModelStoreContainer" CdmEntityContainer="SpecValueDBContext">
+    <EntitySetMapping Name="SpecPriorityByLines">
+      <EntityTypeMapping TypeName="SpecValModel.SpecPriorityByLine">
+        <MappingFragment StoreEntitySet="SpecPriorityByLine">
+          <ScalarProperty Name="RecID" ColumnName="RecID" />
+          <ScalarProperty Name="SpecialtyID" ColumnName="SpecialtyID" />
+          <ScalarProperty Name="LineID" ColumnName="LineID" />
+          <ScalarProperty Name="SpecValue" ColumnName="SpecValue" />
+          <ScalarProperty Name="SpecPriority" ColumnName="SpecPriority" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="SpecValueOld" ColumnName="SpecValueOld" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

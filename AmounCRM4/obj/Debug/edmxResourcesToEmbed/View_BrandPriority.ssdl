@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="View_BrandPrioritiesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AmounCRM2.dbo.View_BrandPriority' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_BrandPriority">
+    <Key>
+      <PropertyRef Name="RecID" />
+    </Key>
+    <Property Name="RecID" Type="int" Nullable="false" />
+    <Property Name="LineID" Type="int" />
+    <Property Name="BrandID" Type="int" />
+    <Property Name="SpecialtyID" Type="int" />
+    <Property Name="BrandPriority" Type="int" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="BrandName" Type="nvarchar" MaxLength="50" />
+    <Property Name="SpecialityCode" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="View_BrandPrioritiesModelStoreContainer">
+    <EntitySet Name="View_BrandPriority" EntityType="Self.View_BrandPriority" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_BrandPriority].[RecID] AS [RecID], 
+    [View_BrandPriority].[LineID] AS [LineID], 
+    [View_BrandPriority].[BrandID] AS [BrandID], 
+    [View_BrandPriority].[SpecialtyID] AS [SpecialtyID], 
+    [View_BrandPriority].[BrandPriority] AS [BrandPriority], 
+    [View_BrandPriority].[Deleted] AS [Deleted], 
+    [View_BrandPriority].[BrandName] AS [BrandName], 
+    [View_BrandPriority].[SpecialityCode] AS [SpecialityCode]
+    FROM [dbo].[View_BrandPriority] AS [View_BrandPriority]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

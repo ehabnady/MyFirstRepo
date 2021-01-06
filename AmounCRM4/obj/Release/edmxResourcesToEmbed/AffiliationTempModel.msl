@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AffiliationsTempModeStoreContainer" CdmEntityContainer="AffiliationTempDBContext">
+    <EntitySetMapping Name="AffiliationsTemps">
+      <EntityTypeMapping TypeName="AffiliationsTempMode.AffiliationsTemp">
+        <MappingFragment StoreEntitySet="AffiliationsTemp">
+          <ScalarProperty Name="New" ColumnName="New" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AffiliationID" ColumnName="AffiliationID" />
+          <ScalarProperty Name="AffiliationName" ColumnName="AffiliationName" />
+          <ScalarProperty Name="PhysicianID" ColumnName="PhysicianID" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="PhysicianClass" ColumnName="PhysicianClass" />
+          <ScalarProperty Name="BestTimeFrom" ColumnName="BestTimeFrom" />
+          <ScalarProperty Name="BestTimeTo" ColumnName="BestTimeTo" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="EntryEmployeeID" ColumnName="EntryEmployeeID" />
+          <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PhysicianModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Physician">
+    <Key>
+      <PropertyRef Name="PhysicianID" />
+    </Key>
+    <Property Name="PhysicianID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PhysicianName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MobileNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="TelNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="PhysicianEmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SpecialtyID" Type="Int32" />
+    <Property Name="PhysicianOldCode" Type="Int32" />
+    <Property Name="EntryEmployeeID" Type="Int32" />
+    <Property Name="EntryDate" Type="DateTime" Precision="0" />
+    <Property Name="Deleted" Type="Boolean" />
+    <Property Name="BirthDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="PhysicianBDContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Physicians" EntityType="Self.Physician" />
+  </EntityContainer>
+</Schema>

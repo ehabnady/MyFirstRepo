@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\AmounECMS_Deploy</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Admins/AdminAffiliationForm.aspx">
+      <publishTime>05/03/2018 10:37:09</publishTime>
+    </File>
+    <File Include="Admins/AdminAffiliationForm2.aspx">
+      <publishTime>09/27/2018 14:23:41</publishTime>
+    </File>
+    <File Include="Admins/AffiliationForm.aspx">
+      <publishTime>04/06/2017 15:36:36</publishTime>
+    </File>
+    <File Include="Admins/AllUsers.aspx">
+      <publishTime>12/12/2018 10:04:12</publishTime>
+    </File>
+    <File Include="Admins/AuditTrailApps.aspx">
+      <publishTime>04/03/2018 09:07:17</publishTime>
+    </File>
+    <File Include="Admins/AutomaticPlan.aspx">
+      <publishTime>09/12/2017 15:07:48</publishTime>
+    </File>
+    <File Include="Admins/Bausch.aspx">
+      <publishTime>04/14/2020 09:34:29</publishTime>
+    </File>
+    <File Include="Admins/BrandPriorityForm.aspx">
+      <publishTime>11/22/2017 10:13:31</publishTime>
+    </File>
+    <File Include="Admins/ChangeRequestsModel.edmx.diagram">
+      <publishTime>01/10/2019 11:40:52</publishTime>
+    </File>
+    <File Include="Admins/ClinicForm.aspx">
+      <publishTime>04/03/2018 12:25:30</publishTime>
+    </File>
+    <File Include="Admins/CycleClosing.aspx">
+      <publishTime>10/02/2017 09:41:50</publishTime>
+    </File>
+    <File Include="Admins/DoctorsList.aspx">
+      <publishTime>03/21/2019 11:23:59</publishTime>
+    </File>
+    <File Include="Admins/EmployeeFormTemp.aspx">
+      <publishTime>11/15/2018 14:20:29</publishTime>
+    </File>
+    <File Include="Admins/EmployeeFormTempUpdates.aspx">
+      <publishTime>01/14/2019 14:37:36</publishTime>
+    </File>
+    <File Include="Admins/Employees.aspx">
+      <publishTime>02/09/2017 14:19:43</publishTime>
+    </File>
+    <File Include="Admins/EmployeesForm.aspx">
+      <publishTime>10/16/2018 16:32:40</publishTime>
+    </File>
+    <File Include="Admins/GenerateClosingReports.aspx">
+      <publishTime>04/18/2018 14:03:44</publishTime>
+    </File>
+    <File Include="Admins/MessageForm2.aspx">
+      <publishTime>06/13/2018 09:28:31</publishTime>
+    </File>
+    <File Include="Admins/MessagesForm.aspx">
+      <publishTime>06/04/2018 09:30:25</publishTime>
+    </File>
+    <File Include="Admins/MobileEdit.aspx">
+      <publishTime>07/20/2020 13:28:09</publishTime>
+    </File>
+    <File Include="Admins/PhysicianForm.aspx">
+      <publishTime>04/30/2018 09:49:42</publishTime>
+    </File>
+    <File Include="Admins/PlanAdjustment.aspx">
+      <publishTime>02/09/2017 14:19:44</publishTime>
+    </File>
+    <File Include="Admins/Plan_Visits.aspx">
+      <publishTime>02/16/2020 10:00:47</publishTime>
+    </File>
+    <File Include="Admins/PopulationList.aspx">
+      <publishTime>12/27/2017 15:22:02</publishTime>
+    </File>
+    <File Include="Admins/RadGridEmployeesMainData.ascx">
+      <publishTime>02/09/2017 14:19:44</publishTime>
+    </File>
+    <File Include="Admins/ReadLogFile.aspx">
+      <publishTime>08/20/2017 17:25:18</publishTime>
+    </File>
+    <File Include="Admins/RepAffiliationForm.aspx">
+      <publishTime>07/21/2020 09:50:20</publishTime>
+    </File>
+    <File Include="Admins/RepAffiliationForm1.aspx">
+      <publishTime>02/19/2018 10:20:58</publishTime>
+    </File>
+    <File Include="Admins/RepAffiliationForm2.aspx">
+      <publishTime>11/10/2018 11:28:39</publishTime>
+    </File>
+    <File Include="Admins/RepAffiliationFormO.aspx">
+      <publishTime>11/07/2019 10:22:49</publishTime>
+    </File>
+    <File Include="Admins/Requests.aspx">
+      <publishTime>09/16/2019 10:31:39</publishTime>
+    </File>
+    <File Include="Admins/Responsibilities.aspx">
+      <publishTime>04/03/2018 10:47:25</publishTime>
+    </File>
+    <File Include="Admins/SalesRepPharmaReq.aspx">
+      <publishTime>05/13/2020 15:15:19</publishTime>
+    </File>
+    <File Include="Admins/SalesRepsPharmacies.aspx">
+      <publishTime>04/01/2020 13:42:51</publishTime>
+    </File>
+    <File Include="Admins/SpecialtyPriorityForm.aspx">
+      <publishTime>06/15/2017 13:08:03</publishTime>
+    </File>
+    <File Include="Admins/Targeting.aspx">
+      <publishTime>10/09/2017 11:31:05</publishTime>
+    </File>
+    <File Include="Admins/TempDoctors.aspx">
+      <publishTime>02/12/2019 11:05:38</publishTime>
+    </File>
+    <File Include="Admins/UpdateDoctors.aspx">
+      <publishTime>07/25/2017 11:35:45</publishTime>
+    </File>
+    <File Include="Admins/UpdateDoctorsForm.aspx">
+      <publishTime>07/12/2017 12:45:32</publishTime>
+    </File>
+    <File Include="Admins/VacationReport.aspx">
+      <publishTime>03/11/2019 09:21:52</publishTime>
+    </File>
+    <File Include="Admins/VacationReportO.aspx">
+      <publishTime>11/07/2019 10:22:49</publishTime>
+    </File>
+    <File Include="Admins/VacationRequest.aspx">
+      <publishTime>05/28/2019 10:01:14</publishTime>
+    </File>
+    <File Include="Admins/VacationRequestO.aspx">
+      <publishTime>11/07/2019 10:22:49</publishTime>
+    </File>
+    <File Include="AffiliationModel.edmx.diagram">
+      <publishTime>02/15/2017 13:43:40</publishTime>
+    </File>
+    <File Include="AffiliationsAdminViewModel.edmx.diagram">
+      <publishTime>09/09/2018 12:16:07</publishTime>
+    </File>
+    <File Include="AffiliationsModel.edmx.diagram">
+      <publishTime>03/05/2017 16:31:14</publishTime>
+    </File>
+    <File Include="AffiliationTempModel.edmx.diagram">
+      <publishTime>08/29/2017 09:29:24</publishTime>
+    </File>
+    <File Include="AffiliationViewModel.edmx.diagram">
+      <publishTime>02/16/2017 09:54:24</publishTime>
+    </File>
+    <File Include="AmounLogo.jpg">
+      <publishTime>10/05/2016 11:21:04</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>02/08/2017 10:11:29</publishTime>
+    </File>
+    <File Include="AppointmentModel.edmx.diagram">
+      <publishTime>02/15/2017 13:54:35</publishTime>
+    </File>
+    <File Include="App_Data/ExecSummary2.xsc">
+      <publishTime>07/29/2019 11:56:11</publishTime>
+    </File>
+    <File Include="App_Data/ExecSummary2.xss">
+      <publishTime>07/29/2019 11:56:11</publishTime>
+    </File>
+    <File Include="App_Data/ExecSummary3.xsc">
+      <publishTime>05/01/2019 09:26:06</publishTime>
+    </File>
+    <File Include="App_Data/ExecSummary3.xss">
+      <publishTime>05/01/2019 09:26:06</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/0.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/1.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/2.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/3.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/4.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/5.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/6.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/7.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/8.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/9.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/A.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/B.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/C.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/D.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/E.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/F.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/G.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/H.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/I.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/J.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/K.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/L.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/M.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/N.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/O.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/P.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/Q.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/R.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/S.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/T.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/U.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/V.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/W.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/X.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/Y.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/Z.wav">
+      <publishTime>05/14/2019 10:10:30</publishTime>
+    </File>
+    <File Include="App_Data/RadSpell/de-DE.tdf">
+      <publishTime>05/14/2019 10:11:12</publishTime>
+    </File>
+    <File Include="App_Data/RadSpell/en-US.tdf">
+      <publishTime>05/14/2019 10:11:12</publishTime>
+    </File>
+    <File Include="App_Data/RadSpell/fr-FR.tdf">
+      <publishTime>05/14/2019 10:11:12</publishTime>
+    </File>
+    <File Include="bin/AmounCRM4.dll">
+      <publishTime>08/11/2020 15:40:30</publishTime>
+    </File>
+    <File Include="bin/AmounCRM4.pdb">
+      <publishTime>08/11/2020 15:40:30</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>02/08/2017 10:11:29</publishTime>
+    </File>
+    <File Include="bin/AWSSDK.Core.dll">
+      <publishTime>02/12/2019 16:56:44</publishTime>
+    </File>
+    <File Include="bin/AWSSDK.S3.dll">
+      <publishTime>02/12/2019 16:56:44</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/03/2015 16:43:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/03/2015 16:43:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/09/2016 21:37:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>12/07/2016 11:45:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>12/06/2016 15:15:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>12/07/2016 11:49:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AnalysisServices.AdomdClient.dll">
+      <publishTime>02/18/2020 14:43:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>12/06/2016 15:09:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/13/2016 23:06:14</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>05/07/2013 13:09:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>05/07/2013 13:09:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>05/07/2013 13:09:18</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.dll">
+      <publishTime>01/16/2019 12:14:42</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.pdb">
+      <publishTime>01/16/2019 12:14:42</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.Services.WebApi.dll">
+      <publishTime>01/16/2019 12:14:54</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.Services.WebApi.pdb">
+      <publishTime>01/16/2019 12:14:54</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.XpsRendering.dll">
+      <publishTime>01/16/2019 12:14:46</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.XpsRendering.pdb">
+      <publishTime>01/16/2019 12:14:46</publishTime>
+    </File>
+    <File Include="bin/Telerik.ReportViewer.Html5.WebForms.dll">
+      <publishTime>01/16/2019 12:15:40</publishTime>
+    </File>
+    <File Include="bin/Telerik.ReportViewer.Html5.WebForms.pdb">
+      <publishTime>01/16/2019 12:15:40</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Device.Detection.dll">
+      <publishTime>05/13/2019 10:34:54</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Spreadsheet.dll">
+      <publishTime>05/14/2019 09:31:48</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>05/13/2019 10:34:54</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll">
+      <publishTime>05/13/2019 10:34:54</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Core.dll">
+      <publishTime>05/14/2019 09:31:48</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Flow.dll">
+      <publishTime>05/14/2019 09:31:50</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.dll">
+      <publishTime>05/14/2019 09:31:50</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll">
+      <publishTime>05/14/2019 09:31:50</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Zip.dll">
+      <publishTime>05/14/2019 09:31:52</publishTime>
+    </File>
+    <File Include="BrainShark.JPG">
+      <publishTime>02/16/2020 16:28:31</publishTime>
+    </File>
+    <File Include="BrandPriorityModel.edmx.diagram">
+      <publishTime>06/11/2017 15:33:42</publishTime>
+    </File>
+    <File Include="Calls2NewDesign.txt">
+      <publishTime>09/12/2019 11:09:19</publishTime>
+    </File>
+    <File Include="Capture.PNG">
+      <publishTime>04/14/2020 09:04:39</publishTime>
+    </File>
+    <File Include="ChangePassword.aspx">
+      <publishTime>02/21/2018 13:53:43</publishTime>
+    </File>
+    <File Include="ChangePassword2.aspx">
+      <publishTime>03/31/2019 16:45:56</publishTime>
+    </File>
+    <File Include="ClinicModel.edmx.diagram">
+      <publishTime>02/15/2017 13:20:32</publishTime>
+    </File>
+    <File Include="CommercialDirector/ActualVsTargetComDir.aspx">
+      <publishTime>10/18/2017 12:19:18</publishTime>
+    </File>
+    <File Include="CommercialDirector/CallRate.aspx">
+      <publishTime>10/18/2017 16:20:03</publishTime>
+    </File>
+    <File Include="CommercialDirector/CallsAnalysis.aspx">
+      <publishTime>03/14/2018 15:10:42</publishTime>
+    </File>
+    <File Include="CommercialDirector/ComDirDefault2.aspx">
+      <publishTime>05/22/2018 09:52:52</publishTime>
+    </File>
+    <File Include="CommercialDirector/ComDirReport_Dashboard.aspx">
+      <publishTime>02/19/2018 09:21:08</publishTime>
+    </File>
+    <File Include="CommercialDirector/ComDirStatistics.aspx">
+      <publishTime>05/24/2018 10:27:20</publishTime>
+    </File>
+    <File Include="CommercialDirector/CovFreqPerCycle.aspx">
+      <publishTime>05/27/2018 12:44:41</publishTime>
+    </File>
+    <File Include="CommercialDirector/DetailingPriority.aspx">
+      <publishTime>09/26/2018 13:00:38</publishTime>
+    </File>
+    <File Include="CommercialDirector/DetailingPriority2.aspx">
+      <publishTime>03/11/2019 10:30:12</publishTime>
+    </File>
+    <File Include="CommercialDirector/gridAffs.aspx">
+      <publishTime>10/18/2017 16:18:59</publishTime>
+    </File>
+    <File Include="CommercialDirector/NotVisitedDoctors.aspx">
+      <publishTime>10/18/2017 16:19:48</publishTime>
+    </File>
+    <File Include="CommercialDirector/PivotAnalyzer.aspx">
+      <publishTime>10/18/2017 15:35:27</publishTime>
+    </File>
+    <File Include="CommercialDirector/SiteMaster2.Master">
+      <publishTime>09/26/2018 15:39:19</publishTime>
+    </File>
+    <File Include="CommercialDirector/SpecValueForm.aspx">
+      <publishTime>10/24/2018 11:43:29</publishTime>
+    </File>
+    <File Include="CommercialDirector/TargetPlanVisits.aspx">
+      <publishTime>10/18/2017 16:19:32</publishTime>
+    </File>
+    <File Include="CommercialDirector/Visits_Plans.aspx">
+      <publishTime>10/18/2017 16:19:36</publishTime>
+    </File>
+    <File Include="Completion.jpg">
+      <publishTime>02/18/2020 10:06:46</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.css">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.css.map">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.min.css">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.min.css.map">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="css/bootstrap.css.map">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>06/07/2017 11:52:21</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css.map">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="DashboardScenario1.txt">
+      <publishTime>03/20/2019 10:07:17</publishTime>
+    </File>
+    <File Include="DataSet1.xsc">
+      <publishTime>02/01/2017 12:53:46</publishTime>
+    </File>
+    <File Include="DataSet1.xss">
+      <publishTime>02/01/2017 12:53:47</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>02/08/2017 10:10:33</publishTime>
+    </File>
+    <File Include="DMs/Calls2.aspx">
+      <publishTime>06/03/2018 11:19:58</publishTime>
+    </File>
+    <File Include="DMs/CallsAnalysis.aspx">
+      <publishTime>03/14/2018 15:40:21</publishTime>
+    </File>
+    <File Include="DMs/CallsEntry.aspx">
+      <publishTime>05/25/2017 08:45:37</publishTime>
+    </File>
+    <File Include="DMs/DMCallsScheduler.aspx">
+      <publishTime>10/25/2018 12:38:30</publishTime>
+    </File>
+    <File Include="DMs/DMDefault2.aspx">
+      <publishTime>09/25/2018 13:47:06</publishTime>
+    </File>
+    <File Include="DMs/DMReport_Affiliations.aspx">
+      <publishTime>03/16/2017 12:36:03</publishTime>
+    </File>
+    <File Include="DMs/DMReport_Appointments.aspx">
+      <publishTime>03/16/2017 12:36:34</publishTime>
+    </File>
+    <File Include="DMs/DMReport_Dashboard.aspx">
+      <publishTime>11/14/2018 09:13:24</publishTime>
+    </File>
+    <File Include="DMs/DMReport_TargetedAffiliations.aspx">
+      <publishTime>03/16/2017 12:37:18</publishTime>
+    </File>
+    <File Include="DMs/DMReport_Visits.aspx">
+      <publishTime>03/16/2017 12:37:30</publishTime>
+    </File>
+    <File Include="DMs/DMStatistics.aspx">
+      <publishTime>02/14/2019 14:13:01</publishTime>
+    </File>
+    <File Include="DMs/Notifications.aspx">
+      <publishTime>02/14/2019 10:57:44</publishTime>
+    </File>
+    <File Include="DMs/SalesAnalysis.aspx">
+      <publishTime>02/14/2019 14:15:35</publishTime>
+    </File>
+    <File Include="DMs/Vacations.aspx">
+      <publishTime>12/07/2017 11:21:33</publishTime>
+    </File>
+    <File Include="DMs/VacationsO.aspx">
+      <publishTime>11/07/2019 10:37:26</publishTime>
+    </File>
+    <File Include="ECMSLogo_png.png">
+      <publishTime>03/20/2019 10:47:48</publishTime>
+    </File>
+    <File Include="EmpHistoryTempModel.edmx.diagram">
+      <publishTime>11/15/2018 12:46:31</publishTime>
+    </File>
+    <File Include="EmployeeHistoryModel.edmx.diagram">
+      <publishTime>05/15/2017 16:53:36</publishTime>
+    </File>
+    <File Include="EmployeeMDModel.edmx.diagram">
+      <publishTime>03/28/2017 13:02:08</publishTime>
+    </File>
+    <File Include="EmployeeViewModel.edmx.diagram">
+      <publishTime>02/21/2018 10:50:14</publishTime>
+    </File>
+    <File Include="EmpTempModel.edmx.diagram">
+      <publishTime>11/15/2018 12:44:21</publishTime>
+    </File>
+    <File Include="EntitiesViewModel.edmx.diagram">
+      <publishTime>05/17/2017 15:32:14</publishTime>
+    </File>
+    <File Include="EntityTempModel.edmx.diagram">
+      <publishTime>08/27/2017 15:27:17</publishTime>
+    </File>
+    <File Include="ErrorPage.htm">
+      <publishTime>10/23/2017 16:47:11</publishTime>
+    </File>
+    <File Include="FeedbackSite4.Master">
+      <publishTime>04/30/2020 10:12:35</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/25/2016 13:43:02</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/25/2016 13:43:02</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/25/2016 13:43:02</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/25/2016 13:43:02</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>07/25/2016 13:43:02</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/09/2017 14:19:45</publishTime>
+    </File>
+    <File Include="js/bootstrap.js">
+      <publishTime>07/25/2016 15:53:28</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>07/25/2016 15:53:30</publishTime>
+    </File>
+    <File Include="js/jquery-3.2.1.min.js">
+      <publishTime>06/06/2017 15:00:18</publishTime>
+    </File>
+    <File Include="js/jquery.responsivetable.min.js">
+      <publishTime>06/28/2017 15:37:55</publishTime>
+    </File>
+    <File Include="js/npm.js">
+      <publishTime>07/25/2016 15:53:30</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>03/31/2019 15:21:55</publishTime>
+    </File>
+    <File Include="Login2.aspx">
+      <publishTime>04/04/2018 10:15:08</publishTime>
+    </File>
+    <File Include="NationalVavModel.edmx.diagram">
+      <publishTime>04/10/2018 11:38:12</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>08/11/2020 13:52:42</publishTime>
+    </File>
+    <File Include="PharmaciesProposedModel.edmx.diagram">
+      <publishTime>04/07/2020 15:27:29</publishTime>
+    </File>
+    <File Include="PharmacyEmployeesModel.edmx.diagram">
+      <publishTime>05/04/2020 12:36:18</publishTime>
+    </File>
+    <File Include="PharmaModel.edmx.diagram">
+      <publishTime>04/23/2020 16:31:24</publishTime>
+    </File>
+    <File Include="PharmaProposedModel.edmx.diagram">
+      <publishTime>05/13/2020 14:28:29</publishTime>
+    </File>
+    <File Include="PhysicianModel.edmx.diagram">
+      <publishTime>05/18/2017 15:19:24</publishTime>
+    </File>
+    <File Include="PhysiciansTempModel.edmx.diagram">
+      <publishTime>08/27/2017 15:11:09</publishTime>
+    </File>
+    <File Include="PhysiciansValueTempModel.edmx.diagram">
+      <publishTime>09/06/2018 16:06:42</publishTime>
+    </File>
+    <File Include="PhysicianValueModel.edmx.diagram">
+      <publishTime>09/06/2018 16:17:59</publishTime>
+    </File>
+    <File Include="PhysicianViewModel.edmx.diagram">
+      <publishTime>05/18/2017 13:03:06</publishTime>
+    </File>
+    <File Include="pic1.png">
+      <publishTime>04/13/2020 14:24:33</publishTime>
+    </File>
+    <File Include="pic2.png">
+      <publishTime>04/13/2020 14:34:55</publishTime>
+    </File>
+    <File Include="ProposedAffiliationModel.edmx.diagram">
+      <publishTime>11/04/2018 16:21:54</publishTime>
+    </File>
+    <File Include="Reps/Calls2.aspx">
+      <publishTime>09/12/2019 11:13:29</publishTime>
+    </File>
+    <File Include="Reps/CallsAnalysis.aspx">
+      <publishTime>03/15/2018 14:30:26</publishTime>
+    </File>
+    <File Include="Reps/CallsEntry.aspx">
+      <publishTime>05/15/2017 14:46:11</publishTime>
+    </File>
+    <File Include="Reps/CallsEntryFromAdmin.aspx">
+      <publishTime>02/09/2017 14:19:46</publishTime>
+    </File>
+    <File Include="Reps/CallsScheduler.aspx">
+      <publishTime>07/30/2019 15:27:21</publishTime>
+    </File>
+    <File Include="Reps/CallsScheduler2.aspx">
+      <publishTime>07/31/2019 08:56:45</publishTime>
+    </File>
+    <File Include="Reps/CallsScheduler3.aspx">
+      <publishTime>07/31/2019 08:57:04</publishTime>
+    </File>
+    <File Include="Reps/CallsSchedulerFromAdmin.aspx">
+      <publishTime>02/09/2017 14:19:46</publishTime>
+    </File>
+    <File Include="Reps/Notifications.aspx">
+      <publishTime>09/12/2019 10:22:41</publishTime>
+    </File>
+    <File Include="Reps/PivotAnalyzer.aspx">
+      <publishTime>03/28/2019 12:44:47</publishTime>
+    </File>
+    <File Include="Reps/RepReport_Affiliations.aspx">
+      <publishTime>03/16/2017 12:38:20</publishTime>
+    </File>
+    <File Include="Reps/RepReport_Appointments.aspx">
+      <publishTime>03/16/2017 12:38:06</publishTime>
+    </File>
+    <File Include="Reps/Repreport_Dashboard.aspx">
+      <publishTime>03/28/2019 12:43:03</publishTime>
+    </File>
+    <File Include="Reps/RepReport_Dashboard2.aspx">
+      <publishTime>03/31/2019 16:17:24</publishTime>
+    </File>
+    <File Include="Reps/RepReport_TargetedAffiliations.aspx">
+      <publishTime>03/16/2017 12:38:37</publishTime>
+    </File>
+    <File Include="Reps/RepReport_Visits.aspx">
+      <publishTime>03/16/2017 12:38:51</publishTime>
+    </File>
+    <File Include="Reps/RepsDefault2.aspx">
+      <publishTime>05/28/2019 10:12:02</publishTime>
+    </File>
+    <File Include="Reps/RepsDefault3.aspx">
+      <publishTime>03/26/2020 10:35:23</publishTime>
+    </File>
+    <File Include="Reps/SalesAnalysis.aspx">
+      <publishTime>02/14/2019 14:15:16</publishTime>
+    </File>
+    <File Include="Reps/Statistics.aspx">
+      <publishTime>02/14/2019 14:12:43</publishTime>
+    </File>
+    <File Include="Reps/Test.aspx">
+      <publishTime>05/24/2018 09:54:28</publishTime>
+    </File>
+    <File Include="SalesDirector/CallsAnalysis.aspx">
+      <publishTime>03/14/2018 15:45:12</publishTime>
+    </File>
+    <File Include="SalesDirector/SDDefault2.aspx">
+      <publishTime>05/27/2018 12:39:27</publishTime>
+    </File>
+    <File Include="SalesDirector/SDReport_Dashboard.aspx">
+      <publishTime>03/14/2018 10:01:15</publishTime>
+    </File>
+    <File Include="SalesDirector/SDStatistics.aspx">
+      <publishTime>05/27/2018 13:44:15</publishTime>
+    </File>
+    <File Include="SalesDirector/SiteMaster2.Master">
+      <publishTime>05/13/2020 15:11:05</publishTime>
+    </File>
+    <File Include="SalesManagers/ActualVsTarget.aspx">
+      <publishTime>06/19/2017 14:28:47</publishTime>
+    </File>
+    <File Include="SalesManagers/CallRate.aspx">
+      <publishTime>06/21/2017 08:44:51</publishTime>
+    </File>
+    <File Include="SalesManagers/Calls2.aspx">
+      <publishTime>06/03/2018 11:13:50</publishTime>
+    </File>
+    <File Include="SalesManagers/CallsAnalysis.aspx">
+      <publishTime>05/27/2018 14:10:52</publishTime>
+    </File>
+    <File Include="SalesManagers/Consents.aspx">
+      <publishTime>08/11/2020 14:34:38</publishTime>
+    </File>
+    <File Include="SalesManagers/Doctors.aspx">
+      <publishTime>05/27/2018 14:52:02</publishTime>
+    </File>
+    <File Include="SalesManagers/DoctorsList.aspx">
+      <publishTime>06/29/2017 09:58:51</publishTime>
+    </File>
+    <File Include="SalesManagers/MyTest.aspx">
+      <publishTime>06/19/2017 13:52:00</publishTime>
+    </File>
+    <File Include="SalesManagers/Notifications.aspx">
+      <publishTime>06/20/2018 13:57:40</publishTime>
+    </File>
+    <File Include="SalesManagers/NotVisited.aspx">
+      <publishTime>06/28/2017 11:23:21</publishTime>
+    </File>
+    <File Include="SalesManagers/NotVisitedDoctors.aspx">
+      <publishTime>05/28/2018 11:45:45</publishTime>
+    </File>
+    <File Include="SalesManagers/SalesManagerDefault2.aspx">
+      <publishTime>06/07/2017 18:03:52</publishTime>
+    </File>
+    <File Include="SalesManagers/SiteMaster2.Master">
+      <publishTime>06/27/2019 14:32:33</publishTime>
+    </File>
+    <File Include="SalesManagers/SMCallsScheduler.aspx">
+      <publishTime>08/08/2017 16:04:15</publishTime>
+    </File>
+    <File Include="SalesManagers/SMDefault2.aspx">
+      <publishTime>03/02/2020 15:25:44</publishTime>
+    </File>
+    <File Include="SalesManagers/SMReport_Dashboard.aspx">
+      <publishTime>02/25/2018 09:24:04</publishTime>
+    </File>
+    <File Include="SalesManagers/SMStatistics.aspx">
+      <publishTime>05/27/2018 14:12:11</publishTime>
+    </File>
+    <File Include="SalesManagers/SMVacations.aspx">
+      <publishTime>12/07/2017 13:57:14</publishTime>
+    </File>
+    <File Include="SalesManagers/Visits_Plan.aspx">
+      <publishTime>06/28/2017 11:22:44</publishTime>
+    </File>
+    <File Include="Site1.Master">
+      <publishTime>08/09/2020 14:03:27</publishTime>
+    </File>
+    <File Include="Site2.Master">
+      <publishTime>01/21/2020 12:05:34</publishTime>
+    </File>
+    <File Include="Site3.Master">
+      <publishTime>11/09/2018 00:58:38</publishTime>
+    </File>
+    <File Include="SpecPrioritybyLineModel.edmx.diagram">
+      <publishTime>06/08/2017 12:46:49</publishTime>
+    </File>
+    <File Include="SpecValueModel.edmx.diagram">
+      <publishTime>05/29/2017 17:03:30</publishTime>
+    </File>
+    <File Include="Styles/Gauges.css">
+      <publishTime>10/23/2016 16:14:49</publishTime>
+    </File>
+    <File Include="Surveys/CreateTableDynamically.txt">
+      <publishTime>06/15/2019 16:51:45</publishTime>
+    </File>
+    <File Include="Surveys/FeedbackReports.aspx">
+      <publishTime>04/01/2020 11:27:23</publishTime>
+    </File>
+    <File Include="Surveys/FeedbackReports_Managers.aspx">
+      <publishTime>04/01/2020 12:27:28</publishTime>
+    </File>
+    <File Include="Surveys/Feedbacks.aspx">
+      <publishTime>04/01/2020 15:47:59</publishTime>
+    </File>
+    <File Include="Surveys/Survey.aspx">
+      <publishTime>05/29/2019 12:02:08</publishTime>
+    </File>
+    <File Include="Surveys/Survey4.aspx">
+      <publishTime>06/10/2019 17:36:11</publishTime>
+    </File>
+    <File Include="Surveys/Survey5.aspx">
+      <publishTime>06/12/2019 08:57:17</publishTime>
+    </File>
+    <File Include="Surveys/Survey6.aspx">
+      <publishTime>06/19/2019 12:50:46</publishTime>
+    </File>
+    <File Include="Surveys/Survey7.aspx">
+      <publishTime>06/19/2019 16:01:44</publishTime>
+    </File>
+    <File Include="Surveys/SurveyReport.aspx">
+      <publishTime>06/12/2019 08:42:00</publishTime>
+    </File>
+    <File Include="Thanks.html">
+      <publishTime>10/26/2017 15:02:06</publishTime>
+    </File>
+    <File Include="UnderMain.jpg">
+      <publishTime>09/18/2017 12:57:23</publishTime>
+    </File>
+    <File Include="Under_Maintenance.aspx">
+      <publishTime>09/19/2017 10:32:34</publishTime>
+    </File>
+    <File Include="UpdateDoctors2.aspx">
+      <publishTime>04/11/2018 12:34:14</publishTime>
+    </File>
+    <File Include="VacationModel.edmx.diagram">
+      <publishTime>11/28/2017 12:09:23</publishTime>
+    </File>
+    <File Include="ViewAffiliationsAdminModel.edmx.diagram">
+      <publishTime>03/08/2017 16:07:15</publishTime>
+    </File>
+    <File Include="ViewAffiliationsonlyModel.edmx.diagram">
+      <publishTime>06/07/2017 11:50:19</publishTime>
+    </File>
+    <File Include="View_BrandPriority.edmx.diagram">
+      <publishTime>06/11/2017 12:11:53</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>08/11/2020 15:40:31</publishTime>
+    </File>
+    <File Include="web.sitemap">
+      <publishTime>03/28/2019 12:59:41</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

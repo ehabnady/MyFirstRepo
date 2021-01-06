@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BrandPrioritiesModelStoreContainer" CdmEntityContainer="BrandPriorityDBContext">
+    <EntitySetMapping Name="BrandPriorityBySpecLines">
+      <EntityTypeMapping TypeName="BrandPrioritiesModel.BrandPriorityBySpecLine">
+        <MappingFragment StoreEntitySet="BrandPriorityBySpecLine">
+          <ScalarProperty Name="RecID" ColumnName="RecID" />
+          <ScalarProperty Name="LineID" ColumnName="LineID" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="SpecialtyID" ColumnName="SpecialtyID" />
+          <ScalarProperty Name="BrandPriority" ColumnName="BrandPriority" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

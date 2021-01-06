@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="" title="Amoun ECMS" description="ECMS for Amoun Sales Force">
+		
+		<siteMapNode url="" title="Administrators" description="">
+			<siteMapNode url="~\Admins\Locations.aspx" title="Locations" description=""></siteMapNode>
+			<siteMapNode url="~\Admins\Physicians.aspx" title="Physicians" description=""></siteMapNode>
+			<siteMapNode url="~\Admins\Affiliation.aspx" title="Associations" description=""></siteMapNode>
+		</siteMapNode>
+
+		<siteMapNode url="" title="Regional Managers" description="">
+			<siteMapNode url="~\Managers\ManagersView.aspx" title="Manager View" description=""></siteMapNode>
+		</siteMapNode>
+
+		<siteMapNode url="" title="Representatives" description="">
+			<siteMapNode url="~\Reps\CallsEntry.aspx" title="Calls Entry" description="Add, Edit, or Delete your Visit's Calls"></siteMapNode>
+			<siteMapNode url="~\Reps\CallsScheduler.aspx" title="Calls Scheduler" description="Schedule your appointments"></siteMapNode>
+			<siteMapNode url="~\Reps\CallsScheduler2.aspx" title="Calls Scheduler" description="Schedule your appointments"></siteMapNode>
+			<siteMapNode url="~\Reps\CallsScheduler3.aspx" title="Calls Scheduler" description="Schedule your appointments"></siteMapNode>
+			<siteMapNode url="~\Reps\Repreport_Dashboard.aspx" title="Dashboard" description="Full Analytics Dashboard"></siteMapNode>
+			<siteMapNode url="~\Reps\RepsDefault2.aspx" title="Collective Reports" description="Analytical Reports"></siteMapNode>
+			<siteMapNode url="~\Reps\RepReport_Visits.aspx" title="Visits" description="Visits and Calls Statistics"></siteMapNode>
+			<siteMapNode url="~\Reps\RepReport_Appointments.aspx" title="Appointments" description="Planned and Unplanned Scheduled Visits"></siteMapNode>
+			<siteMapNode url="~\Reps\RepReport_Affiliations.aspx" title="Doctors List" description="Full Population of Physicians and Entities"></siteMapNode>
+			<siteMapNode url="~\Reps\RepReport_TargetedAffiliations.aspx" title="Targeted Doctors" description="Your Targeted Doctors List"></siteMapNode>
+			<siteMapNode url="~\Admins\RepAffiliationForm1.aspx" title="Change Requests" description="Change Requests"></siteMapNode>
+			<siteMapNode url="~\Admins\AffiliationForm.aspx" title="Doctor's Profile" description="Your Doctors Profile"></siteMapNode>
+
+			<siteMapNode url="~\Reps\SalesAnalysis.aspx" title="Sales Analysis" description="Analyzing InMarket Sales"></siteMapNode>
+			<siteMapNode url="~\Reps\PivotAnalyzer.aspx" title="Visits Analysis" description="Analyse Your Visits (M and O)"></siteMapNode>
+			<siteMapNode url="~\Reps\Statistics.aspx" title="Calls Analysis" description="Analyse Your Calls"></siteMapNode>
+			<siteMapNode url="~\Reps\Notifications.aspx" title="Messages and Alerts" description="Messages, Notes, and Alerts"></siteMapNode>
+			<siteMapNode url="~\Reps\Repreport_Dashboard2.aspx" title="Dashboard" description="Full Analytics Dashboard"></siteMapNode>
+			<siteMapNode url="~\Admins\VacationRequest.aspx" title="Vacations" description="Vacations Requests"></siteMapNode>
+		</siteMapNode>
+
+		<siteMapNode url="" title="District Managers" description="">
+			<siteMapNode url="~\DMs\DMReport_Dashboard.aspx" title="Dashboard" description="Full Analytics Dashboard"></siteMapNode>
+			<siteMapNode url="~\DMs\DMDefault2.aspx" title="Collective Reports" description="Analytical Reports"></siteMapNode>
+			<siteMapNode url="~\DMs\DMReport_Visits.aspx" title="Visits" description="Visits and Calls Statistics"></siteMapNode>
+			<siteMapNode url="~\DMs\DMReport_Appointments.aspx" title="Appointments" description="Planned and Unplanned Scheduled Visits"></siteMapNode>
+			<siteMapNode url="~\DMs\DMReport_Affiliations.aspx" title="Doctors List" description="Full Population of Physicians and Entities"></siteMapNode>
+			<siteMapNode url="~\DMs\DMReport_TargetedAffiliations.aspx" title="Targeted Doctors" description="Your Reps' Targeted Doctors List"></siteMapNode>
+			<!--<siteMapNode url="~\Admins/RepAffiliationForm1.aspx" title="Database Requests" description="Database Requests"></siteMapNode>-->
+			<siteMapNode url="~\DMs\SalesAnalysis.aspx" title="Sales Analysis" description="Analyzing InMarket Sales"></siteMapNode>
+			<siteMapNode url="~\DMs\DMStatistics.aspx" title="Calls Analysis" description="Analyse Your Calls"></siteMapNode>
+			<siteMapNode url="~\DMs\Notifications.aspx" title="Messages and Alerts" description="Messages, Notes, and Alerts"></siteMapNode>
+		</siteMapNode>
+
+	</siteMapNode>
+</siteMap>

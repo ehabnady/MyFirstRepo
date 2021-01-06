@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AffiliationsStoreContainer" CdmEntityContainer="AffiliationsDBContext">
+    <EntitySetMapping Name="Affiliations">
+      <EntityTypeMapping TypeName="Affiliations.Affiliation">
+        <MappingFragment StoreEntitySet="Affiliations">
+          <ScalarProperty Name="AffiliationID" ColumnName="AffiliationID" />
+          <ScalarProperty Name="AffiliationName" ColumnName="AffiliationName" />
+          <ScalarProperty Name="PhysicianID" ColumnName="PhysicianID" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="PhysicianClass" ColumnName="PhysicianClass" />
+          <ScalarProperty Name="BestTimeFrom" ColumnName="BestTimeFrom" />
+          <ScalarProperty Name="BestTimeTo" ColumnName="BestTimeTo" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="EntryEmployeeID" ColumnName="EntryEmployeeID" />
+          <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

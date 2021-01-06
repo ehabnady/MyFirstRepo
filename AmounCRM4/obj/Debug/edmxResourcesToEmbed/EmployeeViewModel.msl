@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmployeesViewStoreContainer" CdmEntityContainer="EmployeesViewDBContext">
+    <EntitySetMapping Name="View_Employees">
+      <EntityTypeMapping TypeName="EmployeesView.View_Employees">
+        <MappingFragment StoreEntitySet="View_Employees">
+          <ScalarProperty Name="NoOfVisitsPerDay" ColumnName="NoOfVisitsPerDay" />
+          <ScalarProperty Name="RecordCreatedBy" ColumnName="RecordCreatedBy" />
+          <ScalarProperty Name="RecordCreationDate" ColumnName="RecordCreationDate" />
+          <ScalarProperty Name="ComDirNextChangeDate" ColumnName="ComDirNextChangeDate" />
+          <ScalarProperty Name="ComDirLastChangeDate" ColumnName="ComDirLastChangeDate" />
+          <ScalarProperty Name="ComDirMustChange" ColumnName="ComDirMustChange" />
+          <ScalarProperty Name="ComDirPassword" ColumnName="ComDirPassword" />
+          <ScalarProperty Name="ComDirUserName" ColumnName="ComDirUserName" />
+          <ScalarProperty Name="ComDirName" ColumnName="ComDirName" />
+          <ScalarProperty Name="ComDirType" ColumnName="ComDirType" />
+          <ScalarProperty Name="ComDirHRCode" ColumnName="ComDirHRCode" />
+          <ScalarProperty Name="ComDirID" ColumnName="ComDirID" />
+          <ScalarProperty Name="DirectorNextChangeDate" ColumnName="DirectorNextChangeDate" />
+          <ScalarProperty Name="DirectorLastChangeDate" ColumnName="DirectorLastChangeDate" />
+          <ScalarProperty Name="DirectorMustChange" ColumnName="DirectorMustChange" />
+          <ScalarProperty Name="DirectorPassword" ColumnName="DirectorPassword" />
+          <ScalarProperty Name="DirectorUserName" ColumnName="DirectorUserName" />
+          <ScalarProperty Name="DirectorName" ColumnName="DirectorName" />
+          <ScalarProperty Name="DirectorType" ColumnName="DirectorType" />
+          <ScalarProperty Name="DirectorHRCode" ColumnName="DirectorHRCode" />
+          <ScalarProperty Name="DirectorID" ColumnName="DirectorID" />
+          <ScalarProperty Name="DeletedEmployee" ColumnName="DeletedEmployee" />
+          <ScalarProperty Name="DeletedRep" ColumnName="DeletedRep" />
+          <ScalarProperty Name="EmployeeHRCode" ColumnName="EmployeeHRCode" />
+          <ScalarProperty Name="EmployeeFullName" ColumnName="EmployeeFullName" />
+          <ScalarProperty Name="EmployeeUserName" ColumnName="EmployeeUserName" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="LineID" ColumnName="LineID" />
+          <ScalarProperty Name="EmployeeType" ColumnName="EmployeeType" />
+          <ScalarProperty Name="AreaRecID" ColumnName="AreaRecID" />
+          <ScalarProperty Name="EmployeePassword" ColumnName="EmployeePassword" />
+          <ScalarProperty Name="MustChangePassword" ColumnName="MustChangePassword" />
+          <ScalarProperty Name="LastChangeDate" ColumnName="LastChangeDate" />
+          <ScalarProperty Name="NextChangeDate" ColumnName="NextChangeDate" />
+          <ScalarProperty Name="DirectManagerID" ColumnName="DirectManagerID" />
+          <ScalarProperty Name="DirectManagerCode" ColumnName="DirectManagerCode" />
+          <ScalarProperty Name="DirectManagerLineID" ColumnName="DirectManagerLineID" />
+          <ScalarProperty Name="DirectManagerAreaID" ColumnName="DirectManagerAreaID" />
+          <ScalarProperty Name="DirectManagerName" ColumnName="DirectManagerName" />
+          <ScalarProperty Name="DirectManagerUserName" ColumnName="DirectManagerUserName" />
+          <ScalarProperty Name="DirectManagerPassword" ColumnName="DirectManagerPassword" />
+          <ScalarProperty Name="DirectManagerMustChangePassword" ColumnName="DirectManagerMustChangePassword" />
+          <ScalarProperty Name="DirectManagerLastChangeDate" ColumnName="DirectManagerLastChangeDate" />
+          <ScalarProperty Name="DirectManagerChangeDate" ColumnName="DirectManagerChangeDate" />
+          <ScalarProperty Name="TopManagerID" ColumnName="TopManagerID" />
+          <ScalarProperty Name="TopManagerHRCode" ColumnName="TopManagerHRCode" />
+          <ScalarProperty Name="TopManagerLineID" ColumnName="TopManagerLineID" />
+          <ScalarProperty Name="TopManagerAreaID" ColumnName="TopManagerAreaID" />
+          <ScalarProperty Name="TopManagerName" ColumnName="TopManagerName" />
+          <ScalarProperty Name="TopManagerUserName" ColumnName="TopManagerUserName" />
+          <ScalarProperty Name="TopManagerPassword" ColumnName="TopManagerPassword" />
+          <ScalarProperty Name="TopManagerMustChangePassword" ColumnName="TopManagerMustChangePassword" />
+          <ScalarProperty Name="TopManagerLastChangeDate" ColumnName="TopManagerLastChangeDate" />
+          <ScalarProperty Name="TopManagerNextChangeDate" ColumnName="TopManagerNextChangeDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

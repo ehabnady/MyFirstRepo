@@ -1,0 +1,431 @@
+ Volume in drive C has no label.
+ Volume Serial Number is C04C-1450
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4
+
+02/22/2017  08:55 AM    <DIR>          .
+02/22/2017  08:55 AM    <DIR>          ..
+02/20/2017  02:57 PM    <DIR>          Admins
+02/15/2017  01:42 PM             1,158 Affiliation.cs
+02/15/2017  01:43 PM               988 AffiliationModel.Context.cs
+02/15/2017  01:42 PM            22,940 AffiliationModel.Context.tt
+02/15/2017  01:44 PM               436 AffiliationModel.cs
+02/15/2017  01:44 PM               817 AffiliationModel.Designer.cs
+02/15/2017  01:43 PM             5,879 AffiliationModel.edmx
+02/15/2017  01:43 PM               626 AffiliationModel.edmx.diagram
+02/15/2017  01:42 PM            25,285 AffiliationModel.tt
+02/16/2017  09:54 AM             1,311 AffiliationsAdminView.cs
+02/09/2017  02:15 PM             1,863 Affiliations_Proposed.cs
+02/16/2017  09:54 AM             1,020 AffiliationViewModel.Context.cs
+02/16/2017  09:54 AM            22,944 AffiliationViewModel.Context.tt
+02/16/2017  09:54 AM               436 AffiliationViewModel.cs
+02/16/2017  09:54 AM               821 AffiliationViewModel.Designer.cs
+02/16/2017  09:54 AM             7,824 AffiliationViewModel.edmx
+02/16/2017  09:54 AM               634 AffiliationViewModel.edmx.diagram
+02/16/2017  09:54 AM            25,289 AffiliationViewModel.tt
+02/21/2017  02:39 PM            35,991 AmounCRM4.csproj
+02/21/2017  02:39 PM             1,227 AmounCRM4.csproj.user
+10/05/2016  11:21 AM             5,692 AmounLogo.jpg
+02/08/2017  10:11 AM             5,939 ApplicationInsights.config
+02/15/2017  01:54 PM             2,143 Appointment.cs
+02/15/2017  01:54 PM               988 AppointmentModel.Context.cs
+02/15/2017  01:53 PM            22,940 AppointmentModel.Context.tt
+02/15/2017  01:55 PM               436 AppointmentModel.cs
+02/15/2017  01:55 PM               817 AppointmentModel.Designer.cs
+02/15/2017  01:54 PM             9,557 AppointmentModel.edmx
+02/15/2017  01:54 PM               764 AppointmentModel.edmx.diagram
+02/15/2017  01:53 PM            25,285 AppointmentModel.tt
+02/21/2017  02:39 PM    <DIR>          App_Data
+02/16/2017  10:15 AM    <DIR>          bin
+02/15/2017  03:11 PM             3,261 ChangePassword.aspx
+02/15/2017  03:11 PM             3,870 ChangePassword.aspx.cs
+02/09/2017  02:18 PM             2,803 ChangePassword.aspx.designer.cs
+02/15/2017  01:20 PM               964 ClinicModel.Context.cs
+02/15/2017  01:19 PM            22,935 ClinicModel.Context.tt
+02/15/2017  01:21 PM               436 ClinicModel.cs
+02/15/2017  01:21 PM               812 ClinicModel.Designer.cs
+02/15/2017  01:20 PM             6,704 ClinicModel.edmx
+02/15/2017  01:20 PM               631 ClinicModel.edmx.diagram
+02/15/2017  01:19 PM            25,280 ClinicModel.tt
+02/09/2017  02:19 PM            13,169 DataSet1.Designer.cs
+02/01/2017  12:53 PM                 3 DataSet1.xsc
+02/01/2017  12:53 PM                 3 DataSet1.xss
+02/08/2017  10:10 AM             1,152 Default.aspx
+02/08/2017  10:10 AM               407 Default.aspx.cs
+02/08/2017  10:10 AM               340 Default.aspx.designer.cs
+02/16/2017  04:36 PM    <DIR>          DMs
+02/15/2017  01:20 PM             1,330 Entity.cs
+02/09/2017  02:19 PM                93 Global.asax
+02/16/2017  11:07 AM             4,124 Global.asax.cs
+02/22/2017  08:56 AM                 0 listmyfolder.txt
+02/09/2017  02:16 PM             4,383 Login2.aspx
+02/14/2017  10:38 AM             9,919 Login2.aspx.cs
+02/09/2017  02:16 PM             3,862 Login2.aspx.designer.cs
+02/08/2017  10:10 AM    <DIR>          obj
+02/15/2017  01:19 PM               878 packages.config
+02/15/2017  01:36 PM             1,123 Physician.cs
+02/15/2017  01:35 PM               978 PhysicianModel.Context.cs
+02/15/2017  01:35 PM            22,938 PhysicianModel.Context.tt
+02/15/2017  01:36 PM               436 PhysicianModel.cs
+02/15/2017  01:36 PM               815 PhysicianModel.Designer.cs
+02/15/2017  01:35 PM             5,680 PhysicianModel.edmx
+02/15/2017  01:35 PM               622 PhysicianModel.edmx.diagram
+02/15/2017  01:35 PM            25,283 PhysicianModel.tt
+10/05/2016  03:54 PM               433 PhysicianModel1.cs
+02/16/2017  03:49 PM    <DIR>          Properties
+02/16/2017  10:10 AM             1,031 ProposedAffiliationModel.Context.cs
+02/16/2017  10:09 AM            22,948 ProposedAffiliationModel.Context.tt
+02/16/2017  10:10 AM               436 ProposedAffiliationModel.cs
+02/16/2017  10:10 AM               825 ProposedAffiliationModel.Designer.cs
+02/16/2017  10:10 AM             9,220 ProposedAffiliationModel.edmx
+02/16/2017  10:10 AM               659 ProposedAffiliationModel.edmx.diagram
+02/16/2017  10:09 AM            25,293 ProposedAffiliationModel.tt
+02/21/2017  02:39 PM    <DIR>          Reps
+02/09/2017  02:19 PM            15,539 Site1.Master
+02/09/2017  02:19 PM             7,428 Site1.Master.cs
+02/09/2017  02:19 PM            12,431 Site1.Master.designer.cs
+02/08/2017  10:37 AM    <DIR>          Styles
+02/16/2017  11:41 AM            12,521 web.config
+02/08/2017  10:10 AM             1,299 web.Debug.config
+02/08/2017  10:10 AM             1,360 web.Release.config
+10/26/2016  01:54 PM             2,067 web.sitemap
+              76 File(s)        510,774 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\Admins
+
+02/20/2017  02:57 PM    <DIR>          .
+02/20/2017  02:57 PM    <DIR>          ..
+02/15/2017  10:51 AM            20,053 AffiliationForm.aspx
+02/16/2017  10:15 AM            19,895 AffiliationForm.aspx.cs
+02/09/2017  02:19 PM            16,022 AffiliationForm.aspx.designer.cs
+02/20/2017  11:07 AM             9,675 AutomaticPlan.aspx
+02/20/2017  02:26 PM            19,033 AutomaticPlan.aspx.cs
+02/09/2017  02:19 PM             8,443 AutomaticPlan.aspx.designer.cs
+02/20/2017  02:57 PM            10,082 ClinicForm.aspx
+02/20/2017  02:57 PM            10,490 ClinicForm.aspx.cs
+02/09/2017  02:19 PM             8,888 ClinicForm.aspx.designer.cs
+02/09/2017  02:19 PM             2,148 Employees.aspx
+02/09/2017  02:19 PM               339 Employees.aspx.cs
+02/09/2017  02:19 PM             3,064 Employees.aspx.designer.cs
+02/09/2017  02:19 PM             7,072 PhysicianForm.aspx
+02/16/2017  10:14 AM             7,813 PhysicianForm.aspx.cs
+02/09/2017  02:19 PM             5,877 PhysicianForm.aspx.designer.cs
+02/09/2017  02:19 PM             5,463 PlanAdjustment.aspx
+02/09/2017  02:19 PM             2,244 PlanAdjustment.aspx.cs
+02/09/2017  02:19 PM             4,412 PlanAdjustment.aspx.designer.cs
+02/09/2017  02:19 PM             5,899 RadGridEmployeesMainData.ascx
+02/09/2017  02:19 PM             2,637 RadGridEmployeesMainData.ascx.cs
+02/09/2017  02:19 PM             1,839 RadGridEmployeesMainData.ascx.designer.cs
+02/09/2017  02:19 PM            15,485 RepAffiliationForm1.aspx
+02/16/2017  10:14 AM            24,649 RepAffiliationForm1.aspx.cs
+02/09/2017  02:19 PM            13,664 RepAffiliationForm1.aspx.designer.cs
+              24 File(s)        225,186 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\App_Data
+
+02/21/2017  02:39 PM    <DIR>          .
+02/21/2017  02:39 PM    <DIR>          ..
+02/09/2017  02:21 PM            69,789 Affiliations.Designer.cs
+02/21/2017  12:03 PM               361 Affiliations.xsc
+02/21/2017  12:03 PM             8,230 Affiliations.xsd
+02/21/2017  12:03 PM               872 Affiliations.xss
+02/21/2017  12:03 PM            71,699 Affiliations1.Designer.cs
+02/09/2017  02:21 PM               151 Appointments.cs
+02/09/2017  02:21 PM            70,575 Appointments.Designer.cs
+11/13/2016  11:55 AM               361 Appointments.xsc
+11/13/2016  11:55 AM             8,230 Appointments.xsd
+11/13/2016  11:55 AM               858 Appointments.xss
+02/21/2017  02:39 PM                95 ExecSummary.cs
+02/09/2017  02:21 PM           275,269 ExecSummary.Designer.cs
+02/21/2017  02:39 PM               361 ExecSummary.xsc
+02/21/2017  02:39 PM            42,366 ExecSummary.xsd
+02/21/2017  02:39 PM             1,738 ExecSummary.xss
+02/21/2017  02:39 PM           276,489 ExecSummary1.Designer.cs
+02/08/2017  10:10 AM    <DIR>          RadCaptcha
+02/08/2017  10:10 AM    <DIR>          RadSpell
+02/09/2017  02:21 PM            74,751 Visits.Designer.cs
+02/21/2017  11:56 AM               361 Visits.xsc
+02/21/2017  11:56 AM            11,187 Visits.xsd
+02/21/2017  11:56 AM               865 Visits.xss
+02/21/2017  11:56 AM            77,580 Visits1.Designer.cs
+              21 File(s)        992,188 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\App_Data\RadCaptcha
+
+02/08/2017  10:10 AM    <DIR>          .
+02/08/2017  10:10 AM    <DIR>          ..
+10/18/2016  12:08 PM            20,718 0.wav
+10/18/2016  12:08 PM            19,312 1.wav
+10/18/2016  12:08 PM            22,570 2.wav
+10/18/2016  12:08 PM            15,702 3.wav
+10/18/2016  12:08 PM            21,480 4.wav
+10/18/2016  12:08 PM            18,494 5.wav
+10/18/2016  12:08 PM            21,654 6.wav
+10/18/2016  12:08 PM            18,788 7.wav
+10/18/2016  12:08 PM            14,938 8.wav
+10/18/2016  12:08 PM            16,584 9.wav
+10/18/2016  12:08 PM            17,000 A.wav
+10/18/2016  12:08 PM            21,594 B.wav
+10/18/2016  12:08 PM            20,672 C.wav
+10/18/2016  12:08 PM            18,866 D.wav
+10/18/2016  12:08 PM            26,318 E.wav
+10/18/2016  12:08 PM            25,746 F.wav
+10/18/2016  12:08 PM            20,564 G.wav
+10/18/2016  12:08 PM            22,004 H.wav
+10/18/2016  12:08 PM            25,246 I.wav
+10/18/2016  12:08 PM            21,594 J.wav
+10/18/2016  12:08 PM            21,680 K.wav
+10/18/2016  12:08 PM            18,926 L.wav
+10/18/2016  12:08 PM            19,274 M.wav
+10/18/2016  12:08 PM            20,238 N.wav
+10/18/2016  12:08 PM            19,648 O.wav
+10/18/2016  12:08 PM            21,420 P.wav
+10/18/2016  12:08 PM            21,790 Q.wav
+10/18/2016  12:08 PM            19,504 R.wav
+10/18/2016  12:08 PM            21,142 S.wav
+10/18/2016  12:08 PM            19,634 T.wav
+10/18/2016  12:08 PM            19,658 U.wav
+10/18/2016  12:08 PM            17,140 V.wav
+10/18/2016  12:08 PM            18,496 W.wav
+10/18/2016  12:08 PM            20,188 X.wav
+10/18/2016  12:08 PM            17,526 Y.wav
+10/18/2016  12:08 PM            18,182 Z.wav
+              36 File(s)        724,290 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\App_Data\RadSpell
+
+02/08/2017  10:10 AM    <DIR>          .
+02/08/2017  10:10 AM    <DIR>          ..
+10/18/2016  12:12 PM         3,470,977 de-DE.tdf
+10/18/2016  12:12 PM         3,245,951 en-US.tdf
+10/18/2016  12:12 PM         2,954,307 fr-FR.tdf
+               3 File(s)      9,671,235 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\bin
+
+02/16/2017  10:15 AM    <DIR>          .
+02/16/2017  10:15 AM    <DIR>          ..
+02/20/2017  02:26 PM           320,512 AmounCRM4.dll
+02/16/2017  11:41 AM            12,521 AmounCRM4.dll.config
+02/20/2017  02:26 PM           572,928 AmounCRM4.pdb
+02/08/2017  10:11 AM             5,939 ApplicationInsights.config
+11/03/2015  04:43 PM         5,196,496 EntityFramework.dll
+11/03/2015  04:43 PM           621,264 EntityFramework.SqlServer.dll
+11/03/2015  04:43 PM           154,866 EntityFramework.SqlServer.xml
+11/03/2015  04:43 PM         3,652,961 EntityFramework.xml
+12/09/2016  09:37 PM         1,954,552 Microsoft.AI.Agent.Intercept.dll
+12/07/2016  11:45 AM            65,792 Microsoft.AI.DependencyCollector.dll
+12/07/2016  11:45 AM            57,209 Microsoft.AI.DependencyCollector.xml
+12/07/2016  11:50 AM           130,312 Microsoft.AI.PerfCounterCollector.dll
+12/06/2016  03:15 PM           103,696 Microsoft.AI.ServerTelemetryChannel.dll
+12/06/2016  03:15 PM            64,356 Microsoft.AI.ServerTelemetryChannel.xml
+12/07/2016  11:49 AM            49,856 Microsoft.AI.Web.dll
+12/07/2016  11:49 AM            25,614 Microsoft.AI.Web.xml
+12/07/2016  11:50 AM            41,712 Microsoft.AI.WindowsServer.dll
+12/07/2016  11:50 AM            27,369 Microsoft.AI.WindowsServer.xml
+12/06/2016  03:09 PM           188,664 Microsoft.ApplicationInsights.dll
+12/06/2016  03:09 PM           172,325 Microsoft.ApplicationInsights.xml
+10/18/2016  11:37 AM           397,312 Newtonsoft.Json.dll
+10/18/2016  11:37 AM            59,904 Telerik.Web.Spreadsheet.dll
+10/18/2016  11:37 AM            43,327 Telerik.Web.Spreadsheet.xml
+10/17/2016  12:45 PM        27,284,480 Telerik.Web.UI.dll
+10/17/2016  12:45 PM        18,881,536 Telerik.Web.UI.Skins.dll
+10/18/2016  12:41 PM        10,169,486 Telerik.Web.UI.xml
+10/18/2016  11:37 AM           352,768 Telerik.Windows.Documents.Core.dll
+10/18/2016  11:37 AM           154,749 Telerik.Windows.Documents.Core.xml
+10/18/2016  11:37 AM         1,800,704 Telerik.Windows.Documents.Flow.dll
+10/18/2016  11:37 AM         1,655,953 Telerik.Windows.Documents.Flow.xml
+10/18/2016  11:37 AM         1,788,416 Telerik.Windows.Documents.Spreadsheet.dll
+10/18/2016  11:37 AM           338,944 Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+10/18/2016  11:37 AM             4,549 Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml
+10/18/2016  11:37 AM         1,688,488 Telerik.Windows.Documents.Spreadsheet.xml
+10/18/2016  11:37 AM           144,896 Telerik.Windows.Zip.dll
+10/18/2016  11:37 AM           192,150 Telerik.Windows.Zip.xml
+              36 File(s)     78,376,606 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\DMs
+
+02/16/2017  04:36 PM    <DIR>          .
+02/16/2017  04:36 PM    <DIR>          ..
+02/09/2017  02:19 PM            26,973 DMDefault2.aspx
+02/09/2017  02:19 PM             6,063 DMDefault2.aspx.cs
+02/09/2017  02:19 PM             8,792 DMDefault2.aspx.designer.cs
+02/09/2017  02:19 PM             9,625 DMReport_Affiliations.aspx
+02/09/2017  02:19 PM             1,628 DMReport_Affiliations.aspx.cs
+02/09/2017  02:19 PM             4,145 DMReport_Affiliations.aspx.designer.cs
+02/16/2017  04:32 PM            11,438 DMReport_Appointments.aspx
+02/09/2017  02:19 PM             2,603 DMReport_Appointments.aspx.cs
+02/09/2017  02:19 PM             4,512 DMReport_Appointments.aspx.designer.cs
+02/09/2017  02:19 PM            10,828 DMReport_Dashboard.aspx
+02/09/2017  02:19 PM             6,445 DMReport_Dashboard.aspx.cs
+02/09/2017  02:19 PM             4,394 DMReport_Dashboard.aspx.designer.cs
+02/16/2017  04:35 PM            10,974 DMReport_TargetedAffiliations.aspx
+02/16/2017  04:36 PM             1,638 DMReport_TargetedAffiliations.aspx.cs
+02/16/2017  04:36 PM             4,169 DMReport_TargetedAffiliations.aspx.designer.cs
+02/09/2017  02:19 PM            10,588 DMReport_Visits.aspx
+02/09/2017  02:19 PM             1,888 DMReport_Visits.aspx.cs
+02/09/2017  02:19 PM             4,173 DMReport_Visits.aspx.designer.cs
+              18 File(s)        130,876 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\obj
+
+02/08/2017  10:10 AM    <DIR>          .
+02/08/2017  10:10 AM    <DIR>          ..
+02/16/2017  03:14 PM    <DIR>          Debug
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\obj\Debug
+
+02/16/2017  03:14 PM    <DIR>          .
+02/16/2017  03:14 PM    <DIR>          ..
+02/16/2017  03:14 PM             4,638 AmounCRM4.csproj.FileListAbsolute.txt
+02/15/2017  03:07 PM           266,737 AmounCRM4.csprojResolveAssemblyReference.cache
+02/20/2017  02:26 PM           320,512 AmounCRM4.dll
+02/20/2017  02:26 PM               273 amouncrm4.dll.licenses
+02/20/2017  02:26 PM           572,928 AmounCRM4.pdb
+02/21/2017  02:39 PM            22,331 DesignTimeResolveAssemblyReferencesInput.cache
+02/16/2017  10:14 AM    <DIR>          edmxResourcesToEmbed
+02/08/2017  10:10 AM                 0 TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+02/08/2017  10:10 AM                 0 TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+02/08/2017  10:10 AM                 0 TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+02/20/2017  02:27 PM    <DIR>          TempPE
+               9 File(s)      1,187,419 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\obj\Debug\edmxResourcesToEmbed
+
+02/16/2017  10:14 AM    <DIR>          .
+02/16/2017  10:14 AM    <DIR>          ..
+02/15/2017  02:10 PM             1,540 AffiliationModel.csdl
+02/15/2017  02:10 PM             1,350 AffiliationModel.msl
+02/15/2017  02:10 PM             1,394 AffiliationModel.ssdl
+02/15/2017  12:52 PM             1,680 AffiliationModel16.csdl
+02/15/2017  12:52 PM             1,551 AffiliationModel16.msl
+02/15/2017  12:52 PM             1,527 AffiliationModel16.ssdl
+02/16/2017  10:14 AM             1,765 AffiliationViewModel.csdl
+02/16/2017  10:14 AM             1,603 AffiliationViewModel.msl
+02/16/2017  10:14 AM             2,789 AffiliationViewModel.ssdl
+02/15/2017  12:52 PM             1,764 AffViewModel10.csdl
+02/15/2017  12:52 PM             1,608 AffViewModel10.msl
+02/15/2017  12:52 PM             2,801 AffViewModel10.ssdl
+02/15/2017  12:52 PM             3,131 AppModel16.csdl
+02/15/2017  12:52 PM             1,987 AppModel16.msl
+02/15/2017  12:52 PM             2,610 AppModel16.ssdl
+02/15/2017  02:10 PM             3,097 AppointmentModel.csdl
+02/15/2017  02:10 PM             1,938 AppointmentModel.msl
+02/15/2017  02:10 PM             2,579 AppointmentModel.ssdl
+02/15/2017  01:31 PM             1,858 ClinicModel.csdl
+02/15/2017  01:31 PM             1,566 ClinicModel.msl
+02/15/2017  01:31 PM             1,613 ClinicModel.ssdl
+02/15/2017  12:52 PM             2,011 ClinicModel16.csdl
+02/15/2017  12:52 PM             1,639 ClinicModel16.msl
+02/15/2017  12:52 PM             1,701 ClinicModel16.ssdl
+02/15/2017  02:10 PM             1,460 PhysicianModel.csdl
+02/15/2017  02:10 PM             1,296 PhysicianModel.msl
+02/15/2017  02:10 PM             1,347 PhysicianModel.ssdl
+02/09/2017  02:19 PM             1,499 PhysicianModel16.csdl
+02/09/2017  02:19 PM             1,271 PhysicianModel16.msl
+02/09/2017  02:19 PM             1,354 PhysicianModel16.ssdl
+02/09/2017  02:19 PM             1,895 ProductModel.csdl
+02/09/2017  02:19 PM             1,629 ProductModel.msl
+02/09/2017  02:19 PM             1,656 ProductModel.ssdl
+02/16/2017  10:14 AM             2,723 ProposedAffiliationModel.csdl
+02/16/2017  10:14 AM             2,384 ProposedAffiliationModel.msl
+02/16/2017  10:14 AM             2,266 ProposedAffiliationModel.ssdl
+02/09/2017  02:19 PM             2,706 ProposedAffModel.csdl
+02/09/2017  02:19 PM             2,359 ProposedAffModel.msl
+02/09/2017  02:19 PM             2,250 ProposedAffModel.ssdl
+              39 File(s)         75,197 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\obj\Debug\TempPE
+
+02/20/2017  02:27 PM    <DIR>          .
+02/20/2017  02:27 PM    <DIR>          ..
+02/15/2017  01:44 PM             2,048 AffiliationModel.cs.dll
+02/15/2017  01:44 PM             2,048 AffiliationModel.Designer.cs.dll
+02/15/2017  12:48 PM             2,048 AffiliationModel161.cs.dll
+02/15/2017  12:48 PM             2,048 AffiliationModel161.Designer.cs.dll
+02/16/2017  09:54 AM             2,048 AffiliationViewModel.cs.dll
+02/16/2017  09:54 AM             2,048 AffiliationViewModel.Designer.cs.dll
+02/15/2017  12:49 PM             2,048 AffViewModel101.cs.dll
+02/15/2017  12:49 PM             2,048 AffViewModel101.Designer.cs.dll
+02/15/2017  12:50 PM             2,048 AppModel161.cs.dll
+02/15/2017  12:50 PM             2,048 AppModel161.Designer.cs.dll
+02/15/2017  01:55 PM             2,048 AppointmentModel.cs.dll
+02/15/2017  01:55 PM             2,048 AppointmentModel.Designer.cs.dll
+02/21/2017  12:03 PM            27,648 App_Data.Affiliations1.Designer.cs.dll
+02/09/2017  02:21 PM            27,648 App_Data.Appointments1.Designer.cs.dll
+02/21/2017  02:39 PM            86,016 App_Data.ExecSummary1.Designer.cs.dll
+02/21/2017  11:56 AM            29,696 App_Data.Visits1.Designer.cs.dll
+02/15/2017  01:21 PM             2,048 ClinicModel.cs.dll
+02/15/2017  01:21 PM             2,048 ClinicModel.Designer.cs.dll
+02/15/2017  12:50 PM             2,048 ClinicModel161.cs.dll
+02/15/2017  12:50 PM             2,048 ClinicModel161.Designer.cs.dll
+02/15/2017  01:36 PM             2,048 PhysicianModel.cs.dll
+02/15/2017  01:36 PM             2,048 PhysicianModel.Designer.cs.dll
+02/09/2017  02:14 PM             2,048 PhysicianModel161.cs.dll
+02/09/2017  02:15 PM             2,048 PhysicianModel161.Designer.cs.dll
+02/09/2017  02:14 PM             2,048 ProductModel1.cs.dll
+02/09/2017  02:15 PM             2,048 ProductModel1.Designer.cs.dll
+02/16/2017  10:10 AM             2,048 ProposedAffiliationModel.cs.dll
+02/16/2017  10:10 AM             2,048 ProposedAffiliationModel.Designer.cs.dll
+02/16/2017  09:36 AM             2,048 ProposedAffModel1.cs.dll
+02/16/2017  09:50 AM             2,048 ProposedAffModel1.Designer.cs.dll
+              30 File(s)        224,256 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\Properties
+
+02/16/2017  03:49 PM    <DIR>          .
+02/16/2017  03:49 PM    <DIR>          ..
+02/08/2017  10:10 AM             1,389 AssemblyInfo.cs
+02/16/2017  03:49 PM             1,325 licenses.licx
+               2 File(s)          2,714 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\Reps
+
+02/21/2017  02:39 PM    <DIR>          .
+02/21/2017  02:39 PM    <DIR>          ..
+02/16/2017  01:55 PM            17,977 CallsEntry.aspx
+02/16/2017  03:14 PM            46,803 CallsEntry.aspx.cs
+02/09/2017  02:19 PM            11,072 CallsEntry.aspx.designer.cs
+02/09/2017  02:19 PM            17,474 CallsEntryFromAdmin.aspx
+02/09/2017  02:19 PM            47,549 CallsEntryFromAdmin.aspx.cs
+02/09/2017  02:19 PM            10,738 CallsEntryFromAdmin.aspx.designer.cs
+02/16/2017  12:36 PM            22,383 CallsScheduler.aspx
+02/16/2017  01:47 PM            37,782 CallsScheduler.aspx.cs
+02/16/2017  12:31 PM             7,032 CallsScheduler.aspx.designer.cs
+02/09/2017  02:19 PM            25,688 CallsSchedulerFromAdmin.aspx
+02/09/2017  02:19 PM            39,661 CallsSchedulerFromAdmin.aspx.cs
+02/09/2017  02:19 PM             8,743 CallsSchedulerFromAdmin.aspx.designer.cs
+02/09/2017  02:19 PM             9,290 RepReport_Affiliations.aspx
+02/09/2017  02:19 PM             1,624 RepReport_Affiliations.aspx.cs
+02/09/2017  02:19 PM             4,147 RepReport_Affiliations.aspx.designer.cs
+02/09/2017  02:19 PM            14,559 RepReport_Appointments.aspx
+02/09/2017  02:19 PM             1,666 RepReport_Appointments.aspx.cs
+02/09/2017  02:19 PM             4,171 RepReport_Appointments.aspx.designer.cs
+02/21/2017  02:39 PM            10,576 Repreport_Dashboard.aspx
+02/09/2017  02:19 PM             6,273 Repreport_Dashboard.aspx.cs
+02/09/2017  02:19 PM             4,396 Repreport_Dashboard.aspx.designer.cs
+02/21/2017  12:06 PM            10,560 RepReport_TargetedAffiliations.aspx
+02/16/2017  04:24 PM             1,640 RepReport_TargetedAffiliations.aspx.cs
+02/16/2017  04:12 PM             4,171 RepReport_TargetedAffiliations.aspx.designer.cs
+02/21/2017  11:57 AM            14,951 RepReport_Visits.aspx
+02/09/2017  02:19 PM             1,626 RepReport_Visits.aspx.cs
+02/09/2017  02:19 PM             4,175 RepReport_Visits.aspx.designer.cs
+02/21/2017  11:34 AM            24,850 RepsDefault2.aspx
+02/09/2017  02:19 PM             1,261 RepsDefault2.aspx.cs
+02/09/2017  02:19 PM             4,773 RepsDefault2.aspx.designer.cs
+02/21/2017  11:40 AM            32,206 RepsDefault3.aspx
+02/09/2017  02:19 PM             1,933 RepsDefault3.aspx.cs
+02/09/2017  02:19 PM             4,114 RepsDefault3.aspx.designer.cs
+              33 File(s)        455,864 bytes
+
+ Directory of C:\Users\nsa-ehabnady\Documents\Visual Studio 2015\projects\AmounCRM4\AmounCRM4\Styles
+
+02/08/2017  10:37 AM    <DIR>          .
+02/08/2017  10:37 AM    <DIR>          ..
+10/23/2016  04:14 PM               682 Gauges.css
+               1 File(s)            682 bytes
+
+     Total Files Listed:
+             328 File(s)     92,577,287 bytes
+              41 Dir(s)  52,757,360,640 bytes free

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BrandPrioritiesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BrandPriorityBySpecLine">
+    <Key>
+      <PropertyRef Name="RecID" />
+    </Key>
+    <Property Name="RecID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LineID" Type="Int32" />
+    <Property Name="BrandID" Type="Int32" />
+    <Property Name="SpecialtyID" Type="Int32" />
+    <Property Name="BrandPriority" Type="Int32" />
+    <Property Name="Deleted" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="BrandPriorityDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BrandPriorityBySpecLines" EntityType="Self.BrandPriorityBySpecLine" />
+  </EntityContainer>
+</Schema>

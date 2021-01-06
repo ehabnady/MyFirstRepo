@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PhysicianValue" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PhysicianValueByLine">
+    <Key>
+      <PropertyRef Name="RecID" />
+    </Key>
+    <Property Name="RecID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AffiliationID" Type="Int32" />
+    <Property Name="LineID" Type="Int32" />
+    <Property Name="NoOfPatients" Type="Double" />
+    <Property Name="WaitingTime" Type="Double" />
+    <Property Name="SpecialtyValue" Type="Double" />
+    <Property Name="TotalValue" Type="Double" />
+    <Property Name="PhysicianClass" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" />
+    <Property Name="PrescriptionHappit" Type="Double" />
+    <Property Name="NoOfPatientsOld" Type="Double" />
+    <Property Name="CreateDate" Type="DateTime" Precision="0" />
+    <Property Name="LastModificationDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatorID" Type="Int32" />
+    <Property Name="LastModifierID" Type="Int32" />
+    <Property Name="NoOfPatientsOld2" Type="Double" />
+    <Property Name="PrescriptionHappitOld2" Type="Double" />
+    <Property Name="NoOfOperations" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="PhysicianValueDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PhysicianValueByLines" EntityType="Self.PhysicianValueByLine" />
+  </EntityContainer>
+</Schema>

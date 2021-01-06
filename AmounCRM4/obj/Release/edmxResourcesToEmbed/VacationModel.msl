@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VacationsModelStoreContainer" CdmEntityContainer="VacationDBContext">
+    <EntitySetMapping Name="Vacations">
+      <EntityTypeMapping TypeName="VacationsModel.Vacation">
+        <MappingFragment StoreEntitySet="Vacation">
+          <ScalarProperty Name="VacationType" ColumnName="VacationType" />
+          <ScalarProperty Name="VacationTypeID" ColumnName="VacationTypeID" />
+          <ScalarProperty Name="CycleID" ColumnName="CycleID" />
+          <ScalarProperty Name="VacationID" ColumnName="VacationID" />
+          <ScalarProperty Name="EmpHRCode" ColumnName="EmpHRCode" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="DMHRCode" ColumnName="DMHRCode" />
+          <ScalarProperty Name="DMName" ColumnName="DMName" />
+          <ScalarProperty Name="DMID" ColumnName="DMID" />
+          <ScalarProperty Name="ApprovalStatus" ColumnName="ApprovalStatus" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="ApprovalDate" ColumnName="ApprovalDate" />
+          <ScalarProperty Name="NoOfDayes" ColumnName="NoOfDayes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

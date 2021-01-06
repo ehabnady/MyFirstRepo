@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ViewAffiliationOnlyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AmounCRM2.dbo.View_Affiliations_only' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_Affiliations_only">
+    <Key>
+      <PropertyRef Name="AffiliationID" />
+      <PropertyRef Name="SpecialityID" />
+    </Key>
+    <Property Name="AffiliationID" Type="int" Nullable="false" />
+    <Property Name="AffiliationName" Type="nvarchar" MaxLength="250" />
+    <Property Name="AmounBrickName" Type="nvarchar" MaxLength="40" />
+    <Property Name="SpecialityCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="LineID" Type="int" />
+    <Property Name="NoOfPatients" Type="float" />
+    <Property Name="PrescriptionHappit" Type="float" />
+    <Property Name="PhysicianClass" Type="nvarchar" MaxLength="2" />
+    <Property Name="WaitingTime" Type="float" />
+    <Property Name="PhysicianID" Type="int" />
+    <Property Name="EntityID" Type="int" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="BestTimeFrom" Type="nvarchar" MaxLength="50" />
+    <Property Name="BestTimeTo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="150" />
+    <Property Name="SpecialityID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ViewAffiliationOnlyModelStoreContainer">
+    <EntitySet Name="View_Affiliations_only" EntityType="Self.View_Affiliations_only" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_Affiliations_only].[AffiliationID] AS [AffiliationID], 
+    [View_Affiliations_only].[AffiliationName] AS [AffiliationName], 
+    [View_Affiliations_only].[AmounBrickName] AS [AmounBrickName], 
+    [View_Affiliations_only].[SpecialityCode] AS [SpecialityCode], 
+    [View_Affiliations_only].[LineID] AS [LineID], 
+    [View_Affiliations_only].[NoOfPatients] AS [NoOfPatients], 
+    [View_Affiliations_only].[PrescriptionHappit] AS [PrescriptionHappit], 
+    [View_Affiliations_only].[PhysicianClass] AS [PhysicianClass], 
+    [View_Affiliations_only].[WaitingTime] AS [WaitingTime], 
+    [View_Affiliations_only].[PhysicianID] AS [PhysicianID], 
+    [View_Affiliations_only].[EntityID] AS [EntityID], 
+    [View_Affiliations_only].[Deleted] AS [Deleted], 
+    [View_Affiliations_only].[BestTimeFrom] AS [BestTimeFrom], 
+    [View_Affiliations_only].[BestTimeTo] AS [BestTimeTo], 
+    [View_Affiliations_only].[Notes] AS [Notes], 
+    [View_Affiliations_only].[SpecialityID] AS [SpecialityID]
+    FROM [dbo].[View_Affiliations_only] AS [View_Affiliations_only]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeesHistoryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EmployeesHistory">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeHRCode" Type="Int32" />
+    <Property Name="LineID" Type="Int32" />
+    <Property Name="RepAreaID" Type="Int32" />
+    <Property Name="EmployeeType" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ReportsTo" Type="Int32" />
+    <Property Name="Deleted" Type="Boolean" />
+    <Property Name="IsPilot" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="EmployeeHDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EmployeesHistories" EntityType="Self.EmployeesHistory" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ChangeRequestEntityModelStoreContainer" CdmEntityContainer="ChangeRequestsBDContext">
+    <EntitySetMapping Name="View_ChangeRequests">
+      <EntityTypeMapping TypeName="ChangeRequestEntityModel.View_ChangeRequests">
+        <MappingFragment StoreEntitySet="View_ChangeRequests">
+          <ScalarProperty Name="AffiliationID" ColumnName="AffiliationID" />
+          <ScalarProperty Name="AffiliationName" ColumnName="AffiliationName" />
+          <ScalarProperty Name="PhysicianID" ColumnName="PhysicianID" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="AreaRecID" ColumnName="AreaRecID" />
+          <ScalarProperty Name="SpecialityID" ColumnName="SpecialityID" />
+          <ScalarProperty Name="LineID" ColumnName="LineID" />
+          <ScalarProperty Name="PhysicianClass" ColumnName="PhysicianClass" />
+          <ScalarProperty Name="BestTimeFrom" ColumnName="BestTimeFrom" />
+          <ScalarProperty Name="BestTimeTo" ColumnName="BestTimeTo" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+          <ScalarProperty Name="Is_Approved" ColumnName="Is_Approved" />
+          <ScalarProperty Name="EntityAddress" ColumnName="EntityAddress" />
+          <ScalarProperty Name="EntityTypeID" ColumnName="EntityTypeID" />
+          <ScalarProperty Name="Tel1" ColumnName="Tel1" />
+          <ScalarProperty Name="Tel2" ColumnName="Tel2" />
+          <ScalarProperty Name="Tel3" ColumnName="Tel3" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="EntityEmailAddress" ColumnName="EntityEmailAddress" />
+          <ScalarProperty Name="EntityWebSite" ColumnName="EntityWebSite" />
+          <ScalarProperty Name="PhysicianName" ColumnName="PhysicianName" />
+          <ScalarProperty Name="EntityName" ColumnName="EntityName" />
+          <ScalarProperty Name="Is_Implemented" ColumnName="Is_Implemented" />
+          <ScalarProperty Name="RepName" ColumnName="RepName" />
+          <ScalarProperty Name="DMID" ColumnName="DMID" />
+          <ScalarProperty Name="BrickID" ColumnName="BrickID" />
+          <ScalarProperty Name="NoOfPatients" ColumnName="NoOfPatients" />
+          <ScalarProperty Name="WatingTime" ColumnName="WatingTime" />
+          <ScalarProperty Name="PrescriptionHappit" ColumnName="PrescriptionHappit" />
+          <ScalarProperty Name="AdminComments" ColumnName="AdminComments" />
+          <ScalarProperty Name="DMComments" ColumnName="DMComments" />
+          <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EntityNameOld" ColumnName="EntityNameOld" />
+          <ScalarProperty Name="PhysicianNameOld" ColumnName="PhysicianNameOld" />
+          <ScalarProperty Name="EntityAddressOld" ColumnName="EntityAddressOld" />
+          <ScalarProperty Name="AreaRecIDOld" ColumnName="AreaRecIDOld" />
+          <ScalarProperty Name="SpecialityIDOld" ColumnName="SpecialityIDOld" />
+          <ScalarProperty Name="EntityTypeIDOld" ColumnName="EntityTypeIDOld" />
+          <ScalarProperty Name="NoOfPatientsOld" ColumnName="NoOfPatientsOld" />
+          <ScalarProperty Name="WatingTimeOld" ColumnName="WatingTimeOld" />
+          <ScalarProperty Name="PrescriptionHappitOld" ColumnName="PrescriptionHappitOld" />
+          <ScalarProperty Name="RealAffID" ColumnName="RealAffID" />
+          <ScalarProperty Name="SMID" ColumnName="SMID" />
+          <ScalarProperty Name="SM_Approved" ColumnName="SM_Approved" />
+          <ScalarProperty Name="SDID" ColumnName="SDID" />
+          <ScalarProperty Name="SD_Approved" ColumnName="SD_Approved" />
+          <ScalarProperty Name="COVP_ID" ColumnName="COVP_ID" />
+          <ScalarProperty Name="COVP_Approved" ColumnName="COVP_Approved" />
+          <ScalarProperty Name="SM_Comment" ColumnName="SM_Comment" />
+          <ScalarProperty Name="SD_Comment" ColumnName="SD_Comment" />
+          <ScalarProperty Name="CO_Comment" ColumnName="CO_Comment" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RecID" ColumnName="RecID" />
+          <ScalarProperty Name="DMSignature" ColumnName="DMSignature" />
+          <ScalarProperty Name="SMSignature" ColumnName="SMSignature" />
+          <ScalarProperty Name="SDSignature" ColumnName="SDSignature" />
+          <ScalarProperty Name="COSignature" ColumnName="COSignature" />
+          <ScalarProperty Name="AdminSignature" ColumnName="AdminSignature" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="DMDate" ColumnName="DMDate" />
+          <ScalarProperty Name="SMDate" ColumnName="SMDate" />
+          <ScalarProperty Name="SDDate" ColumnName="SDDate" />
+          <ScalarProperty Name="CODate" ColumnName="CODate" />
+          <ScalarProperty Name="AdminDate" ColumnName="AdminDate" />
+          <ScalarProperty Name="ProceedBySignature" ColumnName="ProceedBySignature" />
+          <ScalarProperty Name="ProceedByDate" ColumnName="ProceedByDate" />
+          <ScalarProperty Name="ProceedBy" ColumnName="ProceedBy" />
+          <ScalarProperty Name="NoOfOperations" ColumnName="NoOfOperations" />
+          <ScalarProperty Name="NoOfOperationsOld" ColumnName="NoOfOperationsOld" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

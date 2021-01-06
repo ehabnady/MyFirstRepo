@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ViewAffiliationOnlyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AmounCRM2.dbo.View_Affiliations_only' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_Affiliations_only">
+          <Key>
+            <PropertyRef Name="AffiliationID" />
+            <PropertyRef Name="SpecialityID" />
+          </Key>
+          <Property Name="AffiliationID" Type="int" Nullable="false" />
+          <Property Name="AffiliationName" Type="nvarchar" MaxLength="250" />
+          <Property Name="AmounBrickName" Type="nvarchar" MaxLength="40" />
+          <Property Name="SpecialityCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="LineID" Type="int" />
+          <Property Name="NoOfPatients" Type="float" />
+          <Property Name="PrescriptionHappit" Type="float" />
+          <Property Name="PhysicianClass" Type="nvarchar" MaxLength="2" />
+          <Property Name="WaitingTime" Type="float" />
+          <Property Name="PhysicianID" Type="int" />
+          <Property Name="EntityID" Type="int" />
+          <Property Name="Deleted" Type="bit" />
+          <Property Name="BestTimeFrom" Type="nvarchar" MaxLength="50" />
+          <Property Name="BestTimeTo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Notes" Type="nvarchar" MaxLength="150" />
+          <Property Name="SpecialityID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ViewAffiliationOnlyModelStoreContainer">
+          <EntitySet Name="View_Affiliations_only" EntityType="Self.View_Affiliations_only" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_Affiliations_only].[AffiliationID] AS [AffiliationID], 
+    [View_Affiliations_only].[AffiliationName] AS [AffiliationName], 
+    [View_Affiliations_only].[AmounBrickName] AS [AmounBrickName], 
+    [View_Affiliations_only].[SpecialityCode] AS [SpecialityCode], 
+    [View_Affiliations_only].[LineID] AS [LineID], 
+    [View_Affiliations_only].[NoOfPatients] AS [NoOfPatients], 
+    [View_Affiliations_only].[PrescriptionHappit] AS [PrescriptionHappit], 
+    [View_Affiliations_only].[PhysicianClass] AS [PhysicianClass], 
+    [View_Affiliations_only].[WaitingTime] AS [WaitingTime], 
+    [View_Affiliations_only].[PhysicianID] AS [PhysicianID], 
+    [View_Affiliations_only].[EntityID] AS [EntityID], 
+    [View_Affiliations_only].[Deleted] AS [Deleted], 
+    [View_Affiliations_only].[BestTimeFrom] AS [BestTimeFrom], 
+    [View_Affiliations_only].[BestTimeTo] AS [BestTimeTo], 
+    [View_Affiliations_only].[Notes] AS [Notes], 
+    [View_Affiliations_only].[SpecialityID] AS [SpecialityID]
+    FROM [dbo].[View_Affiliations_only] AS [View_Affiliations_only]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ViewAffiliationOnlyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="View_Affiliations_only">
+          <Key>
+            <PropertyRef Name="AffiliationID" />
+            <PropertyRef Name="SpecialityID" />
+          </Key>
+          <Property Name="AffiliationID" Type="Int32" Nullable="false" />
+          <Property Name="AffiliationName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="AmounBrickName" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="SpecialityCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LineID" Type="Int32" />
+          <Property Name="NoOfPatients" Type="Double" />
+          <Property Name="PrescriptionHappit" Type="Double" />
+          <Property Name="PhysicianClass" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="WaitingTime" Type="Double" />
+          <Property Name="PhysicianID" Type="Int32" />
+          <Property Name="EntityID" Type="Int32" />
+          <Property Name="Deleted" Type="Boolean" />
+          <Property Name="BestTimeFrom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BestTimeTo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Notes" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="SpecialityID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ViewAffiliationsOnlyDBContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="View_Affiliations_only" EntityType="Self.View_Affiliations_only" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ViewAffiliationOnlyModelStoreContainer" CdmEntityContainer="ViewAffiliationsOnlyDBContext">
+          <EntitySetMapping Name="View_Affiliations_only">
+            <EntityTypeMapping TypeName="ViewAffiliationOnlyModel.View_Affiliations_only">
+              <MappingFragment StoreEntitySet="View_Affiliations_only">
+                <ScalarProperty Name="SpecialityID" ColumnName="SpecialityID" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="BestTimeTo" ColumnName="BestTimeTo" />
+                <ScalarProperty Name="BestTimeFrom" ColumnName="BestTimeFrom" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+                <ScalarProperty Name="PhysicianID" ColumnName="PhysicianID" />
+                <ScalarProperty Name="AffiliationID" ColumnName="AffiliationID" />
+                <ScalarProperty Name="AffiliationName" ColumnName="AffiliationName" />
+                <ScalarProperty Name="AmounBrickName" ColumnName="AmounBrickName" />
+                <ScalarProperty Name="SpecialityCode" ColumnName="SpecialityCode" />
+                <ScalarProperty Name="LineID" ColumnName="LineID" />
+                <ScalarProperty Name="NoOfPatients" ColumnName="NoOfPatients" />
+                <ScalarProperty Name="PrescriptionHappit" ColumnName="PrescriptionHappit" />
+                <ScalarProperty Name="PhysicianClass" ColumnName="PhysicianClass" />
+                <ScalarProperty Name="WaitingTime" ColumnName="WaitingTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AffiliationsTempMode.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AffiliationsTemp">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AffiliationID" Type="int" Nullable="false" />
+    <Property Name="AffiliationName" Type="nvarchar" MaxLength="250" />
+    <Property Name="PhysicianID" Type="int" />
+    <Property Name="EntityID" Type="int" />
+    <Property Name="PhysicianClass" Type="nvarchar" MaxLength="2" />
+    <Property Name="BestTimeFrom" Type="nvarchar" MaxLength="50" />
+    <Property Name="BestTimeTo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="150" />
+    <Property Name="EntryEmployeeID" Type="int" />
+    <Property Name="EntryDate" Type="smalldatetime" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="New" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="AffiliationsTempModeStoreContainer">
+    <EntitySet Name="AffiliationsTemp" EntityType="Self.AffiliationsTemp" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

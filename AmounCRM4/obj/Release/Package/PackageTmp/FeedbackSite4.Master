@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FeedbackSite4.master.cs" Inherits="AmounCRM4.FeedbackSite4" %>
+
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+
+  
+  
+    <script type="text/javascript">
+
+        (function (i, s, o, g, r, a, m) {
+
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-96910953-1', 'auto', { userId: '<%# Session["GlobalEmpIDName"] %>' });
+        ga('require', 'GTM-M92BGFJ');
+        ga('send', 'pageview');
+        var dimensionValue = '<%# Session["GlobalEmpName"] %>';
+        ga('set', 'dimension1', dimensionValue);
+
+
+
+
+    </script>
+
+   
+    <asp:ContentPlaceHolder ID="Head" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .content {
+            height: 690px;
+            width: 100%;
+        }
+
+        .table1 {
+            width: 99%;
+            height: auto;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            border-style: solid;
+            border-color: blue;
+            border-width: 2px;
+            border-radius: 20px 20px;
+            border-bottom-left-radius: 25px 25px;
+            border-bottom-right-radius: 25px 25px;
+            border-top-left-radius: 25px 25px;
+            border-top-right-radius: 25px 25px;
+            text-align: center;
+        }
+
+        .rightcell {
+            width: 15%;
+            text-align: center;
+            vertical-align:top;
+        }
+
+        .leftcell {
+            width: 15%;
+            text-align: left;
+            padding-left:5px;
+            vertical-align:top;
+        }
+
+        .centercell {
+            width: 70%;
+            text-align: center;
+            vertical-align:middle;
+        }
+
+        </style>
+</head>
+   
+
+<body>
+    
+    <form id="form2" runat="server">
+
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js"></asp:ScriptReference>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js"></asp:ScriptReference>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js"></asp:ScriptReference>
+            </Scripts>
+        </telerik:RadScriptManager>
+
+        <table class="table1">
+            <tr style="border-width: medium; border-color: black;">
+                <td class="leftcell">
+                    <%--<br />
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Times New Roman" Font-Size="Large" PathSeparator=" : ">
+                        <CurrentNodeStyle ForeColor="#333333" />
+                        <NodeStyle Font-Bold="True" ForeColor="#990000" />
+                        <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+                        <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+                    </asp:SiteMapPath>
+                    <br />--%>
+                    <br />
+                    <asp:Label ID="lblEmployeeName" runat="server" Text="" Font-Size="Large"></asp:Label><br />
+                    <asp:Label ID="lblCycleName" runat="server" Text="" Font-Size="Large"></asp:Label><br />
+                    <asp:Label ID="lblNow" runat="server" Text="" Font-Size="Large" Visible="false"></asp:Label><br />
+                    <asp:Label ID="lblAreaName" runat="server" Text="" Font-Size="Large" Visible="false"></asp:Label><br />
+                    <asp:Label id="lblWorkingDays" runat="server" Text="" Font-Size="Large" Visible="false"></asp:Label>
+                    <%--<br />--%>
+                    <%--<br />--%>
+
+                    <%--<asp:LinkButton ID="lnkEntry" runat="server" PostBackUrl="~/Surveys/Feedbacks.aspx" Font-Size="Large">Feedback</asp:LinkButton><br /><br />
+                    <asp:LinkButton ID="lnkReport" runat="server" PostBackUrl="~/Surveys/FeedbackReports.aspx" Font-Size="Large">Reports</asp:LinkButton>--%>
+
+                    <%--<asp:LinkButton ID="logOutLink" runat="server" Text="Logout" Font-Size="Large" OnClick="logOutLink_Click"></asp:LinkButton>--%>
+                </td>
+                <td class="centercell">
+                    <h1 style="text-align: center">Amoun Pharmaceutical Co.</h1>
+                    <br />
+
+
+                    <table width="95%" id="tblLinksSalesReps" runat="server" visible="true">
+                        <%--<tr>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">Entry</td>
+                            <td colspan="1" style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">Reports</td>
+                        </tr>--%>
+                        <tr>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large; padding: 5px">
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Surveys/Feedbacks.aspx" Text="Feedback"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large; padding: 5px">
+                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Surveys/FeedbackReports.aspx" Text="Reports"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large; padding: 5px">
+                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Admins/SalesRepPharmaReq.aspx" Text="Change Requets"></asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="rightcell"><br />
+                    <asp:LinkButton ID="logOutLink" runat="server" Text="Logout" Font-Size="Large" OnClick="logOutLink_Click"></asp:LinkButton>
+                    <br />
+                    <asp:Image ID="img" runat="server" ImageUrl="~/AmounLogo.jpg" Height="73px" Width="166px" />
+                </td>
+            </tr>
+            <tr style="border-width: medium; border-color: black">
+                <td align="center" style="border-width: medium; border-color: black" class="content" colspan="3">
+                    <asp:ContentPlaceHolder ID="Body" runat="server"></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr style="border-width: medium; border-color: black">
+                <td colspan="3" style="border-width: medium; border-color: black; -ms-flex-align: center" align="center">
+                    <br />
+                    <br />
+                    Business Technology Department - Amoun Pharmaceutical Co.</td>
+            </tr>
+        </table>
+
+    </form>
+    
+</body>
+</html>

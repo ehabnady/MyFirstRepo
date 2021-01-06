@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PharmaciesProposedModelStoreContainer" CdmEntityContainer="PharmaciesProposedEntities">
+    <EntitySetMapping Name="PH_Pharmacies_Proposed">
+      <EntityTypeMapping TypeName="PharmaciesProposedModel.PH_Pharmacies_Proposed">
+        <MappingFragment StoreEntitySet="PH_Pharmacies_Proposed">
+          <ScalarProperty Name="SDID" ColumnName="SDID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="PharmacyID" ColumnName="PharmacyID" />
+          <ScalarProperty Name="PharmacyName" ColumnName="PharmacyName" />
+          <ScalarProperty Name="BrickID" ColumnName="BrickID" />
+          <ScalarProperty Name="CusNameFromInMarket" ColumnName="CusNameFromInMarket" />
+          <ScalarProperty Name="IsWrong" ColumnName="IsWrong" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="RecID" ColumnName="RecID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SD_Approved" ColumnName="SD_Approved" />
+          <ScalarProperty Name="SD_Comment" ColumnName="SD_Comment" />
+          <ScalarProperty Name="SDDate" ColumnName="SDDate" />
+          <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="AreaRecID" ColumnName="AreaRecID" />
+          <ScalarProperty Name="AreaRecIDOld" ColumnName="AreaRecIDOld" />
+          <ScalarProperty Name="PharmacyAddress" ColumnName="PharmacyAddress" />
+          <ScalarProperty Name="PharmacyAddressOld" ColumnName="PharmacyAddressOld" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

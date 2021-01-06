@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProposedAffiliationsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Affiliations_Proposed">
+    <Key>
+      <PropertyRef Name="RecID" />
+    </Key>
+    <Property Name="AffiliationID" Type="int" />
+    <Property Name="AffiliationName" Type="nvarchar" MaxLength="250" />
+    <Property Name="PhysicianID" Type="int" />
+    <Property Name="EntityID" Type="int" />
+    <Property Name="AreaRecID" Type="int" />
+    <Property Name="SpecialityID" Type="int" />
+    <Property Name="LineID" Type="int" />
+    <Property Name="PhysicianClass" Type="nvarchar" MaxLength="2" />
+    <Property Name="BestTimeFrom" Type="nvarchar" MaxLength="50" />
+    <Property Name="BestTimeTo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="150" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="EntryDate" Type="smalldatetime" />
+    <Property Name="Is_Approved" Type="bit" />
+    <Property Name="EntityAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="EntityTypeID" Type="int" />
+    <Property Name="Tel1" Type="nvarchar" MaxLength="15" />
+    <Property Name="Tel2" Type="nvarchar" MaxLength="15" />
+    <Property Name="Tel3" Type="nvarchar" MaxLength="15" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="15" />
+    <Property Name="EntityEmailAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="EntityWebSite" Type="nvarchar" MaxLength="100" />
+    <Property Name="PhysicianName" Type="nvarchar" MaxLength="255" />
+    <Property Name="EntityName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Is_Implemented" Type="bit" />
+    <Property Name="RepName" Type="nvarchar" MaxLength="100" />
+    <Property Name="DMID" Type="int" />
+    <Property Name="BrickID" Type="int" />
+    <Property Name="NoOfPatients" Type="nvarchar" MaxLength="50" />
+    <Property Name="WatingTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="PrescriptionHappit" Type="nvarchar" MaxLength="50" />
+    <Property Name="AdminComments" Type="nvarchar" MaxLength="150" />
+    <Property Name="DMComments" Type="nvarchar" MaxLength="150" />
+    <Property Name="RequestType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="EntityNameOld" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhysicianNameOld" Type="nvarchar" MaxLength="255" />
+    <Property Name="EntityAddressOld" Type="nvarchar" MaxLength="255" />
+    <Property Name="AreaRecIDOld" Type="int" />
+    <Property Name="SpecialityIDOld" Type="int" />
+    <Property Name="EntityTypeIDOld" Type="int" />
+    <Property Name="NoOfPatientsOld" Type="nvarchar" MaxLength="50" />
+    <Property Name="WatingTimeOld" Type="nvarchar" MaxLength="50" />
+    <Property Name="PrescriptionHappitOld" Type="nvarchar" MaxLength="50" />
+    <Property Name="RealAffID" Type="int" />
+    <Property Name="SMID" Type="int" />
+    <Property Name="SM_Approved" Type="bit" />
+    <Property Name="SDID" Type="int" />
+    <Property Name="SD_Approved" Type="bit" />
+    <Property Name="COVP_ID" Type="int" />
+    <Property Name="COVP_Approved" Type="bit" />
+    <Property Name="SM_Comment" Type="nvarchar" MaxLength="150" />
+    <Property Name="SD_Comment" Type="nvarchar" MaxLength="150" />
+    <Property Name="CO_Comment" Type="nvarchar" MaxLength="150" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="RecID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DMSignature" Type="nvarchar" MaxLength="150" />
+    <Property Name="SMSignature" Type="nvarchar" MaxLength="150" />
+    <Property Name="SDSignature" Type="nvarchar" MaxLength="150" />
+    <Property Name="COSignature" Type="nvarchar" MaxLength="150" />
+    <Property Name="AdminSignature" Type="nvarchar" MaxLength="150" />
+    <Property Name="RequestDate" Type="smalldatetime" />
+    <Property Name="DMDate" Type="smalldatetime" />
+    <Property Name="SMDate" Type="smalldatetime" />
+    <Property Name="SDDate" Type="smalldatetime" />
+    <Property Name="CODate" Type="smalldatetime" />
+    <Property Name="AdminDate" Type="smalldatetime" />
+    <Property Name="ProceedBySignature" Type="nvarchar" MaxLength="150" />
+    <Property Name="ProceedByDate" Type="smalldatetime" />
+    <Property Name="ProceedBy" Type="bit" />
+    <Property Name="NoOfOperations" Type="nvarchar" MaxLength="50" />
+    <Property Name="NoOfOperationsOld" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="ProposedAffiliationsModelStoreContainer">
+    <EntitySet Name="Affiliations_Proposed" EntityType="Self.Affiliations_Proposed" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

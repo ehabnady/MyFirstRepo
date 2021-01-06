@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SpecialtyPriortiesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="SpecPriorityByLine">
+          <Key>
+            <PropertyRef Name="RecID" />
+          </Key>
+          <Property Name="RecID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SpecialtyID" Type="int" />
+          <Property Name="LineID" Type="int" />
+          <Property Name="SpecValue" Type="float" />
+          <Property Name="SpecPriority" Type="int" />
+          <Property Name="Deleted" Type="bit" />
+          <Property Name="SpecValueOld" Type="float" />
+        </EntityType>
+        <EntityContainer Name="SpecialtyPriortiesModelStoreContainer">
+          <EntitySet Name="SpecPriorityByLine" EntityType="Self.SpecPriorityByLine" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SpecialtyPriortiesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="SpecPriorityByLine">
+          <Key>
+            <PropertyRef Name="RecID" />
+          </Key>
+          <Property Name="RecID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SpecialtyID" Type="Int32" />
+          <Property Name="LineID" Type="Int32" />
+          <Property Name="SpecValue" Type="Double" />
+          <Property Name="SpecPriority" Type="Int32" />
+          <Property Name="Deleted" Type="Boolean" />
+          <Property Name="SpecValueOld" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="SpecialtyPriorityDBContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SpecPriorityByLines" EntityType="Self.SpecPriorityByLine" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SpecialtyPriortiesModelStoreContainer" CdmEntityContainer="SpecialtyPriorityDBContext">
+          <EntitySetMapping Name="SpecPriorityByLines">
+            <EntityTypeMapping TypeName="SpecialtyPriortiesModel.SpecPriorityByLine">
+              <MappingFragment StoreEntitySet="SpecPriorityByLine">
+                <ScalarProperty Name="RecID" ColumnName="RecID" />
+                <ScalarProperty Name="SpecialtyID" ColumnName="SpecialtyID" />
+                <ScalarProperty Name="LineID" ColumnName="LineID" />
+                <ScalarProperty Name="SpecValue" ColumnName="SpecValue" />
+                <ScalarProperty Name="SpecPriority" ColumnName="SpecPriority" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="SpecValueOld" ColumnName="SpecValueOld" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

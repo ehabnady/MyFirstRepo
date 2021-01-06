@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AffiliationsView3StoreContainer" CdmEntityContainer="AffiliationsView3DBContext">
+    <EntitySetMapping Name="View_Affiliations_Admin">
+      <EntityTypeMapping TypeName="AffiliationsView3.View_Affiliations_Admin">
+        <MappingFragment StoreEntitySet="View_Affiliations_Admin">
+          <ScalarProperty Name="AffiliationID" ColumnName="AffiliationID" />
+          <ScalarProperty Name="AffiliationName" ColumnName="AffiliationName" />
+          <ScalarProperty Name="PhysicianName" ColumnName="PhysicianName" />
+          <ScalarProperty Name="Entity_Name" ColumnName="Entity Name" />
+          <ScalarProperty Name="SpecialtyID" ColumnName="SpecialtyID" />
+          <ScalarProperty Name="SpecialityName" ColumnName="SpecialityName" />
+          <ScalarProperty Name="PhysicianClass" ColumnName="PhysicianClass" />
+          <ScalarProperty Name="LineName" ColumnName="LineName" />
+          <ScalarProperty Name="PhysicianID" ColumnName="PhysicianID" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="AmounTerritoryName" ColumnName="AmounTerritoryName" />
+          <ScalarProperty Name="AreaRecID" ColumnName="AreaRecID" />
+          <ScalarProperty Name="SupervisionArea" ColumnName="SupervisionArea" />
+          <ScalarProperty Name="AmounRegionID" ColumnName="AmounRegionID" />
+          <ScalarProperty Name="AmounRegionName" ColumnName="AmounRegionName" />
+          <ScalarProperty Name="AmounTerritoryID" ColumnName="AmounTerritoryID" />
+          <ScalarProperty Name="LineID" ColumnName="LineID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeHRCode" ColumnName="EmployeeHRCode" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmployeeType" ColumnName="EmployeeType" />
+          <ScalarProperty Name="SupervisorName" ColumnName="SupervisorName" />
+          <ScalarProperty Name="EntityAddress" ColumnName="EntityAddress" />
+          <ScalarProperty Name="SpecialityCode" ColumnName="SpecialityCode" />
+          <ScalarProperty Name="SupervisorID" ColumnName="SupervisorID" />
+          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+          <ScalarProperty Name="ManagerName" ColumnName="ManagerName" />
+          <ScalarProperty Name="SupervisionAreaID" ColumnName="SupervisionAreaID" />
+          <ScalarProperty Name="BrickID" ColumnName="BrickID" />
+          <ScalarProperty Name="AmounBrickName" ColumnName="AmounBrickName" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="BestTimeFrom" ColumnName="BestTimeFrom" />
+          <ScalarProperty Name="BestTimeTo" ColumnName="BestTimeTo" />
+          <ScalarProperty Name="NoOfPatients" ColumnName="NoOfPatients" />
+          <ScalarProperty Name="WaitingTime" ColumnName="WaitingTime" />
+          <ScalarProperty Name="SpecialtyValue" ColumnName="SpecialtyValue" />
+          <ScalarProperty Name="TotalValue" ColumnName="TotalValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AppointmentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Appointments">
+          <Key>
+            <PropertyRef Name="AppointmentID" />
+          </Key>
+          <Property Name="AppointmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="255" />
+          <Property Name="Description" Type="nvarchar" MaxLength="1024" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="VisitTypeID" Type="int" />
+          <Property Name="AffiliationID" Type="int" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="LineID" Type="int" />
+          <Property Name="BrickID" Type="int" />
+          <Property Name="CycleID" Type="int" />
+          <Property Name="IsOriginal" Type="bit" />
+          <Property Name="RecurrenceRule" Type="nvarchar" MaxLength="1024" />
+          <Property Name="RecurrenceParentID" Type="int" />
+          <Property Name="Reminder" Type="nvarchar" MaxLength="255" />
+          <Property Name="Annotations" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastModified" Type="nvarchar" MaxLength="50" />
+          <Property Name="EntryDateTime" Type="smalldatetime" />
+          <Property Name="DeletedAppointment" Type="bit" />
+        </EntityType>
+        <Association Name="FK_Appointments_ParentAppointments">
+          <End Role="Appointments" Type="Self.Appointments" Multiplicity="0..1" />
+          <End Role="Appointments1" Type="Self.Appointments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Appointments">
+              <PropertyRef Name="AppointmentID" />
+            </Principal>
+            <Dependent Role="Appointments1">
+              <PropertyRef Name="RecurrenceParentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AppointmentModelStoreContainer">
+          <EntitySet Name="Appointments" EntityType="Self.Appointments" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Appointments_ParentAppointments" Association="Self.FK_Appointments_ParentAppointments">
+            <End Role="Appointments" EntitySet="Appointments" />
+            <End Role="Appointments1" EntitySet="Appointments" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AppointmentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Appointment">
+          <Key>
+            <PropertyRef Name="AppointmentID" />
+          </Key>
+          <Property Name="AppointmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Subject" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="StartDate" Type="DateTime" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="VisitTypeID" Type="Int32" />
+          <Property Name="AffiliationID" Type="Int32" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="LineID" Type="Int32" />
+          <Property Name="BrickID" Type="Int32" />
+          <Property Name="CycleID" Type="Int32" />
+          <Property Name="IsOriginal" Type="Boolean" />
+          <Property Name="RecurrenceRule" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="RecurrenceParentID" Type="Int32" />
+          <Property Name="Reminder" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Annotations" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastModified" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EntryDateTime" Type="DateTime" Precision="0" />
+          <Property Name="DeletedAppointment" Type="Boolean" />
+          <NavigationProperty Name="Appointments1" Relationship="Self.FK_Appointments_ParentAppointments" FromRole="Appointments" ToRole="Appointments1" />
+          <NavigationProperty Name="Appointment1" Relationship="Self.FK_Appointments_ParentAppointments" FromRole="Appointments1" ToRole="Appointments" />
+        </EntityType>
+        <Association Name="FK_Appointments_ParentAppointments">
+          <End Role="Appointments" Type="Self.Appointment" Multiplicity="0..1" />
+          <End Role="Appointments1" Type="Self.Appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Appointments">
+              <PropertyRef Name="AppointmentID" />
+            </Principal>
+            <Dependent Role="Appointments1">
+              <PropertyRef Name="RecurrenceParentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AppointmentDBContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Appointments" EntityType="Self.Appointment" />
+          <AssociationSet Name="FK_Appointments_ParentAppointments" Association="Self.FK_Appointments_ParentAppointments">
+            <End Role="Appointments" EntitySet="Appointments" />
+            <End Role="Appointments1" EntitySet="Appointments" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AppointmentModelStoreContainer" CdmEntityContainer="AppointmentDBContext">
+          <EntitySetMapping Name="Appointments">
+            <EntityTypeMapping TypeName="AppointmentModel.Appointment">
+              <MappingFragment StoreEntitySet="Appointments">
+                <ScalarProperty Name="AppointmentID" ColumnName="AppointmentID" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="VisitTypeID" ColumnName="VisitTypeID" />
+                <ScalarProperty Name="AffiliationID" ColumnName="AffiliationID" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="LineID" ColumnName="LineID" />
+                <ScalarProperty Name="BrickID" ColumnName="BrickID" />
+                <ScalarProperty Name="CycleID" ColumnName="CycleID" />
+                <ScalarProperty Name="IsOriginal" ColumnName="IsOriginal" />
+                <ScalarProperty Name="RecurrenceRule" ColumnName="RecurrenceRule" />
+                <ScalarProperty Name="RecurrenceParentID" ColumnName="RecurrenceParentID" />
+                <ScalarProperty Name="Reminder" ColumnName="Reminder" />
+                <ScalarProperty Name="Annotations" ColumnName="Annotations" />
+                <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+                <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+                <ScalarProperty Name="DeletedAppointment" ColumnName="DeletedAppointment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ProposedAffiliationsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Affiliations_Proposed">
+          <Key>
+            <PropertyRef Name="RecID" />
+          </Key>
+          <Property Name="AffiliationID" Type="int" />
+          <Property Name="AffiliationName" Type="nvarchar" MaxLength="250" />
+          <Property Name="PhysicianID" Type="int" />
+          <Property Name="EntityID" Type="int" />
+          <Property Name="AreaRecID" Type="int" />
+          <Property Name="SpecialityID" Type="int" />
+          <Property Name="LineID" Type="int" />
+          <Property Name="PhysicianClass" Type="nvarchar" MaxLength="2" />
+          <Property Name="BestTimeFrom" Type="nvarchar" MaxLength="50" />
+          <Property Name="BestTimeTo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Notes" Type="nvarchar" MaxLength="150" />
+          <Property Name="Deleted" Type="bit" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="EntryDate" Type="smalldatetime" />
+          <Property Name="Is_Approved" Type="bit" />
+          <Property Name="EntityAddress" Type="nvarchar" MaxLength="255" />
+          <Property Name="EntityTypeID" Type="int" />
+          <Property Name="Tel1" Type="nvarchar" MaxLength="15" />
+          <Property Name="Tel2" Type="nvarchar" MaxLength="15" />
+          <Property Name="Tel3" Type="nvarchar" MaxLength="15" />
+          <Property Name="Fax" Type="nvarchar" MaxLength="15" />
+          <Property Name="EntityEmailAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="EntityWebSite" Type="nvarchar" MaxLength="100" />
+          <Property Name="PhysicianName" Type="nvarchar" MaxLength="255" />
+          <Property Name="EntityName" Type="nvarchar" MaxLength="255" />
+          <Property Name="Is_Implemented" Type="bit" />
+          <Property Name="RepName" Type="nvarchar" MaxLength="100" />
+          <Property Name="DMID" Type="int" />
+          <Property Name="BrickID" Type="int" />
+          <Property Name="NoOfPatients" Type="nvarchar" MaxLength="50" />
+          <Property Name="WatingTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="PrescriptionHappit" Type="nvarchar" MaxLength="50" />
+          <Property Name="AdminComments" Type="nvarchar" MaxLength="150" />
+          <Property Name="DMComments" Type="nvarchar" MaxLength="150" />
+          <Property Name="RequestType" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="255" />
+          <Property Name="EntityNameOld" Type="nvarchar" MaxLength="255" />
+          <Property Name="PhysicianNameOld" Type="nvarchar" MaxLength="255" />
+          <Property Name="EntityAddressOld" Type="nvarchar" MaxLength="255" />
+          <Property Name="AreaRecIDOld" Type="int" />
+          <Property Name="SpecialityIDOld" Type="int" />
+          <Property Name="EntityTypeIDOld" Type="int" />
+          <Property Name="NoOfPatientsOld" Type="nvarchar" MaxLength="50" />
+          <Property Name="WatingTimeOld" Type="nvarchar" MaxLength="50" />
+          <Property Name="PrescriptionHappitOld" Type="nvarchar" MaxLength="50" />
+          <Property Name="RealAffID" Type="int" />
+          <Property Name="SMID" Type="int" />
+          <Property Name="SM_Approved" Type="bit" />
+          <Property Name="SDID" Type="int" />
+          <Property Name="SD_Approved" Type="bit" />
+          <Property Name="COVP_ID" Type="int" />
+          <Property Name="COVP_Approved" Type="bit" />
+          <Property Name="SM_Comment" Type="nvarchar" MaxLength="150" />
+          <Property Name="SD_Comment" Type="nvarchar" MaxLength="150" />
+          <Property Name="CO_Comment" Type="nvarchar" MaxLength="150" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+          <Property Name="RecID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DMSignature" Type="nvarchar" MaxLength="150" />
+          <Property Name="SMSignature" Type="nvarchar" MaxLength="150" />
+          <Property Name="SDSignature" Type="nvarchar" MaxLength="150" />
+          <Property Name="COSignature" Type="nvarchar" MaxLength="150" />
+          <Property Name="AdminSignature" Type="nvarchar" MaxLength="150" />
+          <Property Name="RequestDate" Type="smalldatetime" />
+          <Property Name="DMDate" Type="smalldatetime" />
+          <Property Name="SMDate" Type="smalldatetime" />
+          <Property Name="SDDate" Type="smalldatetime" />
+          <Property Name="CODate" Type="smalldatetime" />
+          <Property Name="AdminDate" Type="smalldatetime" />
+          <Property Name="ProceedBySignature" Type="nvarchar" MaxLength="150" />
+          <Property Name="ProceedByDate" Type="smalldatetime" />
+          <Property Name="ProceedBy" Type="bit" />
+          <Property Name="NoOfOperations" Type="nvarchar" MaxLength="50" />
+          <Property Name="NoOfOperationsOld" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="ProposedAffiliationsModelStoreContainer">
+          <EntitySet Name="Affiliations_Proposed" EntityType="Self.Affiliations_Proposed" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ProposedAffiliationsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Affiliations_Proposed">
+          <Key>
+            <PropertyRef Name="RecID" />
+          </Key>
+          <Property Name="AffiliationID" Type="Int32" />
+          <Property Name="AffiliationName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="PhysicianID" Type="Int32" />
+          <Property Name="EntityID" Type="Int32" />
+          <Property Name="AreaRecID" Type="Int32" />
+          <Property Name="SpecialityID" Type="Int32" />
+          <Property Name="LineID" Type="Int32" />
+          <Property Name="PhysicianClass" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="BestTimeFrom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BestTimeTo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Notes" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Deleted" Type="Boolean" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="EntryDate" Type="DateTime" Precision="0" />
+          <Property Name="Is_Approved" Type="Boolean" />
+          <Property Name="EntityAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EntityTypeID" Type="Int32" />
+          <Property Name="Tel1" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Tel2" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Tel3" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Fax" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="EntityEmailAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EntityWebSite" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PhysicianName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EntityName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Is_Implemented" Type="Boolean" />
+          <Property Name="RepName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DMID" Type="Int32" />
+          <Property Name="BrickID" Type="Int32" />
+          <Property Name="NoOfPatients" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="WatingTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PrescriptionHappit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AdminComments" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="DMComments" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="RequestType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EntityNameOld" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PhysicianNameOld" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EntityAddressOld" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="AreaRecIDOld" Type="Int32" />
+          <Property Name="SpecialityIDOld" Type="Int32" />
+          <Property Name="EntityTypeIDOld" Type="Int32" />
+          <Property Name="NoOfPatientsOld" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="WatingTimeOld" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PrescriptionHappitOld" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RealAffID" Type="Int32" />
+          <Property Name="SMID" Type="Int32" />
+          <Property Name="SM_Approved" Type="Boolean" />
+          <Property Name="SDID" Type="Int32" />
+          <Property Name="SD_Approved" Type="Boolean" />
+          <Property Name="COVP_ID" Type="Int32" />
+          <Property Name="COVP_Approved" Type="Boolean" />
+          <Property Name="SM_Comment" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="SD_Comment" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="CO_Comment" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RecID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DMSignature" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="SMSignature" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="SDSignature" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="COSignature" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="AdminSignature" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="RequestDate" Type="DateTime" Precision="0" />
+          <Property Name="DMDate" Type="DateTime" Precision="0" />
+          <Property Name="SMDate" Type="DateTime" Precision="0" />
+          <Property Name="SDDate" Type="DateTime" Precision="0" />
+          <Property Name="CODate" Type="DateTime" Precision="0" />
+          <Property Name="AdminDate" Type="DateTime" Precision="0" />
+          <Property Name="ProceedBySignature" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ProceedByDate" Type="DateTime" Precision="0" />
+          <Property Name="ProceedBy" Type="Boolean" />
+          <Property Name="NoOfOperations" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NoOfOperationsOld" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="ProposedAffiliationDBContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Affiliations_Proposed" EntityType="Self.Affiliations_Proposed" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ProposedAffiliationsModelStoreContainer" CdmEntityContainer="ProposedAffiliationDBContext">
+          <EntitySetMapping Name="Affiliations_Proposed">
+            <EntityTypeMapping TypeName="ProposedAffiliationsModel.Affiliations_Proposed">
+              <MappingFragment StoreEntitySet="Affiliations_Proposed">
+                <ScalarProperty Name="NoOfOperationsOld" ColumnName="NoOfOperationsOld" />
+                <ScalarProperty Name="NoOfOperations" ColumnName="NoOfOperations" />
+                <ScalarProperty Name="ProceedBy" ColumnName="ProceedBy" />
+                <ScalarProperty Name="ProceedByDate" ColumnName="ProceedByDate" />
+                <ScalarProperty Name="ProceedBySignature" ColumnName="ProceedBySignature" />
+                <ScalarProperty Name="AdminDate" ColumnName="AdminDate" />
+                <ScalarProperty Name="CODate" ColumnName="CODate" />
+                <ScalarProperty Name="SDDate" ColumnName="SDDate" />
+                <ScalarProperty Name="SMDate" ColumnName="SMDate" />
+                <ScalarProperty Name="DMDate" ColumnName="DMDate" />
+                <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+                <ScalarProperty Name="AdminSignature" ColumnName="AdminSignature" />
+                <ScalarProperty Name="COSignature" ColumnName="COSignature" />
+                <ScalarProperty Name="SDSignature" ColumnName="SDSignature" />
+                <ScalarProperty Name="SMSignature" ColumnName="SMSignature" />
+                <ScalarProperty Name="DMSignature" ColumnName="DMSignature" />
+                <ScalarProperty Name="AffiliationID" ColumnName="AffiliationID" />
+                <ScalarProperty Name="AffiliationName" ColumnName="AffiliationName" />
+                <ScalarProperty Name="PhysicianID" ColumnName="PhysicianID" />
+                <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+                <ScalarProperty Name="AreaRecID" ColumnName="AreaRecID" />
+                <ScalarProperty Name="SpecialityID" ColumnName="SpecialityID" />
+                <ScalarProperty Name="LineID" ColumnName="LineID" />
+                <ScalarProperty Name="PhysicianClass" ColumnName="PhysicianClass" />
+                <ScalarProperty Name="BestTimeFrom" ColumnName="BestTimeFrom" />
+                <ScalarProperty Name="BestTimeTo" ColumnName="BestTimeTo" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+                <ScalarProperty Name="Is_Approved" ColumnName="Is_Approved" />
+                <ScalarProperty Name="EntityAddress" ColumnName="EntityAddress" />
+                <ScalarProperty Name="EntityTypeID" ColumnName="EntityTypeID" />
+                <ScalarProperty Name="Tel1" ColumnName="Tel1" />
+                <ScalarProperty Name="Tel2" ColumnName="Tel2" />
+                <ScalarProperty Name="Tel3" ColumnName="Tel3" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="EntityEmailAddress" ColumnName="EntityEmailAddress" />
+                <ScalarProperty Name="EntityWebSite" ColumnName="EntityWebSite" />
+                <ScalarProperty Name="PhysicianName" ColumnName="PhysicianName" />
+                <ScalarProperty Name="EntityName" ColumnName="EntityName" />
+                <ScalarProperty Name="Is_Implemented" ColumnName="Is_Implemented" />
+                <ScalarProperty Name="RepName" ColumnName="RepName" />
+                <ScalarProperty Name="DMID" ColumnName="DMID" />
+                <ScalarProperty Name="BrickID" ColumnName="BrickID" />
+                <ScalarProperty Name="NoOfPatients" ColumnName="NoOfPatients" />
+                <ScalarProperty Name="WatingTime" ColumnName="WatingTime" />
+                <ScalarProperty Name="PrescriptionHappit" ColumnName="PrescriptionHappit" />
+                <ScalarProperty Name="AdminComments" ColumnName="AdminComments" />
+                <ScalarProperty Name="DMComments" ColumnName="DMComments" />
+                <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="EntityNameOld" ColumnName="EntityNameOld" />
+                <ScalarProperty Name="PhysicianNameOld" ColumnName="PhysicianNameOld" />
+                <ScalarProperty Name="EntityAddressOld" ColumnName="EntityAddressOld" />
+                <ScalarProperty Name="AreaRecIDOld" ColumnName="AreaRecIDOld" />
+                <ScalarProperty Name="SpecialityIDOld" ColumnName="SpecialityIDOld" />
+                <ScalarProperty Name="EntityTypeIDOld" ColumnName="EntityTypeIDOld" />
+                <ScalarProperty Name="NoOfPatientsOld" ColumnName="NoOfPatientsOld" />
+                <ScalarProperty Name="WatingTimeOld" ColumnName="WatingTimeOld" />
+                <ScalarProperty Name="PrescriptionHappitOld" ColumnName="PrescriptionHappitOld" />
+                <ScalarProperty Name="RealAffID" ColumnName="RealAffID" />
+                <ScalarProperty Name="SMID" ColumnName="SMID" />
+                <ScalarProperty Name="SM_Approved" ColumnName="SM_Approved" />
+                <ScalarProperty Name="SDID" ColumnName="SDID" />
+                <ScalarProperty Name="SD_Approved" ColumnName="SD_Approved" />
+                <ScalarProperty Name="COVP_ID" ColumnName="COVP_ID" />
+                <ScalarProperty Name="COVP_Approved" ColumnName="COVP_Approved" />
+                <ScalarProperty Name="SM_Comment" ColumnName="SM_Comment" />
+                <ScalarProperty Name="SD_Comment" ColumnName="SD_Comment" />
+                <ScalarProperty Name="CO_Comment" ColumnName="CO_Comment" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="RecID" ColumnName="RecID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProductModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SAPID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductTypeID" Type="int" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="150" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="PublicPrice" Type="decimal" Precision="4" Scale="2" />
+    <Property Name="Indication1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Indication2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Indication3" Type="nvarchar" MaxLength="50" />
+    <Property Name="Indication4" Type="nvarchar" MaxLength="50" />
+    <Property Name="LineID" Type="int" />
+    <Property Name="PMID" Type="int" />
+    <Property Name="PMName" Type="nvarchar" MaxLength="255" />
+    <Property Name="BrandID" Type="int" />
+    <Property Name="BrandName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="ProductModelStoreContainer">
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

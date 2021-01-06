@@ -1,0 +1,304 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="AmounCRM4.Site1" %>
+
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+
+  
+  
+    <script type="text/javascript">
+
+        (function (i, s, o, g, r, a, m) {
+
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-96910953-1', 'auto', { userId: '<%# Session["GlobalEmpIDName"] %>' });
+        ga('require', 'GTM-M92BGFJ');
+        ga('send', 'pageview');
+        var dimensionValue = '<%# Session["GlobalEmpName"] %>';
+        ga('set', 'dimension1', dimensionValue);
+
+
+
+
+    </script>
+
+   
+    <asp:ContentPlaceHolder ID="Head" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .content {
+            height: 690px;
+            width: 100%;
+        }
+
+        .table1 {
+            width: 98%;
+            height: auto;
+            margin-left: 5px;
+            margin-right: 5px;
+            border-style: solid;
+            border-color: blue;
+            border-width: 2px;
+            border-radius: 20px 20px;
+            border-bottom-left-radius: 25px 25px;
+            border-bottom-right-radius: 25px 25px;
+            border-top-left-radius: 25px 25px;
+            border-top-right-radius: 25px 25px;
+        }
+
+        .rightcell {
+            width: 25%;
+            text-align: right;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .leftcell {
+            width: 25%;
+            text-align: left;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .centercell {
+            width: 50%;
+            text-align: center;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .auto-style1 {
+            width: 37px;
+        }
+        .auto-style2 {
+            width: 64px;
+        }
+
+        </style>
+</head>
+   
+
+<body>
+    
+    <form id="form2" runat="server">
+
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js"></asp:ScriptReference>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js"></asp:ScriptReference>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js"></asp:ScriptReference>
+            </Scripts>
+        </telerik:RadScriptManager>
+
+        <table class="table1" style="text-align: center" align="center">
+            <tr style="border-width: medium; border-color: black;">
+                <td class="leftcell">
+                    <br />
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Times New Roman" Font-Size="Large" PathSeparator=" : ">
+                        <CurrentNodeStyle ForeColor="#333333" />
+                        <NodeStyle Font-Bold="True" ForeColor="#990000" />
+                        <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+                        <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+                    </asp:SiteMapPath>
+                    <br />
+                    <br />
+                    <asp:Label ID="lblEmployeeName" runat="server" Text="" Font-Size="Large"></asp:Label><br />
+                    <asp:Label ID="lblCycleName" runat="server" Text="" Font-Size="Large"></asp:Label><br />
+                    <asp:Label ID="lblNow" runat="server" Text="" Font-Size="Large" Visible="false"></asp:Label><br />
+                    <asp:Label ID="lblAreaName" runat="server" Text="" Font-Size="Large" Visible="false"></asp:Label><br />
+                    <asp:Label id="lblWorkingDays" runat="server" Text="" Font-Size="Large" Visible="false"></asp:Label>
+                    <br />
+                    <br />
+                    <%--<asp:LinkButton ID="logOutLink" runat="server" Text="Logout" Font-Size="Large" OnClick="logOutLink_Click"></asp:LinkButton>--%>
+                </td>
+                <td class="centercell">
+                    <h1 style="-ms-flex-align: center; text-align: center">Amoun Pharmaceutical Co.</h1>
+                    <br />
+
+                    <table width="95%" id="tblLinksAdmin" runat="server" visible="false">
+                        <tr>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="hl1" runat="server" NavigateUrl="~/Admins/DoctorsList.aspx" Text="Doctors List"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="HyperLink18" runat="server" NavigateUrl="~/Admins/SalesRepsPharmacies.aspx" Text="Sales Reps Responsibilities"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Admins/PopulationList.aspx" Text="Population List"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Admins/Plan_Visits.aspx" Text="Plan & Visits"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;" class="auto-style2">
+                                <asp:HyperLink ID="HyperLink32" runat="server" NavigateUrl="~/Admins/RepAffiliationForm2.aspx" Text="Database Requests(Review)"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;" class="auto-style1">
+                                <asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/Admins/RepAffiliationForm1.aspx" Text="Database Requests(Approved)"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;" class="auto-style1">
+                                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Admins/Requests.aspx" Text="Requests"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="HyperLink33" runat="server" NavigateUrl="~/Admins/AllUsers.aspx" Text="All Users"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="HyperLink34" runat="server" NavigateUrl="~/Admins/AuditTrailApps.aspx" Text="Audit Trail"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="HyperLink35" runat="server" NavigateUrl="~/Admins/AdminAffiliationForm2.aspx" Text="Affiliations Update"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="HyperLink36" runat="server" NavigateUrl="~/Admins/ClinicForm.aspx" Text="Clinic Update"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="HyperLink37" runat="server" NavigateUrl="~/Admins/PhysicianForm.aspx" Text="Physicians Update"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="HyperLink38" runat="server" NavigateUrl="~/Admins/EmployeeFormTemp.aspx" Text="Employees Update"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admins/Responsibilities.aspx" Text="Responsibilities"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium">
+                                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Admins/VacationReport.aspx" Text="Vacations"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="HyperLink17" runat="server" NavigateUrl="~/Admins/MessageForm2.aspx" Text="Notifications" Font-Bold="true"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: medium;">
+                                <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/CommercialDirector/DetailingPriority2.aspx" Text="Strategy" Font-Bold="true"></asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table width="95%" id="tblLinksAdmin2" runat="server" visible="false">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                    
+                    <%--For John--%>
+                    <table width="95%" id="tblLinksReps" runat="server" visible="false">
+                        <tr>
+                            <td colspan="4" style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">Entry</td>
+                            <td colspan="2" style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">Reports</td>
+                            <%--<td colspan="2" style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">Surveys</td>--%>
+                            <td rowspan="2" style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">
+                                <asp:HyperLink ID="HyperLink15" runat="server" NavigateUrl="~/Admins/Bausch.aspx" Text="Announcements"></asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large">
+                                <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/Reps/CallsScheduler.aspx" Text="Scheduler"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">
+                                <asp:HyperLink ID="HyperLink24" runat="server" NavigateUrl="~/Admins/RepAffiliationForm.aspx" Text="Change Requests"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">
+                                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Admins/VacationRequest.aspx" Text="Vacations"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">
+                                <asp:HyperLink ID="HyperLink19" runat="server" NavigateUrl="~/Admins/MobileEdit.aspx" Text="Mobile Editing"></asp:HyperLink>
+                            </td>
+
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large">
+                                <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Reps/Repreport_Dashboard.aspx" Text="Dashboard"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">
+                                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Reps/RepsDefault2.aspx" Text="Collective Reports"></asp:HyperLink>
+                            </td>
+
+                            <%--<td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">
+                                <asp:HyperLink ID="HyperLink15" runat="server" NavigateUrl="~/Surveys/Survey6.aspx" Text="New"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">
+                                <asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="~/Surveys/Survey7.aspx" Text="Edit"></asp:HyperLink>
+                            </td>--%>
+                        </tr>
+                    </table>
+
+                    <table width="95%" id="tblLinksDMs" runat="server" visible="false">
+                        <tr>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">Entry</td>
+                            <td colspan="4" style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">Reports</td>
+                            <td rowspan="2" style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">
+                                <asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="~/Admins/Bausch.aspx" Text="Announcements"></asp:HyperLink>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">
+                                <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="~/Admins/RepAffiliationForm.aspx" Text="Change Requests"></asp:HyperLink>
+                            </td>
+
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large">
+                                <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/DMs/DMReport_Dashboard.aspx" Text="Dashboard"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">
+                                <asp:HyperLink ID="HyperLink20" runat="server" NavigateUrl="~/DMs/DMDefault2.aspx" Text="Collective Reports"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">
+                                <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/DMs/DMCallsScheduler.aspx" Text="Reps Plans"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large;">
+                                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/DMs/Vacations.aspx" Text="Vacations"></asp:HyperLink>
+                            </td>
+
+                            <%--
+                            
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large; visibility:hidden">
+                                <asp:HyperLink ID="hlNotificationsDM" runat="server" NavigateUrl="~/DMs/Notifications.aspx" Text="Notifications" Font-Bold="true"></asp:HyperLink>
+                            </td>
+                            <td style="background-color: lightblue; color: blue; font-family: 'Times New Roman'; font-weight: bold; font-size: large; visibility:hidden">
+                                <asp:HyperLink ID="HyperLink18" runat="server" NavigateUrl="~/DMs/DMStatistics.aspx" Text="Calls Analysis" Font-Bold="true"></asp:HyperLink>
+                            </td>
+
+    
+                            <td style="background-color:lightblue; color:blue; font-family:'Times New Roman'; font-weight:bold; font-size:small">
+                                <asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="~/DMs/DMReport_Visits.aspx" Text="Actual Visits"></asp:HyperLink>
+                            </td>
+                            <td style="background-color:lightblue; color:blue; font-family:'Times New Roman'; font-weight:bold; font-size:small">
+                                <asp:HyperLink ID="HyperLink17" runat="server" NavigateUrl="~/DMs/DMReport_Appointments.aspx" Text="Scheduled Appointments"></asp:HyperLink>
+                            </td>
+                            <td style="background-color:lightblue; color:blue; font-family:'Times New Roman'; font-weight:bold; font-size:small">
+                                <asp:HyperLink ID="HyperLink18" runat="server" NavigateUrl="~/DMs/DMReport_Affiliations.aspx" Text="Doctors List"></asp:HyperLink>
+                            </td>
+                            <td style="background-color:lightblue; color:blue; font-family:'Times New Roman'; font-weight:bold; font-size:small">
+                                <asp:HyperLink ID="HyperLink21" runat="server" NavigateUrl="~/DMs/DMReport_TargetedAffiliations.aspx" Text="Targeted Doctors"></asp:HyperLink>
+                            </td>--%>
+                        </tr>
+                    </table>
+                    <%--End For John--%>
+                </td>
+                <td align="center" class="rightcell">
+                    <asp:LinkButton ID="logOutLink" runat="server" Text="Logout" Font-Size="Large" OnClick="logOutLink_Click"></asp:LinkButton>
+                    <br />
+                    <asp:Image ID="img" runat="server" ImageUrl="~/AmounLogo.jpg" Height="73px" Width="166px" />
+                </td>
+            </tr>
+            <tr style="border-width: medium; border-color: black">
+                <td align="center" style="border-width: medium; border-color: black" class="content" colspan="3">
+                    <asp:ContentPlaceHolder ID="Body" runat="server"></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr style="border-width: medium; border-color: black">
+                <td colspan="3" style="border-width: medium; border-color: black; -ms-flex-align: center" align="center">
+                    <br />
+                    <br />
+                    Business Technology Department - Amoun Pharmaceutical Co.</td>
+            </tr>
+        </table>
+
+    </form>
+    
+</body>
+</html>
+
+

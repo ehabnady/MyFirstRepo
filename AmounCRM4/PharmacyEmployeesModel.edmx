@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PharmacyEmployeesModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="PharmacyEmployees">
+          <Key>
+            <PropertyRef Name="PharmacyEmployeeRecID" />
+          </Key>
+          <Property Name="PharmacyEmployeeRecID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PharmacyID" Type="int" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="Deleted" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="PharmacyEmployeesModel2StoreContainer">
+          <EntitySet Name="PharmacyEmployees" EntityType="Self.PharmacyEmployees" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PharmacyEmployeesModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="PharmacyEmployee">
+          <Key>
+            <PropertyRef Name="PharmacyEmployeeRecID" />
+          </Key>
+          <Property Name="PharmacyEmployeeRecID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PharmacyID" Type="Int32" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="Deleted" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="PharmacyEmployeesEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PharmacyEmployees" EntityType="Self.PharmacyEmployee" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PharmacyEmployeesModel2StoreContainer" CdmEntityContainer="PharmacyEmployeesEntities">
+          <EntitySetMapping Name="PharmacyEmployees">
+            <EntityTypeMapping TypeName="PharmacyEmployeesModel2.PharmacyEmployee">
+              <MappingFragment StoreEntitySet="PharmacyEmployees">
+                <ScalarProperty Name="PharmacyEmployeeRecID" ColumnName="PharmacyEmployeeRecID" />
+                <ScalarProperty Name="PharmacyID" ColumnName="PharmacyID" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

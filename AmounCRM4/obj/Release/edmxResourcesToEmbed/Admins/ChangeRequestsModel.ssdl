@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ChangeRequestEntityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AmounCRM2.dbo.View_ChangeRequests' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_ChangeRequests">
+    <Key>
+      <PropertyRef Name="RecID" />
+    </Key>
+    <Property Name="AffiliationID" Type="int" />
+    <Property Name="AffiliationName" Type="nvarchar" MaxLength="250" />
+    <Property Name="PhysicianID" Type="int" />
+    <Property Name="EntityID" Type="int" />
+    <Property Name="AreaRecID" Type="int" />
+    <Property Name="SpecialityID" Type="int" />
+    <Property Name="LineID" Type="int" />
+    <Property Name="PhysicianClass" Type="nvarchar" MaxLength="2" />
+    <Property Name="BestTimeFrom" Type="nvarchar" MaxLength="50" />
+    <Property Name="BestTimeTo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="150" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="EntryDate" Type="smalldatetime" />
+    <Property Name="Is_Approved" Type="bit" />
+    <Property Name="EntityAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="EntityTypeID" Type="int" />
+    <Property Name="Tel1" Type="nvarchar" MaxLength="15" />
+    <Property Name="Tel2" Type="nvarchar" MaxLength="15" />
+    <Property Name="Tel3" Type="nvarchar" MaxLength="15" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="15" />
+    <Property Name="EntityEmailAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="EntityWebSite" Type="nvarchar" MaxLength="100" />
+    <Property Name="PhysicianName" Type="nvarchar" MaxLength="255" />
+    <Property Name="EntityName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Is_Implemented" Type="bit" />
+    <Property Name="RepName" Type="nvarchar" MaxLength="100" />
+    <Property Name="DMID" Type="int" />
+    <Property Name="BrickID" Type="int" />
+    <Property Name="NoOfPatients" Type="nvarchar" MaxLength="50" />
+    <Property Name="WatingTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="PrescriptionHappit" Type="nvarchar" MaxLength="50" />
+    <Property Name="AdminComments" Type="nvarchar" MaxLength="150" />
+    <Property Name="DMComments" Type="nvarchar" MaxLength="150" />
+    <Property Name="RequestType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="EntityNameOld" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhysicianNameOld" Type="nvarchar" MaxLength="255" />
+    <Property Name="EntityAddressOld" Type="nvarchar" MaxLength="255" />
+    <Property Name="AreaRecIDOld" Type="int" />
+    <Property Name="SpecialityIDOld" Type="int" />
+    <Property Name="EntityTypeIDOld" Type="int" />
+    <Property Name="NoOfPatientsOld" Type="nvarchar" MaxLength="50" />
+    <Property Name="WatingTimeOld" Type="nvarchar" MaxLength="50" />
+    <Property Name="PrescriptionHappitOld" Type="nvarchar" MaxLength="50" />
+    <Property Name="RealAffID" Type="int" />
+    <Property Name="SMID" Type="int" />
+    <Property Name="SM_Approved" Type="bit" />
+    <Property Name="SDID" Type="int" />
+    <Property Name="SD_Approved" Type="bit" />
+    <Property Name="COVP_ID" Type="int" />
+    <Property Name="COVP_Approved" Type="bit" />
+    <Property Name="SM_Comment" Type="nvarchar" MaxLength="150" />
+    <Property Name="SD_Comment" Type="nvarchar" MaxLength="150" />
+    <Property Name="CO_Comment" Type="nvarchar" MaxLength="150" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="RecID" Type="int" Nullable="false" />
+    <Property Name="DMSignature" Type="nvarchar" MaxLength="150" />
+    <Property Name="SMSignature" Type="nvarchar" MaxLength="150" />
+    <Property Name="SDSignature" Type="nvarchar" MaxLength="150" />
+    <Property Name="COSignature" Type="nvarchar" MaxLength="150" />
+    <Property Name="AdminSignature" Type="nvarchar" MaxLength="150" />
+    <Property Name="RequestDate" Type="smalldatetime" />
+    <Property Name="DMDate" Type="smalldatetime" />
+    <Property Name="SMDate" Type="smalldatetime" />
+    <Property Name="SDDate" Type="smalldatetime" />
+    <Property Name="CODate" Type="smalldatetime" />
+    <Property Name="AdminDate" Type="smalldatetime" />
+    <Property Name="ProceedBySignature" Type="nvarchar" MaxLength="150" />
+    <Property Name="ProceedByDate" Type="smalldatetime" />
+    <Property Name="ProceedBy" Type="bit" />
+    <Property Name="NoOfOperations" Type="nvarchar" MaxLength="50" />
+    <Property Name="NoOfOperationsOld" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="ChangeRequestEntityModelStoreContainer">
+    <EntitySet Name="View_ChangeRequests" EntityType="Self.View_ChangeRequests" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_ChangeRequests].[AffiliationID] AS [AffiliationID], 
+    [View_ChangeRequests].[AffiliationName] AS [AffiliationName], 
+    [View_ChangeRequests].[PhysicianID] AS [PhysicianID], 
+    [View_ChangeRequests].[EntityID] AS [EntityID], 
+    [View_ChangeRequests].[AreaRecID] AS [AreaRecID], 
+    [View_ChangeRequests].[SpecialityID] AS [SpecialityID], 
+    [View_ChangeRequests].[LineID] AS [LineID], 
+    [View_ChangeRequests].[PhysicianClass] AS [PhysicianClass], 
+    [View_ChangeRequests].[BestTimeFrom] AS [BestTimeFrom], 
+    [View_ChangeRequests].[BestTimeTo] AS [BestTimeTo], 
+    [View_ChangeRequests].[Notes] AS [Notes], 
+    [View_ChangeRequests].[Deleted] AS [Deleted], 
+    [View_ChangeRequests].[EmployeeID] AS [EmployeeID], 
+    [View_ChangeRequests].[EntryDate] AS [EntryDate], 
+    [View_ChangeRequests].[Is_Approved] AS [Is_Approved], 
+    [View_ChangeRequests].[EntityAddress] AS [EntityAddress], 
+    [View_ChangeRequests].[EntityTypeID] AS [EntityTypeID], 
+    [View_ChangeRequests].[Tel1] AS [Tel1], 
+    [View_ChangeRequests].[Tel2] AS [Tel2], 
+    [View_ChangeRequests].[Tel3] AS [Tel3], 
+    [View_ChangeRequests].[Fax] AS [Fax], 
+    [View_ChangeRequests].[EntityEmailAddress] AS [EntityEmailAddress], 
+    [View_ChangeRequests].[EntityWebSite] AS [EntityWebSite], 
+    [View_ChangeRequests].[PhysicianName] AS [PhysicianName], 
+    [View_ChangeRequests].[EntityName] AS [EntityName], 
+    [View_ChangeRequests].[Is_Implemented] AS [Is_Implemented], 
+    [View_ChangeRequests].[RepName] AS [RepName], 
+    [View_ChangeRequests].[DMID] AS [DMID], 
+    [View_ChangeRequests].[BrickID] AS [BrickID], 
+    [View_ChangeRequests].[NoOfPatients] AS [NoOfPatients], 
+    [View_ChangeRequests].[WatingTime] AS [WatingTime], 
+    [View_ChangeRequests].[PrescriptionHappit] AS [PrescriptionHappit], 
+    [View_ChangeRequests].[AdminComments] AS [AdminComments], 
+    [View_ChangeRequests].[DMComments] AS [DMComments], 
+    [View_ChangeRequests].[RequestType] AS [RequestType], 
+    [View_ChangeRequests].[Description] AS [Description], 
+    [View_ChangeRequests].[EntityNameOld] AS [EntityNameOld], 
+    [View_ChangeRequests].[PhysicianNameOld] AS [PhysicianNameOld], 
+    [View_ChangeRequests].[EntityAddressOld] AS [EntityAddressOld], 
+    [View_ChangeRequests].[AreaRecIDOld] AS [AreaRecIDOld], 
+    [View_ChangeRequests].[SpecialityIDOld] AS [SpecialityIDOld], 
+    [View_ChangeRequests].[EntityTypeIDOld] AS [EntityTypeIDOld], 
+    [View_ChangeRequests].[NoOfPatientsOld] AS [NoOfPatientsOld], 
+    [View_ChangeRequests].[WatingTimeOld] AS [WatingTimeOld], 
+    [View_ChangeRequests].[PrescriptionHappitOld] AS [PrescriptionHappitOld], 
+    [View_ChangeRequests].[RealAffID] AS [RealAffID], 
+    [View_ChangeRequests].[SMID] AS [SMID], 
+    [View_ChangeRequests].[SM_Approved] AS [SM_Approved], 
+    [View_ChangeRequests].[SDID] AS [SDID], 
+    [View_ChangeRequests].[SD_Approved] AS [SD_Approved], 
+    [View_ChangeRequests].[COVP_ID] AS [COVP_ID], 
+    [View_ChangeRequests].[COVP_Approved] AS [COVP_Approved], 
+    [View_ChangeRequests].[SM_Comment] AS [SM_Comment], 
+    [View_ChangeRequests].[SD_Comment] AS [SD_Comment], 
+    [View_ChangeRequests].[CO_Comment] AS [CO_Comment], 
+    [View_ChangeRequests].[Status] AS [Status], 
+    [View_ChangeRequests].[RecID] AS [RecID], 
+    [View_ChangeRequests].[DMSignature] AS [DMSignature], 
+    [View_ChangeRequests].[SMSignature] AS [SMSignature], 
+    [View_ChangeRequests].[SDSignature] AS [SDSignature], 
+    [View_ChangeRequests].[COSignature] AS [COSignature], 
+    [View_ChangeRequests].[AdminSignature] AS [AdminSignature], 
+    [View_ChangeRequests].[RequestDate] AS [RequestDate], 
+    [View_ChangeRequests].[DMDate] AS [DMDate], 
+    [View_ChangeRequests].[SMDate] AS [SMDate], 
+    [View_ChangeRequests].[SDDate] AS [SDDate], 
+    [View_ChangeRequests].[CODate] AS [CODate], 
+    [View_ChangeRequests].[AdminDate] AS [AdminDate], 
+    [View_ChangeRequests].[ProceedBySignature] AS [ProceedBySignature], 
+    [View_ChangeRequests].[ProceedByDate] AS [ProceedByDate], 
+    [View_ChangeRequests].[ProceedBy] AS [ProceedBy], 
+    [View_ChangeRequests].[NoOfOperations] AS [NoOfOperations], 
+    [View_ChangeRequests].[NoOfOperationsOld] AS [NoOfOperationsOld]
+    FROM [dbo].[View_ChangeRequests] AS [View_ChangeRequests]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

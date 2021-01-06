@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EntityTempMode.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EntityTemp">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="EntityID" Type="int" Nullable="false" />
+    <Property Name="EntityName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="EntityCode" Type="int" />
+    <Property Name="EntityAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="EntityTypeID" Type="int" />
+    <Property Name="BrickID" Type="int" />
+    <Property Name="Tel1" Type="nvarchar" MaxLength="15" />
+    <Property Name="Tel2" Type="nvarchar" MaxLength="15" />
+    <Property Name="Tel3" Type="nvarchar" MaxLength="15" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="15" />
+    <Property Name="EntityEmailAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="EntityWebSite" Type="nvarchar" MaxLength="100" />
+    <Property Name="EntryEmployeeID" Type="int" />
+    <Property Name="EntryDate" Type="smalldatetime" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BrickName" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="EntityTempModeStoreContainer">
+    <EntitySet Name="EntityTemp" EntityType="Self.EntityTemp" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

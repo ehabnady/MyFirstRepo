@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ViewAffiliationsAdmin" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="View_Affiliations_Admin">
+    <Key>
+      <PropertyRef Name="AffiliationID" />
+      <PropertyRef Name="PhysicianName" />
+      <PropertyRef Name="IsTargeted" />
+    </Key>
+    <Property Name="AffiliationID" Type="Int32" Nullable="false" />
+    <Property Name="AffiliationName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="PhysicianName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Entity_Name" Type="String" MaxLength="508" FixedLength="false" Unicode="true" />
+    <Property Name="SpecialtyID" Type="Int32" />
+    <Property Name="SpecialityName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="PhysicianClass" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="LineName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PhysicianID" Type="Int32" />
+    <Property Name="EntityID" Type="Int32" />
+    <Property Name="AmounTerritoryName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="AreaRecID" Type="Int32" />
+    <Property Name="SupervisionArea" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="AmounRegionID" Type="Int32" />
+    <Property Name="AmounRegionName" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="AmounTerritoryID" Type="Int32" />
+    <Property Name="LineID" Type="Int32" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="EmployeeHRCode" Type="Int32" />
+    <Property Name="EmployeeName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeType" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SupervisorName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EntityAddress" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SpecialityCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SupervisorID" Type="Int32" />
+    <Property Name="ManagerID" Type="Int32" />
+    <Property Name="ManagerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SupervisionAreaID" Type="Int32" />
+    <Property Name="BrickID" Type="Int32" />
+    <Property Name="AmounBrickName" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="Notes" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" />
+    <Property Name="BestTimeFrom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BestTimeTo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NoOfPatients" Type="Double" />
+    <Property Name="WaitingTime" Type="Double" />
+    <Property Name="SpecialtyValue" Type="Double" />
+    <Property Name="TotalValue" Type="Double" />
+    <Property Name="IsTargeted" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="PrescriptionHappit" Type="Double" />
+    <Property Name="NoOfPatientsNew" Type="Double" />
+    <Property Name="NoOfPatientsOld" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="ViewAffiliationsAdminDB" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="View_Affiliations_Admin" EntityType="Self.View_Affiliations_Admin" />
+  </EntityContainer>
+</Schema>

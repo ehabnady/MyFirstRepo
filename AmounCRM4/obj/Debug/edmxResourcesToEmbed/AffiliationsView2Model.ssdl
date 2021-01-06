@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AffiliationsView2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'AmounCRM2.dbo.AffiliationsView' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="AffiliationsView">
+          <Property Name="AffiliationID" Type="int" />
+          <Property Name="LineID" Type="int" />
+          <Property Name="NoOfPatients" Type="int" />
+          <Property Name="WaitingTime" Type="int" />
+          <Property Name="SpecialtyValue" Type="float" />
+          <Property Name="TotalValue" Type="float" />
+          <Property Name="PhysicianClass" Type="nvarchar" MaxLength="2" />
+          <Property Name="Deleted" Type="bit" />
+          <Property Name="AffiliationName" Type="nvarchar" MaxLength="250" />
+          <Property Name="Expr1" Type="bit" />
+          <Property Name="BestTimeFrom" Type="nvarchar" MaxLength="50" />
+          <Property Name="BestTimeTo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Notes" Type="nvarchar" MaxLength="150" />
+          <Property Name="EntityAddress" Type="nvarchar" MaxLength="250" />
+          <Property Name="BrickID" Type="int" />
+          <Property Name="AmounBrickName" Type="nvarchar" MaxLength="40" />
+          <Property Name="LineName" Type="nvarchar" MaxLength="50" />
+          <Property Name="EntityTypeName" Type="nvarchar" MaxLength="150" />
+          <Property Name="SpecialtyID" Type="int" />
+          <Property Name="SpecialityCode" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+  <EntityContainer Name="AffiliationsView2StoreContainer" />
+</Schema>

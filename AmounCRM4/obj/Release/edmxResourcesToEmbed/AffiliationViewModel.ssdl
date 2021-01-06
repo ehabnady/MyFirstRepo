@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AmounCRM2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AmounCRM2.dbo.AffiliationsAdminView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AffiliationsAdminView">
+    <Key>
+      <PropertyRef Name="AffiliationID" />
+    </Key>
+    <Property Name="AffiliationID" Type="int" Nullable="false" />
+    <Property Name="AffiliationName" Type="nvarchar" MaxLength="250" />
+    <Property Name="EntityID" Type="int" />
+    <Property Name="PhysicianID" Type="int" />
+    <Property Name="PhysicianClass" Type="nvarchar" MaxLength="2" />
+    <Property Name="AmounTerritoryName" Type="nvarchar" MaxLength="60" />
+    <Property Name="BestTimeFrom" Type="nvarchar" MaxLength="50" />
+    <Property Name="BestTimeTo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="150" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="AreaRecID" Type="int" />
+    <Property Name="SpecialtyID" Type="int" />
+    <Property Name="LineID" Type="int" />
+    <Property Name="SpecialityName" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityContainer Name="AmounCRM2ModelStoreContainer">
+    <EntitySet Name="AffiliationsAdminView" EntityType="Self.AffiliationsAdminView" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AffiliationsAdminView].[AffiliationID] AS [AffiliationID], 
+    [AffiliationsAdminView].[AffiliationName] AS [AffiliationName], 
+    [AffiliationsAdminView].[EntityID] AS [EntityID], 
+    [AffiliationsAdminView].[PhysicianID] AS [PhysicianID], 
+    [AffiliationsAdminView].[PhysicianClass] AS [PhysicianClass], 
+    [AffiliationsAdminView].[AmounTerritoryName] AS [AmounTerritoryName], 
+    [AffiliationsAdminView].[BestTimeFrom] AS [BestTimeFrom], 
+    [AffiliationsAdminView].[BestTimeTo] AS [BestTimeTo], 
+    [AffiliationsAdminView].[Notes] AS [Notes], 
+    [AffiliationsAdminView].[Deleted] AS [Deleted], 
+    [AffiliationsAdminView].[AreaRecID] AS [AreaRecID], 
+    [AffiliationsAdminView].[SpecialtyID] AS [SpecialtyID], 
+    [AffiliationsAdminView].[LineID] AS [LineID], 
+    [AffiliationsAdminView].[SpecialityName] AS [SpecialityName]
+    FROM [dbo].[AffiliationsAdminView] AS [AffiliationsAdminView]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

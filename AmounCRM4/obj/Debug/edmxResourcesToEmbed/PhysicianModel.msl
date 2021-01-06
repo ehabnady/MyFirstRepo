@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PhysicianModelStoreContainer" CdmEntityContainer="PhysicianBDContext">
+    <EntitySetMapping Name="Physicians">
+      <EntityTypeMapping TypeName="PhysicianModel.Physician">
+        <MappingFragment StoreEntitySet="Physicians">
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="PhysicianID" ColumnName="PhysicianID" />
+          <ScalarProperty Name="PhysicianName" ColumnName="PhysicianName" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="TelNumber" ColumnName="TelNumber" />
+          <ScalarProperty Name="PhysicianEmailAddress" ColumnName="PhysicianEmailAddress" />
+          <ScalarProperty Name="SpecialtyID" ColumnName="SpecialtyID" />
+          <ScalarProperty Name="PhysicianOldCode" ColumnName="PhysicianOldCode" />
+          <ScalarProperty Name="EntryEmployeeID" ColumnName="EntryEmployeeID" />
+          <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmpTempDBContextStoreContainer" CdmEntityContainer="AmounCRM2Entities">
+    <EntitySetMapping Name="EmployeesMasterDataTemps">
+      <EntityTypeMapping TypeName="EmpTempDBContext.EmployeesMasterDataTemp">
+        <MappingFragment StoreEntitySet="EmployeesMasterDataTemp">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EmployeeHRCode" ColumnName="EmployeeHRCode" />
+          <ScalarProperty Name="EmployeeFullName" ColumnName="EmployeeFullName" />
+          <ScalarProperty Name="EmployeeUserName" ColumnName="EmployeeUserName" />
+          <ScalarProperty Name="EmployeePassword" ColumnName="EmployeePassword" />
+          <ScalarProperty Name="MustChangePassword" ColumnName="MustChangePassword" />
+          <ScalarProperty Name="LastChangeDate" ColumnName="LastChangeDate" />
+          <ScalarProperty Name="NextChangeDate" ColumnName="NextChangeDate" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsPilot" ColumnName="IsPilot" />
+          <ScalarProperty Name="NoOfVisitsPerDay" ColumnName="NoOfVisitsPerDay" />
+          <ScalarProperty Name="TStatus" ColumnName="TStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

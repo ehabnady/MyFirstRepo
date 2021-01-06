@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeesView" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="View_Employees">
+    <Key>
+      <PropertyRef Name="EmployeeHRCode" />
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="TopManagerID" />
+      <PropertyRef Name="DirectorID" />
+      <PropertyRef Name="ComDirID" />
+    </Key>
+    <Property Name="DeletedEmployee" Type="Boolean" />
+    <Property Name="DeletedRep" Type="Boolean" />
+    <Property Name="EmployeeHRCode" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeFullName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="LineID" Type="Int32" />
+    <Property Name="EmployeeType" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AreaRecID" Type="Int32" />
+    <Property Name="EmployeePassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MustChangePassword" Type="Boolean" />
+    <Property Name="LastChangeDate" Type="DateTime" Precision="0" />
+    <Property Name="NextChangeDate" Type="DateTime" Precision="0" />
+    <Property Name="DirectManagerID" Type="Int32" />
+    <Property Name="DirectManagerCode" Type="Int32" />
+    <Property Name="DirectManagerLineID" Type="Int32" />
+    <Property Name="DirectManagerAreaID" Type="Int32" />
+    <Property Name="DirectManagerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DirectManagerUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DirectManagerPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DirectManagerMustChangePassword" Type="Boolean" />
+    <Property Name="DirectManagerLastChangeDate" Type="DateTime" Precision="0" />
+    <Property Name="DirectManagerChangeDate" Type="DateTime" Precision="0" />
+    <Property Name="TopManagerID" Type="Int32" Nullable="false" />
+    <Property Name="TopManagerHRCode" Type="Int32" />
+    <Property Name="TopManagerLineID" Type="Int32" />
+    <Property Name="TopManagerAreaID" Type="Int32" />
+    <Property Name="TopManagerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TopManagerUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TopManagerPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TopManagerMustChangePassword" Type="Boolean" />
+    <Property Name="TopManagerLastChangeDate" Type="DateTime" Precision="0" />
+    <Property Name="TopManagerNextChangeDate" Type="DateTime" Precision="0" />
+    <Property Name="DirectorID" Type="Int32" Nullable="false" />
+    <Property Name="DirectorHRCode" Type="Int32" />
+    <Property Name="DirectorType" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DirectorName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DirectorUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DirectorPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DirectorMustChange" Type="Boolean" />
+    <Property Name="DirectorLastChangeDate" Type="DateTime" Precision="0" />
+    <Property Name="DirectorNextChangeDate" Type="DateTime" Precision="0" />
+    <Property Name="ComDirID" Type="Int32" Nullable="false" />
+    <Property Name="ComDirHRCode" Type="Int32" />
+    <Property Name="ComDirType" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ComDirName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ComDirUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ComDirPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ComDirMustChange" Type="Boolean" />
+    <Property Name="ComDirLastChangeDate" Type="DateTime" Precision="0" />
+    <Property Name="ComDirNextChangeDate" Type="DateTime" Precision="0" />
+    <Property Name="RecordCreationDate" Type="DateTime" Precision="0" />
+    <Property Name="RecordCreatedBy" Type="Int32" />
+    <Property Name="NoOfVisitsPerDay" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="EmployeesViewDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="View_Employees" EntityType="Self.View_Employees" />
+  </EntityContainer>
+</Schema>

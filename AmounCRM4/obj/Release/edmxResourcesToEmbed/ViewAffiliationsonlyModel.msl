@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ViewAffiliationOnlyModelStoreContainer" CdmEntityContainer="ViewAffiliationsOnlyDBContext">
+    <EntitySetMapping Name="View_Affiliations_only">
+      <EntityTypeMapping TypeName="ViewAffiliationOnlyModel.View_Affiliations_only">
+        <MappingFragment StoreEntitySet="View_Affiliations_only">
+          <ScalarProperty Name="SpecialityID" ColumnName="SpecialityID" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="BestTimeTo" ColumnName="BestTimeTo" />
+          <ScalarProperty Name="BestTimeFrom" ColumnName="BestTimeFrom" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="PhysicianID" ColumnName="PhysicianID" />
+          <ScalarProperty Name="AffiliationID" ColumnName="AffiliationID" />
+          <ScalarProperty Name="AffiliationName" ColumnName="AffiliationName" />
+          <ScalarProperty Name="AmounBrickName" ColumnName="AmounBrickName" />
+          <ScalarProperty Name="SpecialityCode" ColumnName="SpecialityCode" />
+          <ScalarProperty Name="LineID" ColumnName="LineID" />
+          <ScalarProperty Name="NoOfPatients" ColumnName="NoOfPatients" />
+          <ScalarProperty Name="PrescriptionHappit" ColumnName="PrescriptionHappit" />
+          <ScalarProperty Name="PhysicianClass" ColumnName="PhysicianClass" />
+          <ScalarProperty Name="WaitingTime" ColumnName="WaitingTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

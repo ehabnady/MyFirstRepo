@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NationalVaccModelStoreContainer" CdmEntityContainer="NationalEntities">
+    <EntitySetMapping Name="NationalVaccations">
+      <EntityTypeMapping TypeName="NationalVaccModel.NationalVaccation">
+        <MappingFragment StoreEntitySet="NationalVaccations">
+          <ScalarProperty Name="VaccationID" ColumnName="VaccationID" />
+          <ScalarProperty Name="VaccationDate" ColumnName="VaccationDate" />
+          <ScalarProperty Name="DayID" ColumnName="DayID" />
+          <ScalarProperty Name="MonthID" ColumnName="MonthID" />
+          <ScalarProperty Name="YearID" ColumnName="YearID" />
+          <ScalarProperty Name="CycleID" ColumnName="CycleID" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Vaccation_Name" ColumnName="Vaccation Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

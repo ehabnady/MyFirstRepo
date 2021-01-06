@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AppModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Appointments">
+    <Key>
+      <PropertyRef Name="AppointmentID" />
+    </Key>
+    <Property Name="AppointmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Subject" Type="nvarchar" MaxLength="255" />
+    <Property Name="Description" Type="nvarchar" MaxLength="1024" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="EntityID" Type="int" />
+    <Property Name="PhysicianID" Type="int" />
+    <Property Name="RecurrenceRule" Type="nvarchar" MaxLength="1024" />
+    <Property Name="RecurrenceParentID" Type="int" />
+    <Property Name="Reminder" Type="nvarchar" MaxLength="255" />
+    <Property Name="Annotations" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastModified" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="LineID" Type="int" />
+    <Property Name="AreaRecID" Type="int" />
+    <Property Name="CycleID" Type="int" />
+    <Property Name="AffiliationID" Type="int" />
+    <Property Name="IsOriginal" Type="bit" />
+    <Property Name="EntryDateTime" Type="smalldatetime" />
+    <Property Name="DeletedAppointment" Type="bit" />
+  </EntityType>
+  <Association Name="FK_Appointments_ParentAppointments">
+    <End Role="Appointments" Type="Self.Appointments" Multiplicity="0..1" />
+    <End Role="Appointments1" Type="Self.Appointments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appointments">
+        <PropertyRef Name="AppointmentID" />
+      </Principal>
+      <Dependent Role="Appointments1">
+        <PropertyRef Name="RecurrenceParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AppModelStoreContainer">
+    <EntitySet Name="Appointments" EntityType="Self.Appointments" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Appointments_ParentAppointments" Association="Self.FK_Appointments_ParentAppointments">
+      <End Role="Appointments" EntitySet="Appointments" />
+      <End Role="Appointments1" EntitySet="Appointments" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

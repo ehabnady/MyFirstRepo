@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProductModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SAPID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductTypeID" Type="Int32" />
+    <Property Name="ProductName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyID" Type="Int32" />
+    <Property Name="Deleted" Type="Boolean" />
+    <Property Name="PublicPrice" Type="Decimal" Precision="4" Scale="2" />
+    <Property Name="Indication1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Indication2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Indication3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Indication4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LineID" Type="Int32" />
+    <Property Name="PMID" Type="Int32" />
+    <Property Name="PMName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BrandID" Type="Int32" />
+    <Property Name="BrandName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ProductEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Products" EntityType="Self.Product" />
+  </EntityContainer>
+</Schema>

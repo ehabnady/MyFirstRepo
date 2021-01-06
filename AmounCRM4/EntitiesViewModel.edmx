@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="EntitiesViewsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AmounCRM2.dbo.View_Entities' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_Entities">
+          <Key>
+            <PropertyRef Name="EntityID" />
+            <PropertyRef Name="EntityName" />
+          </Key>
+          <Property Name="EntityID" Type="int" Nullable="false" />
+          <Property Name="EntityName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="EntityCode" Type="int" />
+          <Property Name="EntityAddress" Type="nvarchar" MaxLength="250" />
+          <Property Name="EntityTypeID" Type="int" />
+          <Property Name="BrickID" Type="int" />
+          <Property Name="Tel1" Type="nvarchar" MaxLength="15" />
+          <Property Name="Tel2" Type="nvarchar" MaxLength="15" />
+          <Property Name="Tel3" Type="nvarchar" MaxLength="15" />
+          <Property Name="Fax" Type="nvarchar" MaxLength="15" />
+          <Property Name="EntityEmailAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="EntityWebSite" Type="nvarchar" MaxLength="100" />
+          <Property Name="EntryEmployeeID" Type="int" />
+          <Property Name="EntryDate" Type="smalldatetime" />
+          <Property Name="Deleted" Type="bit" />
+          <Property Name="AmounBrickName" Type="nvarchar" MaxLength="40" />
+        </EntityType>
+        <EntityContainer Name="EntitiesViewsModelStoreContainer">
+          <EntitySet Name="View_Entities" EntityType="Self.View_Entities" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_Entities].[EntityID] AS [EntityID], 
+    [View_Entities].[EntityName] AS [EntityName], 
+    [View_Entities].[EntityCode] AS [EntityCode], 
+    [View_Entities].[EntityAddress] AS [EntityAddress], 
+    [View_Entities].[EntityTypeID] AS [EntityTypeID], 
+    [View_Entities].[BrickID] AS [BrickID], 
+    [View_Entities].[Tel1] AS [Tel1], 
+    [View_Entities].[Tel2] AS [Tel2], 
+    [View_Entities].[Tel3] AS [Tel3], 
+    [View_Entities].[Fax] AS [Fax], 
+    [View_Entities].[EntityEmailAddress] AS [EntityEmailAddress], 
+    [View_Entities].[EntityWebSite] AS [EntityWebSite], 
+    [View_Entities].[EntryEmployeeID] AS [EntryEmployeeID], 
+    [View_Entities].[EntryDate] AS [EntryDate], 
+    [View_Entities].[Deleted] AS [Deleted], 
+    [View_Entities].[AmounBrickName] AS [AmounBrickName]
+    FROM [dbo].[View_Entities] AS [View_Entities]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EntitiesViewsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="View_Entities">
+          <Key>
+            <PropertyRef Name="EntityID" />
+            <PropertyRef Name="EntityName" />
+          </Key>
+          <Property Name="EntityID" Type="Int32" Nullable="false" />
+          <Property Name="EntityName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EntityCode" Type="Int32" />
+          <Property Name="EntityAddress" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="EntityTypeID" Type="Int32" />
+          <Property Name="BrickID" Type="Int32" />
+          <Property Name="Tel1" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Tel2" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Tel3" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Fax" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="EntityEmailAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EntityWebSite" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EntryEmployeeID" Type="Int32" />
+          <Property Name="EntryDate" Type="DateTime" Precision="0" />
+          <Property Name="Deleted" Type="Boolean" />
+          <Property Name="AmounBrickName" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="EntitiesViewDBContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="View_Entities" EntityType="Self.View_Entities" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EntitiesViewsModelStoreContainer" CdmEntityContainer="EntitiesViewDBContext">
+          <EntitySetMapping Name="View_Entities">
+            <EntityTypeMapping TypeName="EntitiesViewsModel.View_Entities">
+              <MappingFragment StoreEntitySet="View_Entities">
+                <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+                <ScalarProperty Name="EntityName" ColumnName="EntityName" />
+                <ScalarProperty Name="EntityCode" ColumnName="EntityCode" />
+                <ScalarProperty Name="EntityAddress" ColumnName="EntityAddress" />
+                <ScalarProperty Name="EntityTypeID" ColumnName="EntityTypeID" />
+                <ScalarProperty Name="BrickID" ColumnName="BrickID" />
+                <ScalarProperty Name="Tel1" ColumnName="Tel1" />
+                <ScalarProperty Name="Tel2" ColumnName="Tel2" />
+                <ScalarProperty Name="Tel3" ColumnName="Tel3" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="EntityEmailAddress" ColumnName="EntityEmailAddress" />
+                <ScalarProperty Name="EntityWebSite" ColumnName="EntityWebSite" />
+                <ScalarProperty Name="EntryEmployeeID" ColumnName="EntryEmployeeID" />
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="AmounBrickName" ColumnName="AmounBrickName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

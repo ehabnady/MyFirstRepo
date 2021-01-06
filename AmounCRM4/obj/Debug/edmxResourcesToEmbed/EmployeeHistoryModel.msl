@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmployeesHistoryModelStoreContainer" CdmEntityContainer="EmployeeHDBContext">
+    <EntitySetMapping Name="EmployeesHistories">
+      <EntityTypeMapping TypeName="EmployeesHistoryModel.EmployeesHistory">
+        <MappingFragment StoreEntitySet="EmployeesHistory">
+          <ScalarProperty Name="IsPilot" ColumnName="IsPilot" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeHRCode" ColumnName="EmployeeHRCode" />
+          <ScalarProperty Name="LineID" ColumnName="LineID" />
+          <ScalarProperty Name="RepAreaID" ColumnName="RepAreaID" />
+          <ScalarProperty Name="EmployeeType" ColumnName="EmployeeType" />
+          <ScalarProperty Name="ReportsTo" ColumnName="ReportsTo" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

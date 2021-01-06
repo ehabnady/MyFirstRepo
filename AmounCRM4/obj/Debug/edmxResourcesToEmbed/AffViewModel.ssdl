@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="affView.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AmounCRM2.dbo.AffiliationsView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AffiliationsView">
+    <Key>
+      <PropertyRef Name="PhysicianName" />
+      <PropertyRef Name="EntityName" />
+    </Key>
+    <Property Name="AffiliationID" Type="int" />
+    <Property Name="AffiliationName" Type="nvarchar" MaxLength="250" />
+    <Property Name="PhysicianID" Type="int" />
+    <Property Name="PhysicianName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="SpecialtyID" Type="int" />
+    <Property Name="SpecialityCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="SpecialityName" Type="nvarchar" MaxLength="150" />
+    <Property Name="EntityID" Type="int" />
+    <Property Name="EntityName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="EntityTypeID" Type="int" />
+    <Property Name="EntityTypeName" Type="nvarchar" MaxLength="150" />
+    <Property Name="BrickID" Type="int" />
+    <Property Name="AmounBrickName" Type="nvarchar" MaxLength="40" />
+    <Property Name="PhysicianClass" Type="nvarchar" MaxLength="2" />
+    <Property Name="BestTimeFrom" Type="nvarchar" MaxLength="50" />
+    <Property Name="BestTimeTo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="150" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="LineID" Type="int" />
+    <Property Name="LineName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NoOfPatients" Type="int" />
+    <Property Name="WaitingTime" Type="int" />
+    <Property Name="SpecialtyValue" Type="float" />
+    <Property Name="TotalValue" Type="float" />
+    <Property Name="Expr1" Type="nvarchar" MaxLength="2" />
+    <Property Name="Expr2" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="affViewStoreContainer">
+    <EntitySet Name="AffiliationsView" EntityType="Self.AffiliationsView" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AffiliationsView].[AffiliationID] AS [AffiliationID], 
+    [AffiliationsView].[AffiliationName] AS [AffiliationName], 
+    [AffiliationsView].[PhysicianID] AS [PhysicianID], 
+    [AffiliationsView].[PhysicianName] AS [PhysicianName], 
+    [AffiliationsView].[SpecialtyID] AS [SpecialtyID], 
+    [AffiliationsView].[SpecialityCode] AS [SpecialityCode], 
+    [AffiliationsView].[SpecialityName] AS [SpecialityName], 
+    [AffiliationsView].[EntityID] AS [EntityID], 
+    [AffiliationsView].[EntityName] AS [EntityName], 
+    [AffiliationsView].[EntityTypeID] AS [EntityTypeID], 
+    [AffiliationsView].[EntityTypeName] AS [EntityTypeName], 
+    [AffiliationsView].[BrickID] AS [BrickID], 
+    [AffiliationsView].[AmounBrickName] AS [AmounBrickName], 
+    [AffiliationsView].[PhysicianClass] AS [PhysicianClass], 
+    [AffiliationsView].[BestTimeFrom] AS [BestTimeFrom], 
+    [AffiliationsView].[BestTimeTo] AS [BestTimeTo], 
+    [AffiliationsView].[Notes] AS [Notes], 
+    [AffiliationsView].[Deleted] AS [Deleted], 
+    [AffiliationsView].[LineID] AS [LineID], 
+    [AffiliationsView].[LineName] AS [LineName], 
+    [AffiliationsView].[NoOfPatients] AS [NoOfPatients], 
+    [AffiliationsView].[WaitingTime] AS [WaitingTime], 
+    [AffiliationsView].[SpecialtyValue] AS [SpecialtyValue], 
+    [AffiliationsView].[TotalValue] AS [TotalValue], 
+    [AffiliationsView].[Expr1] AS [Expr1], 
+    [AffiliationsView].[Expr2] AS [Expr2]
+    FROM [dbo].[AffiliationsView] AS [AffiliationsView]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
